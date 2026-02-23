@@ -22,5 +22,17 @@ export class AccountController {
         const account = await this.accountService.getProfile(accountId);
         return new ApiResponse(200, account, 'Profile retrieved successfully');
     });
+
+    updateProfile = asyncHandler(async (req: Request) => {
+        const accountId = (req as any).user.id;
+        const account = await this.accountService.updateProfile(accountId, req.body);
+        return new ApiResponse(200, account, 'Profile updated successfully');
+    });
+
+    deleteAccount = asyncHandler(async (req: Request) => {
+        const accountId = (req as any).user.id;
+        await this.accountService.softDelete(accountId);
+        return new ApiResponse(200, null, 'Account deleted successfully');
+    });
 }
 

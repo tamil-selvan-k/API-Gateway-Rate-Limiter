@@ -13,5 +13,8 @@ const accountController = new AccountController(accountService);
 router.post('/register', accountController.register);
 router.post('/login', accountController.login);
 router.get('/profile', auth, accountController.getProfile);
+router.patch('/profile', auth, accountController.updateProfile);
+router.delete('/', auth, accountController.deleteAccount);
+
 
 export { router as accountRoutes };

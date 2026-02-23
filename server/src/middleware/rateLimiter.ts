@@ -98,6 +98,8 @@ export const rateLimiter = (options: RateLimitOptions) => {
 
             const [allowed, remainingTokens] = result;
 
+            const resetSeconds = Math.max(0, Math.ceil((max - remainingTokens) / refillRate));
+            res.setHeader('X-RateLimit-Reset', Math.floor((now + resetSeconds * 1000) / 1000).toString());
             res.setHeader('X-RateLimit-Limit', max);
             res.setHeader('X-RateLimit-Remaining', Math.floor(remainingTokens));
 

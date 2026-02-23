@@ -32,3 +32,531 @@
 2026-02-23T06:59:04.581Z [INFO]: [0mPOST /api/v1/accounts/register [32m201[0m 1743.585 ms - 253[0m
 2026-02-23T06:59:33.180Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 771.825 ms - 484[0m
 2026-02-23T07:00:14.260Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 768.527 ms - 252[0m
+2026-02-23T07:47:59.450Z [INFO]: Database connection established
+2026-02-23T07:48:00.116Z [INFO]: Redis connection established
+2026-02-23T07:48:00.130Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T07:51:49.802Z [INFO]: [0mGET /.well-known/appspecific/com.chrome.devtools.json [33m404[0m 74.141 ms - 187[0m
+2026-02-23T07:51:53.204Z [INFO]: [0mGET /health [32m200[0m 3525.316 ms - 290[0m
+2026-02-23T07:51:54.396Z [INFO]: [0mGET /health [32m200[0m 278.166 ms - 290[0m
+2026-02-23T07:51:54.465Z [INFO]: [0mGET /.well-known/appspecific/com.chrome.devtools.json [33m404[0m 7.984 ms - 187[0m
+2026-02-23T07:52:13.760Z [INFO]: Database connection established
+2026-02-23T07:52:13.882Z [INFO]: Redis connection established
+2026-02-23T07:52:13.893Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T07:52:14.310Z [INFO]: [0mGET /.well-known/appspecific/com.chrome.devtools.json [33m404[0m 11.942 ms - 187[0m
+2026-02-23T07:52:14.318Z [INFO]: [0mGET /.well-known/appspecific/com.chrome.devtools.json [33m404[0m 3.671 ms - 187[0m
+2026-02-23T07:53:04.042Z [INFO]: Database connection established
+2026-02-23T07:53:04.089Z [INFO]: Redis connection established
+2026-02-23T07:53:04.096Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T07:53:28.509Z [INFO]: Database connection established
+2026-02-23T07:53:28.559Z [INFO]: Redis connection established
+2026-02-23T07:53:28.568Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T07:53:37.533Z [INFO]: Database connection established
+2026-02-23T07:53:37.579Z [INFO]: Redis connection established
+2026-02-23T07:53:37.586Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T07:54:01.666Z [INFO]: Database connection established
+2026-02-23T07:54:01.705Z [INFO]: Redis connection established
+2026-02-23T07:54:01.712Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T07:54:15.434Z [INFO]: Database connection established
+2026-02-23T07:54:15.512Z [INFO]: Redis connection established
+2026-02-23T07:54:15.523Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T07:54:42.166Z [INFO]: [0mGET /health [32m200[0m 980.200 ms - 289[0m
+2026-02-23T07:54:42.298Z [INFO]: [0mGET /.well-known/appspecific/com.chrome.devtools.json [33m404[0m 10.878 ms - 187[0m
+2026-02-23T07:55:15.728Z [INFO]: Database connection established
+2026-02-23T07:55:15.813Z [INFO]: Redis connection established
+2026-02-23T07:55:15.827Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T08:49:14.277Z [INFO]: Database connection established
+2026-02-23T08:49:16.325Z [INFO]: Redis connection established
+2026-02-23T08:49:16.342Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T08:50:17.027Z [INFO]: Database connection established
+2026-02-23T08:50:17.160Z [INFO]: Redis connection established
+2026-02-23T08:50:17.172Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T08:50:54.171Z [INFO]: Database connection established
+2026-02-23T08:50:54.230Z [INFO]: Redis connection established
+2026-02-23T08:50:54.236Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T08:52:05.313Z [INFO]: Database connection established
+2026-02-23T08:52:05.489Z [INFO]: Redis connection established
+2026-02-23T08:52:05.498Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:04:44.619Z [INFO]: Database connection established
+2026-02-23T09:04:45.074Z [INFO]: Redis connection established
+2026-02-23T09:04:45.087Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:05:06.482Z [INFO]: Database connection established
+2026-02-23T09:05:08.195Z [INFO]: Redis connection established
+2026-02-23T09:05:08.211Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:05:25.833Z [INFO]: Database connection established
+2026-02-23T09:05:26.453Z [INFO]: Redis connection established
+2026-02-23T09:07:04.337Z [INFO]: Database connection established
+2026-02-23T09:07:04.533Z [INFO]: Redis connection established
+2026-02-23T09:07:04.543Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:07:52.376Z [INFO]: Database connection established
+2026-02-23T09:08:46.195Z [INFO]: Database connection established
+2026-02-23T09:08:47.882Z [INFO]: Redis connection established
+2026-02-23T09:08:47.895Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:09:03.203Z [INFO]: Database connection established
+2026-02-23T09:09:03.458Z [INFO]: Redis connection established
+2026-02-23T09:09:03.474Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:09:18.294Z [INFO]: Database connection established
+2026-02-23T09:09:18.480Z [INFO]: Redis connection established
+2026-02-23T09:09:18.491Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:10:32.535Z [INFO]: Database connection established
+2026-02-23T09:10:32.930Z [INFO]: Redis connection established
+2026-02-23T09:10:32.946Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:10:49.193Z [INFO]: Database connection established
+2026-02-23T09:10:49.257Z [INFO]: Redis connection established
+2026-02-23T09:10:49.269Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:11:38.651Z [INFO]: Database connection established
+2026-02-23T09:11:38.854Z [INFO]: Redis connection established
+2026-02-23T09:11:38.863Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T09:13:19.587Z [ERROR]: POST /api/v1/accounts/login - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+2026-02-23T14:37:58.689Z [INFO]: Database connection established
+2026-02-23T14:37:58.688Z [INFO]: Database connection established
+2026-02-23T14:37:58.771Z [INFO]: Redis connection established
+2026-02-23T14:37:58.770Z [INFO]: Redis connection established
+2026-02-23T14:37:58.778Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T14:37:58.780Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T14:39:32.692Z [INFO]: Database connection established
+2026-02-23T14:39:32.748Z [INFO]: Redis connection established
+2026-02-23T14:39:32.743Z [INFO]: Database connection established
+2026-02-23T14:39:32.754Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T14:39:32.783Z [INFO]: Redis connection established
+2026-02-23T14:39:32.787Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T14:39:42.495Z [ERROR]: POST /api/v1/accounts/login - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+2026-02-23T14:41:11.150Z [ERROR]: POST /api/v1/accounts/login - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+2026-02-23T14:41:15.688Z [INFO]: [0mGET /health [32m200[0m 1888.737 ms - 290[0m
+2026-02-23T14:42:45.043Z [INFO]: [0mPOST /api/v1/accounts/register [32m201[0m 2249.977 ms - 281[0m
+2026-02-23T14:42:45.563Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 435.058 ms - 456[0m
+2026-02-23T14:42:46.933Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 1363.756 ms - 254[0m
+2026-02-23T14:42:51.760Z [INFO]: [0mPOST /api/v1/apis [32m201[0m 4808.066 ms - 342[0m
+2026-02-23T14:42:52.634Z [INFO]: [0mGET /api/v1/apis [32m200[0m 855.017 ms - 347[0m
+2026-02-23T14:42:53.910Z [INFO]: [0mGET /api/v1/apis/e53c920c-f2a4-4f9d-bc1c-fe64fa4c387e [32m200[0m 1265.706 ms - 599[0m
+2026-02-23T14:43:05.989Z [INFO]: [0mPOST /api/v1/subscriptions/subscribe [32m201[0m 8675.473 ms - 356[0m
+2026-02-23T14:43:07.126Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 1120.323 ms - 685[0m
+2026-02-23T14:43:07.163Z [ERROR]: POST /api/v1/api-keys - Validation failed
+2026-02-23T14:43:07.170Z [INFO]: [0mPOST /api/v1/api-keys [33m400[0m 27.197 ms - 353[0m
+2026-02-23T14:43:08.123Z [INFO]: [0mGET /api/v1/api-keys/account/enterprise_01 [32m200[0m 941.237 ms - 87[0m
+2026-02-23T15:53:47.434Z [INFO]: [0mPOST /api/v1/accounts/register [32m201[0m 7212.525 ms - 281[0m
+2026-02-23T15:53:48.013Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 553.488 ms - 456[0m
+2026-02-23T15:53:49.311Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 1293.647 ms - 254[0m
+2026-02-23T15:53:52.008Z [INFO]: [0mPOST /api/v1/apis [32m201[0m 2687.822 ms - 342[0m
+2026-02-23T15:53:53.752Z [INFO]: [0mGET /api/v1/apis [32m200[0m 1724.871 ms - 612[0m
+2026-02-23T15:53:56.187Z [INFO]: [0mGET /api/v1/apis/8b725cd0-d512-4914-9219-40f41fb822c4 [32m200[0m 2428.567 ms - 599[0m
+2026-02-23T15:54:05.475Z [ERROR]: POST /api/v1/subscriptions/subscribe - Account already has an active subscription. Use upgrade instead.
+2026-02-23T15:54:05.477Z [INFO]: [0mPOST /api/v1/subscriptions/subscribe [33m400[0m 5744.010 ms - 599[0m
+2026-02-23T15:54:06.966Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 1481.609 ms - 685[0m
+2026-02-23T15:54:06.979Z [ERROR]: POST /api/v1/api-keys - Validation failed
+2026-02-23T15:54:06.981Z [INFO]: [0mPOST /api/v1/api-keys [33m400[0m 10.129 ms - 353[0m
+2026-02-23T15:54:07.740Z [INFO]: [0mGET /api/v1/api-keys/account/enterprise_01 [32m200[0m 754.372 ms - 87[0m
+2026-02-23T15:55:57.343Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T15:55:57.349Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:03:21.143Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:05:25.395Z [INFO]: Database connection established
+2026-02-23T16:05:25.619Z [INFO]: Redis connection established
+2026-02-23T16:05:25.634Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:08:25.361Z [INFO]: [0mPOST /api/v1/accounts/register [32m201[0m 12524.746 ms - 281[0m
+2026-02-23T16:08:28.720Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 2739.770 ms - 456[0m
+2026-02-23T16:08:32.879Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 4141.898 ms - 254[0m
+2026-02-23T16:08:36.520Z [INFO]: [0mPOST /api/v1/apis [32m201[0m 3555.333 ms - 342[0m
+2026-02-23T16:08:37.239Z [INFO]: [0mGET /api/v1/apis [32m200[0m 695.568 ms - 877[0m
+2026-02-23T16:08:40.410Z [INFO]: [0mGET /api/v1/apis/fb6aa0c3-9c64-46ed-b239-2b4c0dfecb77 [32m200[0m 3158.571 ms - 599[0m
+2026-02-23T16:12:52.588Z [INFO]: [0mPOST /api/v1/accounts/register [32m201[0m 8057.503 ms - 281[0m
+2026-02-23T16:12:53.062Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 448.467 ms - 456[0m
+2026-02-23T16:12:54.000Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 933.163 ms - 254[0m
+2026-02-23T16:12:57.623Z [INFO]: [0mPOST /api/v1/apis [32m201[0m 3617.405 ms - 342[0m
+2026-02-23T16:12:58.323Z [INFO]: [0mGET /api/v1/apis [32m200[0m 691.807 ms - 1142[0m
+2026-02-23T16:13:00.263Z [INFO]: [0mGET /api/v1/apis/df2fba5b-ec07-4682-b225-7cdcad4696d6 [32m200[0m 1935.572 ms - 599[0m
+2026-02-23T16:15:07.037Z [INFO]: [0mPOST /api/v1/accounts/register [32m201[0m 9905.423 ms - 285[0m
+2026-02-23T16:15:08.458Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 1336.346 ms - 533[0m
+2026-02-23T16:15:10.408Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 1921.614 ms - 284[0m
+2026-02-23T16:15:14.504Z [INFO]: [0mPOST /api/v1/apis [32m201[0m 4082.279 ms - 359[0m
+2026-02-23T16:15:15.299Z [INFO]: [0mGET /api/v1/apis [32m200[0m 754.027 ms - 364[0m
+2026-02-23T16:15:16.956Z [INFO]: [0mGET /api/v1/apis/ef1bf60e-9c19-4942-84ae-ba701d5046af [32m200[0m 1473.512 ms - 646[0m
+2026-02-23T16:15:19.224Z [INFO]: [0mPATCH /api/v1/apis/ef1bf60e-9c19-4942-84ae-ba701d5046af [32m200[0m 2049.726 ms - 367[0m
+2026-02-23T16:15:28.372Z [INFO]: [0mPOST /api/v1/subscriptions/subscribe [32m201[0m 8079.885 ms - 379[0m
+2026-02-23T16:15:29.649Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 1196.694 ms - 708[0m
+2026-02-23T16:15:32.846Z [INFO]: [0mPOST /api/v1/api-keys [32m201[0m 3161.704 ms - 452[0m
+2026-02-23T16:15:39.592Z [INFO]: [0mGET /api/v1/api-keys/account/a910a97a-94fb-45f6-9294-b023ae50eeee [32m200[0m 6595.798 ms - 713[0m
+2026-02-23T16:15:40.719Z [INFO]: [0mGET /api/v1/api-keys/api/ef1bf60e-9c19-4942-84ae-ba701d5046af [32m200[0m 1047.186 ms - 425[0m
+2026-02-23T16:15:42.084Z [INFO]: [0mPATCH /api/v1/api-keys/a799b090-7a0a-479d-aac2-b9268de0d852/revoke [32m200[0m 939.965 ms - 413[0m
+2026-02-23T16:15:44.189Z [INFO]: [0mPATCH /api/v1/accounts/profile [32m200[0m 1449.707 ms - 290[0m
+2026-02-23T16:15:45.578Z [INFO]: [0mPOST /api/v1/subscriptions/cancel [32m200[0m 1316.602 ms - 408[0m
+2026-02-23T16:15:47.816Z [ERROR]: DELETE /api/v1/apis/ef1bf60e-9c19-4942-84ae-ba701d5046af - 
+Invalid `prisma.api.delete()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\api\api.repository.ts:36:27
+
+  33 }
+  34 
+  35 async delete(id: string): Promise<Api> {
+→ 36     return prisma.api.delete(
+Foreign key constraint violated on the constraint: `ApiKey_apiId_fkey`
+2026-02-23T16:15:47.827Z [INFO]: [0mDELETE /api/v1/apis/ef1bf60e-9c19-4942-84ae-ba701d5046af [31m500[0m 2243.139 ms - 1564[0m
+2026-02-23T16:20:06.238Z [INFO]: Database connection established
+2026-02-23T16:20:06.428Z [INFO]: Redis connection established
+2026-02-23T16:20:06.443Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:21:46.328Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:21:46.496Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:21:46.343Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:22:09.349Z [INFO]: Database connection established
+2026-02-23T16:22:09.350Z [INFO]: Database connection established
+2026-02-23T16:22:09.350Z [INFO]: Database connection established
+2026-02-23T16:22:10.105Z [INFO]: Redis connection established
+2026-02-23T16:22:10.114Z [INFO]: Redis connection established
+2026-02-23T16:22:10.116Z [INFO]: Redis connection established
+2026-02-23T16:22:10.121Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:22:10.125Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:22:10.129Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:22:30.789Z [INFO]: Database connection established
+2026-02-23T16:22:30.870Z [INFO]: Database connection established
+2026-02-23T16:22:30.956Z [INFO]: Redis connection established
+2026-02-23T16:22:30.967Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:22:30.980Z [INFO]: Redis connection established
+2026-02-23T16:22:30.992Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:22:30.992Z [INFO]: Database connection established
+2026-02-23T16:22:31.112Z [INFO]: Redis connection established
+2026-02-23T16:22:31.122Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:23:00.600Z [INFO]: Database connection established
+2026-02-23T16:23:00.599Z [INFO]: Database connection established
+2026-02-23T16:23:00.652Z [INFO]: Database connection established
+2026-02-23T16:23:02.347Z [INFO]: Redis connection established
+2026-02-23T16:23:02.347Z [INFO]: Redis connection established
+2026-02-23T16:23:02.347Z [INFO]: Redis connection established
+2026-02-23T16:23:02.379Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:23:02.375Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:23:02.385Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:23:31.259Z [INFO]: Database connection established
+2026-02-23T16:23:31.259Z [INFO]: Database connection established
+2026-02-23T16:23:31.335Z [INFO]: Redis connection established
+2026-02-23T16:23:31.335Z [INFO]: Redis connection established
+2026-02-23T16:23:31.344Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:23:31.348Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:23:31.547Z [INFO]: Database connection established
+2026-02-23T16:23:31.633Z [INFO]: Redis connection established
+2026-02-23T16:23:31.640Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:23:54.326Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:23:54.320Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:23:54.385Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T16:24:09.300Z [INFO]: Database connection established
+2026-02-23T16:24:09.300Z [INFO]: Database connection established
+2026-02-23T16:24:09.301Z [INFO]: Database connection established
+2026-02-23T16:24:09.456Z [INFO]: Redis connection established
+2026-02-23T16:24:09.452Z [INFO]: Redis connection established
+2026-02-23T16:24:09.454Z [INFO]: Redis connection established
+2026-02-23T16:24:09.485Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:24:09.481Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:24:09.487Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:28:23.486Z [INFO]: Database connection established
+2026-02-23T16:28:23.692Z [INFO]: Redis connection established
+2026-02-23T16:28:23.702Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T16:36:17.106Z [INFO]: Database connection established
+2026-02-23T16:36:17.178Z [INFO]: Redis connection established
+2026-02-23T16:36:17.183Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:06:13.582Z [INFO]: Database connection established
+2026-02-23T17:06:13.582Z [INFO]: Database connection established
+2026-02-23T17:06:13.584Z [INFO]: Database connection established
+2026-02-23T17:06:13.923Z [INFO]: Redis connection established
+2026-02-23T17:06:13.924Z [INFO]: Redis connection established
+2026-02-23T17:06:13.926Z [INFO]: Redis connection established
+2026-02-23T17:06:13.934Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:06:13.934Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:06:13.935Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:06:26.261Z [INFO]: Database connection established
+2026-02-23T17:06:26.377Z [INFO]: Redis connection established
+2026-02-23T17:06:26.401Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:06:26.616Z [INFO]: Database connection established
+2026-02-23T17:06:26.678Z [INFO]: Redis connection established
+2026-02-23T17:06:26.688Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:06:26.979Z [INFO]: Database connection established
+2026-02-23T17:06:27.061Z [INFO]: Redis connection established
+2026-02-23T17:06:27.067Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:06:52.286Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:06:53.449Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:06:53.483Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:07:58.167Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:07:58.170Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:07:58.170Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:10:36.815Z [INFO]: Database connection established
+2026-02-23T17:10:36.816Z [INFO]: Database connection established
+2026-02-23T17:10:36.830Z [INFO]: Database connection established
+2026-02-23T17:10:36.951Z [INFO]: Redis connection established
+2026-02-23T17:10:36.956Z [INFO]: Redis connection established
+2026-02-23T17:10:36.957Z [INFO]: Redis connection established
+2026-02-23T17:10:36.960Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:10:36.962Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:10:36.963Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:13:53.817Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:13:53.809Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:13:54.742Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:14:14.820Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:14:14.974Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:14:15.086Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:14:47.201Z [INFO]: Database connection established
+2026-02-23T17:14:47.201Z [INFO]: Database connection established
+2026-02-23T17:14:47.201Z [INFO]: Database connection established
+2026-02-23T17:14:47.379Z [INFO]: Redis connection established
+2026-02-23T17:14:47.379Z [INFO]: Redis connection established
+2026-02-23T17:14:47.380Z [INFO]: Redis connection established
+2026-02-23T17:14:47.390Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:14:47.389Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:14:47.393Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:14:59.386Z [INFO]: Database connection established
+2026-02-23T17:14:59.386Z [INFO]: Database connection established
+2026-02-23T17:14:59.463Z [INFO]: Redis connection established
+2026-02-23T17:14:59.466Z [INFO]: Redis connection established
+2026-02-23T17:14:59.470Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:14:59.471Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:14:59.737Z [INFO]: Database connection established
+2026-02-23T17:14:59.796Z [INFO]: Redis connection established
+2026-02-23T17:14:59.803Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:17:11.035Z [INFO]: Database connection established
+2026-02-23T17:17:11.047Z [INFO]: Database connection established
+2026-02-23T17:17:11.047Z [INFO]: Database connection established
+2026-02-23T17:17:11.125Z [INFO]: Redis connection established
+2026-02-23T17:17:11.126Z [INFO]: Redis connection established
+2026-02-23T17:17:11.128Z [INFO]: Redis connection established
+2026-02-23T17:17:11.134Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:17:11.135Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:17:11.135Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:17:21.045Z [INFO]: Database connection established
+2026-02-23T17:17:21.101Z [INFO]: Redis connection established
+2026-02-23T17:17:21.110Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:17:21.113Z [INFO]: Database connection established
+2026-02-23T17:17:21.141Z [INFO]: Database connection established
+2026-02-23T17:17:21.168Z [INFO]: Redis connection established
+2026-02-23T17:17:21.176Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:17:21.204Z [INFO]: Redis connection established
+2026-02-23T17:17:21.213Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:18:38.276Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:18:38.298Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:18:38.382Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:20:00.749Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:20:01.019Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:20:01.136Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:21:33.318Z [INFO]: Database connection established
+2026-02-23T17:21:33.319Z [INFO]: Database connection established
+2026-02-23T17:21:33.319Z [INFO]: Database connection established
+2026-02-23T17:21:33.577Z [INFO]: Redis connection established
+2026-02-23T17:21:33.578Z [INFO]: Redis connection established
+2026-02-23T17:21:33.578Z [INFO]: Redis connection established
+2026-02-23T17:21:33.585Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:21:33.584Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:21:33.587Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:22:03.747Z [INFO]: Database connection established
+2026-02-23T17:22:03.742Z [INFO]: Database connection established
+2026-02-23T17:22:03.744Z [INFO]: Database connection established
+2026-02-23T17:22:03.955Z [INFO]: Redis connection established
+2026-02-23T17:22:03.975Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:22:03.986Z [INFO]: Redis connection established
+2026-02-23T17:22:03.987Z [INFO]: Redis connection established
+2026-02-23T17:22:04.005Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:22:04.007Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:23:05.577Z [INFO]: Database connection established
+2026-02-23T17:23:05.577Z [INFO]: Database connection established
+2026-02-23T17:23:05.577Z [INFO]: Database connection established
+2026-02-23T17:23:05.641Z [INFO]: Redis connection established
+2026-02-23T17:23:05.641Z [INFO]: Redis connection established
+2026-02-23T17:23:05.648Z [INFO]: Redis connection established
+2026-02-23T17:23:05.650Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:23:05.651Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:23:05.655Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:23:26.168Z [INFO]: Database connection established
+2026-02-23T17:23:26.168Z [INFO]: Database connection established
+2026-02-23T17:23:26.169Z [INFO]: Database connection established
+2026-02-23T17:23:26.217Z [INFO]: Redis connection established
+2026-02-23T17:23:26.230Z [INFO]: Redis connection established
+2026-02-23T17:23:26.232Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:23:26.239Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:23:26.256Z [INFO]: Redis connection established
+2026-02-23T17:23:26.262Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:24:10.407Z [INFO]: Database connection established
+2026-02-23T17:24:10.406Z [INFO]: Database connection established
+2026-02-23T17:24:10.405Z [INFO]: Database connection established
+2026-02-23T17:24:10.529Z [INFO]: Redis connection established
+2026-02-23T17:24:10.530Z [INFO]: Redis connection established
+2026-02-23T17:24:10.544Z [INFO]: Redis connection established
+2026-02-23T17:24:10.545Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:24:10.547Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:24:10.550Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:13.023Z [INFO]: Database connection established
+2026-02-23T17:25:13.026Z [INFO]: Database connection established
+2026-02-23T17:25:13.069Z [INFO]: Redis connection established
+2026-02-23T17:25:13.070Z [INFO]: Redis connection established
+2026-02-23T17:25:13.076Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:13.076Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:14.606Z [INFO]: Database connection established
+2026-02-23T17:25:14.657Z [INFO]: Redis connection established
+2026-02-23T17:25:14.662Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:32.424Z [INFO]: Database connection established
+2026-02-23T17:25:32.438Z [INFO]: Database connection established
+2026-02-23T17:25:32.475Z [INFO]: Redis connection established
+2026-02-23T17:25:32.488Z [INFO]: Redis connection established
+2026-02-23T17:25:32.489Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:32.499Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:35.215Z [INFO]: Database connection established
+2026-02-23T17:25:35.269Z [INFO]: Redis connection established
+2026-02-23T17:25:35.277Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:57.904Z [INFO]: Database connection established
+2026-02-23T17:25:57.942Z [INFO]: Redis connection established
+2026-02-23T17:25:57.949Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:59.450Z [INFO]: Database connection established
+2026-02-23T17:25:59.449Z [INFO]: Database connection established
+2026-02-23T17:25:59.489Z [INFO]: Redis connection established
+2026-02-23T17:25:59.490Z [INFO]: Redis connection established
+2026-02-23T17:25:59.496Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:25:59.496Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:26:26.407Z [INFO]: Database connection established
+2026-02-23T17:26:26.412Z [INFO]: Database connection established
+2026-02-23T17:26:26.423Z [INFO]: Database connection established
+2026-02-23T17:26:26.445Z [INFO]: Redis connection established
+2026-02-23T17:26:26.457Z [INFO]: Redis connection established
+2026-02-23T17:26:26.457Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:26:26.471Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:26:26.477Z [INFO]: Redis connection established
+2026-02-23T17:26:26.483Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:27:19.021Z [INFO]: Database connection established
+2026-02-23T17:27:19.082Z [INFO]: Redis connection established
+2026-02-23T17:27:19.090Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:27:19.438Z [INFO]: Database connection established
+2026-02-23T17:27:19.472Z [INFO]: Redis connection established
+2026-02-23T17:27:19.477Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:27:19.731Z [INFO]: Database connection established
+2026-02-23T17:27:19.772Z [INFO]: Redis connection established
+2026-02-23T17:27:19.778Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:30:29.232Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:30:29.246Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:30:29.256Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:31:09.855Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:31:09.869Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:31:09.881Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:42:30.091Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:47:14.684Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:49:46.362Z [INFO]: Database connection established
+2026-02-23T17:49:46.360Z [INFO]: Database connection established
+2026-02-23T17:49:46.633Z [INFO]: Redis connection established
+2026-02-23T17:49:46.636Z [INFO]: Redis connection established
+2026-02-23T17:49:46.642Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:49:46.643Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:49:46.958Z [INFO]: Database connection established
+2026-02-23T17:49:47.018Z [INFO]: Redis connection established
+2026-02-23T17:49:47.023Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:52:23.783Z [INFO]: Database connection established
+2026-02-23T17:52:23.782Z [INFO]: Database connection established
+2026-02-23T17:52:23.783Z [INFO]: Database connection established
+2026-02-23T17:52:23.937Z [INFO]: Redis connection established
+2026-02-23T17:52:23.939Z [INFO]: Redis connection established
+2026-02-23T17:52:23.939Z [INFO]: Redis connection established
+2026-02-23T17:52:23.948Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:52:23.947Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:52:23.950Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:53:10.964Z [INFO]: Database connection established
+2026-02-23T17:53:10.962Z [INFO]: Database connection established
+2026-02-23T17:53:10.967Z [INFO]: Database connection established
+2026-02-23T17:53:11.098Z [INFO]: Redis connection established
+2026-02-23T17:53:11.096Z [INFO]: Redis connection established
+2026-02-23T17:53:11.097Z [INFO]: Redis connection established
+2026-02-23T17:53:11.105Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:53:11.105Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:53:11.108Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:53:22.783Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:53:22.878Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:53:22.933Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:55:45.522Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:55:50.246Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:55:50.314Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-23T17:56:03.222Z [INFO]: Database connection established
+2026-02-23T17:56:03.223Z [INFO]: Database connection established
+2026-02-23T17:56:03.224Z [INFO]: Database connection established
+2026-02-23T17:56:03.389Z [INFO]: Redis connection established
+2026-02-23T17:56:03.390Z [INFO]: Redis connection established
+2026-02-23T17:56:03.390Z [INFO]: Redis connection established
+2026-02-23T17:56:03.400Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:56:03.403Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:56:03.404Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:57:20.737Z [INFO]: Database connection established
+2026-02-23T17:57:20.735Z [INFO]: Database connection established
+2026-02-23T17:57:20.737Z [INFO]: Database connection established
+2026-02-23T17:57:20.836Z [INFO]: Redis connection established
+2026-02-23T17:57:20.835Z [INFO]: Redis connection established
+2026-02-23T17:57:20.837Z [INFO]: Redis connection established
+2026-02-23T17:57:20.841Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:57:20.843Z [INFO]: Server is running on port 3000 in development mode
+2026-02-23T17:57:20.843Z [INFO]: Server is running on port 3000 in development mode
