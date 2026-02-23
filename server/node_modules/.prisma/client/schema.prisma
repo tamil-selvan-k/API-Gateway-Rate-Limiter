@@ -1,0 +1,86 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id            String         @id @default(uuid())
+  name          String
+  email         String         @unique
+  password      String
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  apiKeys       ApiKey[]
+  subscriptions Subscription[]
+}
+
+model Plan {
+  id                     String         @id @default(uuid())
+  name                   String         @unique
+  description            String?
+  monthlyRequestLimit    Int
+  requestsPerSecond      Int
+  burstLimit             Int
+  createdAt              DateTime       @default(now())
+  updatedAt              DateTime       @updatedAt
+  monthlyPrice           Decimal        @default(0) @db.Decimal(10, 2)
+  overagePricePerMillion Decimal?       @db.Decimal(10, 2)
+  refillRate             Int?
+  isActive               Boolean        @default(true)
+  subscriptions          Subscription[]
+}
+
+model Subscription {
+  id        String    @id @default(uuid())
+  accountId String
+  planId    String
+  status    String    @default("active")
+  startDate DateTime  @default(now())
+  endDate   DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  account   Account   @relation(fields: [accountId], references: [id])
+  plan      Plan      @relation(fields: [planId], references: [id])
+}
+
+model ApiKey {
+  id        String     @id @default(uuid())
+  key       String     @unique
+  name      String
+  accountId String
+  isActive  Boolean    @default(true)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  account   Account    @relation(fields: [accountId], references: [id])
+  usageLogs UsageLog[]
+
+  @@index([key])
+}
+
+model UsageLog {
+  id           String   @id @default(uuid())
+  apiKeyId     String
+  endpoint     String
+  method       String
+  statusCode   Int
+  responseTime Int
+  timestamp    DateTime @default(now())
+  apiKey       ApiKey   @relation(fields: [apiKeyId], references: [id])
+
+  @@index([apiKeyId, timestamp])
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  resource  String
+  action    String
+  actorId   String
+  metadata  Json?
+  timestamp DateTime @default(now())
+
+  @@index([resource, timestamp])
+}

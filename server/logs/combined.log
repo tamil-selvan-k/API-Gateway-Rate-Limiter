@@ -1,0 +1,51 @@
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:34:50.976Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:34:51.139Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:34:51.152Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:34:56.731Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:34:56.941Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:34:56.953Z"}
+{"level":"info","message":"\u001b[0mGET /health \u001b[32m200\u001b[0m 1822.600 ms - 289\u001b[0m","timestamp":"2026-02-23T05:36:08.345Z"}
+{"level":"info","message":"\u001b[0mGET /health \u001b[32m200\u001b[0m 767.477 ms - 290\u001b[0m","timestamp":"2026-02-23T05:37:08.874Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:38:19.754Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:38:19.852Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:38:19.862Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:38:20.471Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:38:20.536Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:38:20.549Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:38:25.923Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:38:26.280Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:38:26.291Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:39:09.720Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:39:09.789Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:39:09.796Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:54:20.023Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:54:20.217Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:54:20.227Z"}
+{"level":"info","message":"\u001b[0mGET /health \u001b[32m200\u001b[0m 695.608 ms - 292\u001b[0m","timestamp":"2026-02-23T05:54:28.109Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:56:09.986Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:56:10.114Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:56:10.122Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T05:58:43.993Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T05:58:44.314Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T05:58:44.321Z"}
+{"level":"info","message":"\u001b[0mGET /health \u001b[32m200\u001b[0m 675.322 ms - 291\u001b[0m","timestamp":"2026-02-23T05:58:50.513Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T06:02:58.663Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T06:02:58.970Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T06:02:58.978Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T06:55:53.038Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T06:55:53.200Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T06:55:53.208Z"}
+{"level":"info","message":"\u001b[0mPOST /api/v1/accounts/register \u001b[33m404\u001b[0m 35.097 ms - 164\u001b[0m","timestamp":"2026-02-23T06:56:01.052Z"}
+{"level":"info","message":"\u001b[0mPOST /register \u001b[33m404\u001b[0m 12.888 ms - 148\u001b[0m","timestamp":"2026-02-23T06:56:34.807Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T06:57:36.873Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T06:57:37.041Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T06:57:37.061Z"}
+{"level":"info","message":"\u001b[0mPOST /register \u001b[33m404\u001b[0m 12.167 ms - 148\u001b[0m","timestamp":"2026-02-23T06:57:38.673Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-02-23T06:58:17.009Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-02-23T06:58:17.191Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-02-23T06:58:17.200Z"}
+{"level":"info","message":"\u001b[0mPOST /register \u001b[33m404\u001b[0m 200.360 ms - 148\u001b[0m","timestamp":"2026-02-23T06:58:38.150Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/test \u001b[32m200\u001b[0m 19.373 ms - 28\u001b[0m","timestamp":"2026-02-23T06:58:57.357Z"}
+{"level":"info","message":"\u001b[0mPOST /api/v1/accounts/register \u001b[32m201\u001b[0m 1743.585 ms - 253\u001b[0m","timestamp":"2026-02-23T06:59:04.581Z"}
+{"level":"info","message":"\u001b[0mPOST /api/v1/accounts/login \u001b[32m200\u001b[0m 771.825 ms - 484\u001b[0m","timestamp":"2026-02-23T06:59:33.180Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/accounts/profile \u001b[32m200\u001b[0m 768.527 ms - 252\u001b[0m","timestamp":"2026-02-23T07:00:14.260Z"}
