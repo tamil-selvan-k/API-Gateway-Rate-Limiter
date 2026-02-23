@@ -14,8 +14,29 @@ model Account {
   password      String
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
+  isActive      Boolean        @default(true)
+  apis          Api[]
   apiKeys       ApiKey[]
   subscriptions Subscription[]
+  monthlyUsages MonthlyUsage[]
+}
+
+model Api {
+  id              String     @id @default(uuid())
+  name            String
+  gatewayId       String     @unique
+  upstreamBaseUrl String
+  isActive        Boolean    @default(true)
+  accountId       String
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+  account         Account    @relation(fields: [accountId], references: [id])
+  apiKeys         ApiKey[]
+  usageLogs       UsageLog[]
+  monthlyUsages MonthlyUsage[]
+
+  @@index([accountId])
+  @@index([gatewayId])
 }
 
 model Plan {
@@ -45,6 +66,10 @@ model Subscription {
   updatedAt DateTime  @updatedAt
   account   Account   @relation(fields: [accountId], references: [id])
   plan      Plan      @relation(fields: [planId], references: [id])
+
+  @@index([accountId])
+  @@index([planId])
+  @@index([status])
 }
 
 model ApiKey {
@@ -55,9 +80,13 @@ model ApiKey {
   isActive  Boolean    @default(true)
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
+  apiId     String
   account   Account    @relation(fields: [accountId], references: [id])
+  api       Api        @relation(fields: [apiId], references: [id])
   usageLogs UsageLog[]
 
+  @@index([accountId])
+  @@index([apiId])
   @@index([key])
 }
 
@@ -69,9 +98,12 @@ model UsageLog {
   statusCode   Int
   responseTime Int
   timestamp    DateTime @default(now())
+  apiId        String
+  api          Api      @relation(fields: [apiId], references: [id])
   apiKey       ApiKey   @relation(fields: [apiKeyId], references: [id])
 
   @@index([apiKeyId, timestamp])
+  @@index([apiId, timestamp])
 }
 
 model AuditLog {
@@ -83,4 +115,22 @@ model AuditLog {
   timestamp DateTime @default(now())
 
   @@index([resource, timestamp])
+}
+
+model MonthlyUsage {
+  id            String   @id @default(uuid())
+  accountId     String
+  apiId         String
+  month         DateTime @db.Date
+  totalRequests BigInt   @default(0)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  account       Account  @relation(fields: [accountId], references: [id])
+  api           Api      @relation(fields: [apiId], references: [id])
+
+  @@unique([accountId, apiId, month])
+  @@index([accountId, month])
+  @@index([apiId, month])
 }
