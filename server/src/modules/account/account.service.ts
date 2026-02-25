@@ -72,6 +72,21 @@ export class AccountService {
     async softDelete(id: string) {
         return this.accountRepository.update(id, { isActive: false } as Prisma.AccountUpdateInput);
     }
+
+    async changePassword(id: string, currentPassword: string, newPassword: string) {
+        const account = await this.accountRepository.findById(id) as unknown as AccountModel | null;
+        if (!account || !account.isActive) {
+            throw new AppError('Account not found or inactive', 404);
+        }
+
+        const isPasswordValid = await PasswordUtil.compare(currentPassword, account.password || '');
+        if (!isPasswordValid) {
+            throw new AppError('Current password is incorrect', 400);
+        }
+
+        const hashedPassword = await PasswordUtil.hash(newPassword);
+        await this.accountRepository.update(id, { password: hashedPassword } as Prisma.AccountUpdateInput);
+    }
 }
 
 

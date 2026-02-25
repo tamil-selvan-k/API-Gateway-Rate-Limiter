@@ -14,6 +14,7 @@ router.post('/register', accountController.register);
 router.post('/login', accountController.login);
 router.get('/profile', auth, accountController.getProfile);
 router.patch('/profile', auth, accountController.updateProfile);
+router.patch('/change-password', auth, accountController.changePassword);
 router.delete('/', auth, accountController.deleteAccount);
 
 
