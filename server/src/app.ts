@@ -13,6 +13,7 @@ import { apiKeyRoutes } from '@modules/apiKey/apiKey.routes';
 import { apiRoutes } from '@modules/api/api.routes';
 import { subscriptionRoutes } from '@modules/subscription/subscription.routes';
 import { rateLimiterRoutes } from '@modules/rateLimiter/rateLimiter.routes';
+import { planRoutes } from '@modules/plan/plan.routes';
 import { gatewayMiddleware } from '@middleware/gateway';
 import { proxyHandler } from '@middleware/proxy';
 import { ApiResponse } from '@utils/ApiResponse';
@@ -44,7 +45,7 @@ app.use('/ready', readyRoutes);
 app.use('/internal/metrics', metricsRoutes);
 
 app.get('/api/v1/test', (req, res) => {
-    return new ApiResponse(200, {message: 'API is working'})
+    return new ApiResponse(200, { message: 'API is working' })
 });
 
 // Routes
@@ -52,6 +53,7 @@ app.get('/api/v1/test', (req, res) => {
 app.use('/api/v1/accounts', accountRoutes);
 app.use('/api/v1/api-keys', apiKeyRoutes);
 app.use('/api/v1/apis', apiRoutes);
+app.use('/api/v1/plans', planRoutes);
 app.use('/api/v1/subscriptions', subscriptionRoutes);
 app.use('/api/v1/rate-limiter', rateLimiterRoutes);
 

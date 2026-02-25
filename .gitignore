@@ -8,8 +8,9 @@ logs/
 server_log.txt
 
 # Prisma
-server/node_modules/.prisma/
+server/node_modules/
 server/prisma/migrations/
+server/.env
 
 # OS
 .DS_Store

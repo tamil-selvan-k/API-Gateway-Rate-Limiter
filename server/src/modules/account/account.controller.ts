@@ -30,9 +30,16 @@ export class AccountController {
     });
 
     deleteAccount = asyncHandler(async (req: Request) => {
-        const accountId = (req as any).user.id;
+        const accountId = (req as unknown as { user: { id: string } }).user.id;
         await this.accountService.softDelete(accountId);
         return new ApiResponse(200, null, 'Account deleted successfully');
+    });
+
+    changePassword = asyncHandler(async (req: Request) => {
+        const accountId = (req as unknown as { user: { id: string } }).user.id;
+        const { currentPassword, newPassword } = req.body;
+        await this.accountService.changePassword(accountId, currentPassword, newPassword);
+        return new ApiResponse(200, null, 'Password changed successfully');
     });
 }
 
