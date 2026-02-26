@@ -508,3 +508,220 @@ Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pool
 2026-02-25T17:58:13.296Z [ERROR]: Redis Client Error
 2026-02-25T17:58:13.488Z [INFO]: Shutting down server...
 2026-02-25T17:58:13.533Z [INFO]: Closed DB and Redis connections
+2026-02-26T16:49:19.942Z [INFO]: Database connection established
+2026-02-26T16:49:20.009Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
+2026-02-26T16:49:20.012Z [DEBUG]: Redis Client Error
+2026-02-26T16:49:20.280Z [WARN]: Redis connection failed. Running with degraded rate limiting.
+2026-02-26T16:49:20.288Z [INFO]: Server is running on port 3000 in development mode
+2026-02-26T16:51:21.312Z [INFO]: request.start
+2026-02-26T16:51:23.753Z [INFO]: request.end
+2026-02-26T16:51:23.759Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 2423.311 ms - -[0m
+2026-02-26T16:51:23.762Z [INFO]: request.start
+2026-02-26T16:51:24.057Z [INFO]: request.start
+2026-02-26T16:51:24.076Z [INFO]: request.start
+2026-02-26T16:51:24.093Z [INFO]: request.start
+2026-02-26T16:51:24.108Z [INFO]: request.end
+2026-02-26T16:51:24.111Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 342.652 ms - -[0m
+2026-02-26T16:51:29.254Z [ERROR]: GET /api/v1/subscriptions/status - 
+Invalid `prisma.subscription.findFirst()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\subscription\subscription.repository.ts:8:36
+
+  5 
+  6 export class SubscriptionRepository {
+  7     async findActiveByAccountId(accountId: string): Promise<Subscription | null> {
+→ 8         return prisma.subscription.findFirst(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-26T16:51:29.262Z [INFO]: request.end
+2026-02-26T16:51:29.264Z [INFO]: [0mGET /api/v1/subscriptions/status [31m500[0m 5201.018 ms - 2271[0m
+2026-02-26T16:51:29.281Z [ERROR]: GET /api/v1/apis - 
+Invalid `prisma.api.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\api\api.repository.ts:28:27
+
+  25     offset: number = DEFAULT_OFFSET,
+  26     limit: number = DEFAULT_LIMIT,
+  27 ): Promise<Api[]> {
+→ 28     return prisma.api.findMany(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-26T16:51:29.285Z [INFO]: request.end
+2026-02-26T16:51:29.286Z [INFO]: [0mGET /api/v1/apis?limit=100 [31m500[0m 5205.696 ms - 1961[0m
+2026-02-26T16:51:29.627Z [INFO]: request.end
+2026-02-26T16:51:29.628Z [INFO]: [0mGET /api/v1/api-keys/account/e19b408e-40e4-4d00-8ab2-8397209ec940 [36m304[0m 5529.394 ms - -[0m
+2026-02-26T16:51:40.783Z [INFO]: request.start
+2026-02-26T16:51:40.803Z [INFO]: request.start
+2026-02-26T16:51:42.799Z [INFO]: request.end
+2026-02-26T16:51:42.803Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 2010.798 ms - 703[0m
+2026-02-26T16:51:44.421Z [INFO]: request.end
+2026-02-26T16:51:44.424Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 3616.824 ms - 368[0m
+2026-02-26T16:51:44.460Z [INFO]: request.start
+2026-02-26T16:51:45.909Z [INFO]: request.end
+2026-02-26T16:51:45.911Z [INFO]: [0mGET /api/v1/rate-limiter/usage/9858c3de-41c3-487d-a321-f5e9def96722 [36m304[0m 1446.868 ms - -[0m
+2026-02-26T16:51:59.554Z [INFO]: request.start
+2026-02-26T16:52:00.915Z [INFO]: request.end
+2026-02-26T16:52:00.930Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 1358.533 ms - -[0m
+2026-02-26T16:52:00.944Z [INFO]: request.start
+2026-02-26T16:52:01.061Z [INFO]: request.start
+2026-02-26T16:52:01.075Z [INFO]: request.start
+2026-02-26T16:52:01.082Z [INFO]: request.start
+2026-02-26T16:52:01.272Z [INFO]: request.end
+2026-02-26T16:52:01.273Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 319.391 ms - -[0m
+2026-02-26T16:52:02.144Z [INFO]: request.end
+2026-02-26T16:52:02.146Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1081.192 ms - -[0m
+2026-02-26T16:52:04.698Z [INFO]: request.end
+2026-02-26T16:52:04.701Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 3619.704 ms - -[0m
+2026-02-26T16:52:04.728Z [INFO]: request.start
+2026-02-26T16:52:05.418Z [INFO]: request.end
+2026-02-26T16:52:05.421Z [INFO]: [0mGET /api/v1/api-keys/account/e19b408e-40e4-4d00-8ab2-8397209ec940 [36m304[0m 4328.875 ms - -[0m
+2026-02-26T16:52:06.335Z [INFO]: request.end
+2026-02-26T16:52:06.337Z [INFO]: [0mGET /api/v1/rate-limiter/usage/9858c3de-41c3-487d-a321-f5e9def96722 [36m304[0m 1605.497 ms - -[0m
+2026-02-26T16:54:44.952Z [INFO]: request.start
+2026-02-26T16:54:45.018Z [INFO]: request.start
+2026-02-26T16:54:45.025Z [INFO]: request.start
+2026-02-26T16:54:45.029Z [INFO]: request.start
+2026-02-26T16:54:46.686Z [INFO]: [0mGET /api/v1/subscriptions/status [0m-[0m - ms - -[0m
+2026-02-26T16:54:46.690Z [INFO]: [0mGET /api/v1/apis?limit=100 [0m-[0m - ms - -[0m
+2026-02-26T16:54:46.694Z [INFO]: [0mGET /api/v1/rate-limiter/usage/9858c3de-41c3-487d-a321-f5e9def96722 [0m-[0m - ms - -[0m
+2026-02-26T16:54:46.696Z [INFO]: [0mGET /api/v1/api-keys/account/e19b408e-40e4-4d00-8ab2-8397209ec940 [0m-[0m - ms - -[0m
+2026-02-26T16:54:46.956Z [INFO]: request.start
+2026-02-26T16:54:50.104Z [ERROR]: GET /api/v1/api-keys/account/e19b408e-40e4-4d00-8ab2-8397209ec940 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-26T16:54:52.011Z [ERROR]: GET /api/v1/accounts/profile - 
+Invalid `prisma.account.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\account\account.repository.ts:12:31
+
+   9 }
+  10 
+  11 async findById(id: string): Promise<Account | null> {
+→ 12     return prisma.account.findUnique(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-26T16:54:52.025Z [INFO]: request.end
+2026-02-26T16:54:52.037Z [INFO]: [0mGET /api/v1/accounts/profile [31m500[0m 5064.790 ms - 2083[0m
+2026-02-26T16:54:52.045Z [INFO]: request.start
+2026-02-26T16:54:54.790Z [INFO]: request.end
+2026-02-26T16:54:54.792Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 2741.272 ms - 284[0m
+2026-02-26T16:55:13.916Z [INFO]: request.start
+2026-02-26T16:55:15.660Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:55:15.663Z [INFO]: request.end
+2026-02-26T16:55:15.665Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 1743.686 ms - 492[0m
+2026-02-26T16:55:18.732Z [INFO]: request.start
+2026-02-26T16:55:19.298Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:55:19.300Z [INFO]: request.end
+2026-02-26T16:55:19.301Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 566.863 ms - 492[0m
+2026-02-26T16:55:28.675Z [INFO]: request.start
+2026-02-26T16:55:29.531Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:55:29.535Z [INFO]: request.end
+2026-02-26T16:55:29.537Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 857.800 ms - 492[0m
+2026-02-26T16:56:15.945Z [INFO]: request.start
+2026-02-26T16:56:16.747Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:56:16.749Z [INFO]: request.end
+2026-02-26T16:56:16.750Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 801.756 ms - 492[0m
+2026-02-26T16:58:32.212Z [INFO]: request.start
+2026-02-26T16:58:36.112Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:58:36.115Z [INFO]: request.end
+2026-02-26T16:58:36.118Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 3901.324 ms - 492[0m
+2026-02-26T16:58:41.906Z [INFO]: request.start
+2026-02-26T16:58:42.479Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:58:42.481Z [INFO]: request.end
+2026-02-26T16:58:42.482Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 573.971 ms - 492[0m
+2026-02-26T16:59:19.667Z [INFO]: request.start
+2026-02-26T16:59:20.945Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:59:20.947Z [INFO]: request.end
+2026-02-26T16:59:20.948Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 1277.960 ms - 492[0m
+2026-02-26T16:59:25.825Z [INFO]: request.start
+2026-02-26T16:59:26.373Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:59:26.376Z [INFO]: request.end
+2026-02-26T16:59:26.377Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 550.184 ms - 492[0m
+2026-02-26T16:59:29.523Z [INFO]: request.start
+2026-02-26T16:59:30.402Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:59:30.406Z [INFO]: request.end
+2026-02-26T16:59:30.407Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 880.752 ms - 492[0m
+2026-02-26T16:59:32.753Z [INFO]: request.start
+2026-02-26T16:59:33.408Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:59:33.410Z [INFO]: request.end
+2026-02-26T16:59:33.411Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 655.866 ms - 492[0m
+2026-02-26T16:59:37.432Z [INFO]: request.start
+2026-02-26T16:59:38.732Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:59:38.734Z [INFO]: request.end
+2026-02-26T16:59:38.735Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 1300.446 ms - 492[0m
+2026-02-26T16:59:43.995Z [INFO]: request.start
+2026-02-26T16:59:44.557Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T16:59:44.559Z [INFO]: request.end
+2026-02-26T16:59:44.560Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 562.164 ms - 492[0m
+2026-02-26T17:03:25.550Z [INFO]: request.start
+2026-02-26T17:03:26.473Z [ERROR]: POST /api/v1/accounts/register - Account with this email already exists
+2026-02-26T17:03:26.475Z [INFO]: request.end
+2026-02-26T17:03:26.478Z [INFO]: [0mPOST /api/v1/accounts/register [33m400[0m 922.670 ms - 521[0m
+2026-02-26T17:03:38.952Z [INFO]: request.start
+2026-02-26T17:03:43.991Z [ERROR]: POST /api/v1/accounts/login - 
+Invalid `prisma.account.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\account\account.repository.ts:6:31
+
+  3 
+  4 export class AccountRepository {
+  5     async findByEmail(email: string): Promise<Account | null> {
+→ 6         return prisma.account.findUnique(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-26T17:03:44.000Z [INFO]: request.end
+2026-02-26T17:03:44.003Z [INFO]: [0mPOST /api/v1/accounts/login [31m500[0m 5045.671 ms - 2158[0m
+2026-02-26T17:03:44.543Z [INFO]: request.start
+2026-02-26T17:03:56.267Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T17:03:56.270Z [INFO]: request.end
+2026-02-26T17:03:56.272Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 11726.071 ms - 492[0m
+2026-02-26T17:03:57.853Z [INFO]: request.start
+2026-02-26T17:04:02.388Z [ERROR]: POST /api/v1/accounts/login - Invalid email or password
+2026-02-26T17:04:02.391Z [INFO]: request.end
+2026-02-26T17:04:02.393Z [INFO]: [0mPOST /api/v1/accounts/login [33m401[0m 4537.386 ms - 492[0m
+2026-02-26T17:05:24.079Z [INFO]: Shutting down server...
+2026-02-26T17:09:39.362Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-26T17:10:01.686Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-02-26T17:10:53.507Z [INFO]: Database connection established
+2026-02-26T17:10:53.581Z [INFO]: Redis connection established
+2026-02-26T17:10:53.593Z [INFO]: Server is running on port 3000 in development mode
+2026-02-26T17:11:04.169Z [INFO]: request.start
+2026-02-26T17:11:05.747Z [INFO]: request.end
+2026-02-26T17:11:05.752Z [INFO]: [0mPOST /api/v1/accounts/register [32m201[0m 1572.608 ms - 272[0m
+2026-02-26T17:11:05.760Z [INFO]: request.start
+2026-02-26T17:11:06.332Z [INFO]: request.end
+2026-02-26T17:11:06.334Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 568.936 ms - 501[0m
+2026-02-26T17:11:06.499Z [INFO]: request.start
+2026-02-26T17:11:06.503Z [INFO]: request.start
+2026-02-26T17:11:06.508Z [INFO]: request.start
+2026-02-26T17:11:07.381Z [INFO]: request.end
+2026-02-26T17:11:07.384Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 875.798 ms - 83[0m
+2026-02-26T17:11:09.782Z [INFO]: request.end
+2026-02-26T17:11:09.784Z [INFO]: [0mGET /api/v1/api-keys/account/b0340e33-b1c4-407b-b4ce-805c088fa77d [32m200[0m 3271.540 ms - 87[0m
+2026-02-26T17:11:09.789Z [INFO]: request.end
+2026-02-26T17:11:09.791Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 3286.693 ms - 100[0m
+2026-02-26T17:11:18.897Z [INFO]: request.start
+2026-02-26T17:11:19.953Z [INFO]: request.end
+2026-02-26T17:11:19.955Z [INFO]: [0mGET /api/v1/plans [36m304[0m 1054.693 ms - -[0m
+2026-02-26T17:11:24.169Z [INFO]: request.start
+2026-02-26T17:11:37.488Z [INFO]: request.end
+2026-02-26T17:11:37.492Z [INFO]: [0mPOST /api/v1/subscriptions/subscribe [32m201[0m 13313.619 ms - 379[0m
+2026-02-26T17:11:37.503Z [INFO]: request.start
+2026-02-26T17:11:37.592Z [INFO]: request.start
+2026-02-26T17:11:39.068Z [INFO]: request.end
+2026-02-26T17:11:39.069Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1473.786 ms - -[0m
+2026-02-26T17:11:39.072Z [INFO]: request.end
+2026-02-26T17:11:39.073Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 1567.035 ms - 703[0m
+2026-02-26T17:12:08.182Z [INFO]: Shutting down server...

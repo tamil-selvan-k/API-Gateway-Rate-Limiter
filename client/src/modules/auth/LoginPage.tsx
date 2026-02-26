@@ -79,6 +79,12 @@ export default function LoginPage() {
                     </button>
                 </form>
 
+                <div className="auth-card__link-row">
+                    <button type="button" className="auth-link" onClick={() => showToast('Forgot password is coming soon', 'info')}>
+                        Forgot password?
+                    </button>
+                </div>
+
                 <p className="auth-card__footer">
                     Don't have an account? <Link to="/register">Create one</Link>
                 </p>

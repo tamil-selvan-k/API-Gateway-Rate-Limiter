@@ -561,6 +561,33 @@ a:hover { color: var(--brand-500); }
   cursor: not-allowed;
 }
 
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-right: 42px;
+}
+
+.input-icon-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-icon-btn:hover {
+  color: var(--gray-100);
+}
+
 /* ──────────────────────────── Auth Pages ─────────────────── */
 .auth-page {
   min-height: 100vh;
@@ -613,6 +640,26 @@ a:hover { color: var(--brand-500); }
 
 .auth-form {
   margin-bottom: 20px;
+}
+
+.auth-card__link-row {
+  display: flex;
+  justify-content: flex-end;
+  margin: -6px 0 16px;
+}
+
+.auth-link {
+  background: none;
+  border: none;
+  color: var(--brand-400);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  padding: 0;
+}
+
+.auth-link:hover {
+  color: var(--brand-500);
 }
 
 .auth-card__footer {

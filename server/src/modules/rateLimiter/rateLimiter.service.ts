@@ -13,7 +13,7 @@ export class RateLimiterService {
         this.subscriptionService = new SubscriptionService(subscriptionRepository);
     }
 
-    private ensureOwnership(apiId: string, accountId: string) {
+    private async ensureOwnership(apiId: string, accountId: string) {
         return this.rateLimiterRepository.findApiById(apiId).then((api) => {
             if (!api) {
                 throw new AppError('API not found', 404);

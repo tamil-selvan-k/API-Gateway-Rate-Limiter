@@ -2,7 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../components/Toast';
-import { UserPlus, Zap } from 'lucide-react';
+import { Eye, EyeOff, UserPlus, Zap } from 'lucide-react';
 import type { AxiosError } from 'axios';
 import type { ApiResponse } from '../../types/types';
 
@@ -10,6 +10,9 @@ export default function RegisterPage() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [loading, setLoading] = useState(false);
     const { register } = useAuth();
     const { showToast } = useToast();
@@ -17,6 +20,10 @@ export default function RegisterPage() {
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
+        if (password !== confirmPassword) {
+            showToast('Passwords do not match', 'error');
+            return;
+        }
         setLoading(true);
         try {
             await register(name, email, password);
@@ -70,16 +77,50 @@ export default function RegisterPage() {
 
                     <div className="form-group">
                         <label htmlFor="password">Password</label>
-                        <input
-                            id="password"
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder="••••••••"
-                            required
-                            minLength={6}
-                            autoComplete="new-password"
-                        />
+                        <div className="input-with-icon">
+                            <input
+                                id="password"
+                                type={showPassword ? 'text' : 'password'}
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                placeholder="••••••••"
+                                required
+                                minLength={6}
+                                autoComplete="new-password"
+                            />
+                            <button
+                                type="button"
+                                className="input-icon-btn"
+                                onClick={() => setShowPassword((prev) => !prev)}
+                                aria-label={showPassword ? 'Hide password' : 'Show password'}
+                            >
+                                {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="confirm-password">Confirm Password</label>
+                        <div className="input-with-icon">
+                            <input
+                                id="confirm-password"
+                                type={showConfirmPassword ? 'text' : 'password'}
+                                value={confirmPassword}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                placeholder="••••••••"
+                                required
+                                minLength={6}
+                                autoComplete="new-password"
+                            />
+                            <button
+                                type="button"
+                                className="input-icon-btn"
+                                onClick={() => setShowConfirmPassword((prev) => !prev)}
+                                aria-label={showConfirmPassword ? 'Hide confirm password' : 'Show confirm password'}
+                            >
+                                {showConfirmPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                            </button>
+                        </div>
                     </div>
 
                     <button type="submit" className="btn btn--primary btn--full" disabled={loading}>

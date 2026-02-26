@@ -6,7 +6,7 @@ import { ApiResponse } from './ApiResponse';
  * 1. Eliminate try/catch boilerplate.
  * 2. Automatically catch errors and pass them to the global error handler.
  * 3. Handle 'return new ApiResponse()' syntax by automatically sending the response.
- */
+ */ 
 export const asyncHandler = (fn: Function) => {
     return async (req: Request, res: Response, next: NextFunction) => {
         try {
