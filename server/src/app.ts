@@ -1,11 +1,11 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import { requestLogger } from '@middleware/logger';
 import { errorHandler } from '@middleware/errorHandler';
 import { rateLimiter } from '@middleware/rateLimiter';
 import { requestContext } from '@middleware/requestContext';
-import { healthRoutes } from '@modules/health/health.routes';
+import { healthRoutes } from    '@modules/health/health.routes';
 import { metricsRoutes } from '@modules/health/metrics.routes';
 import { readyRoutes } from '@modules/health/ready.routes';
 import { accountRoutes } from '@modules/account/account.routes';
@@ -44,7 +44,7 @@ app.use('/health', healthRoutes);
 app.use('/ready', readyRoutes);
 app.use('/internal/metrics', metricsRoutes);
 
-app.get('/api/v1/test', (req, res) => {
+app.get('/api/v1/test', (req: Request, res: Response) => {
     return new ApiResponse(200, { message: 'API is working' })
 });
 
