@@ -57,7 +57,10 @@ export default function SubscriptionPage() {
         return `$${amount.toLocaleString()}`;
     };
 
+    const isSelfServePlan = (plan: Plan) => Number(plan.monthlyPrice) === 0;
+
     const getPlanActionLabel = (plan: Plan) => {
+        if (!isSelfServePlan(plan)) return 'Coming Soon';
         if (!currentPlanId) return 'Choose Plan';
         if (plan.id === currentPlanId) return 'Current Plan';
 
@@ -83,8 +86,8 @@ export default function SubscriptionPage() {
                     <Gem size={20} />
                 </div>
                 <div>
-                    <strong>Stripe integration is coming soon.</strong>
-                    <p className="text-muted">For now, selecting a plan activates it immediately.</p>
+                    <strong>Paid plans are locked until payment gateway integration is ready.</strong>
+                    <p className="text-muted">Free can be activated now. Pro and other paid tiers will open once checkout is connected.</p>
                 </div>
             </div>
 
@@ -104,6 +107,7 @@ export default function SubscriptionPage() {
                 <div className="plan-grid">
                     {plans.map((plan) => {
                         const isCurrent = plan.id === currentPlanId;
+                        const isLocked = !isSelfServePlan(plan) && !isCurrent;
                         const isPending = purchaseMutation.isPending && purchaseMutation.variables?.id === plan.id;
 
                         return (
@@ -146,12 +150,17 @@ export default function SubscriptionPage() {
                                 </ul>
 
                                 <button
-                                    className={`btn ${isCurrent ? 'btn--ghost' : 'btn--primary'} btn--full`}
-                                    disabled={isCurrent || isPending}
+                                    className={`btn ${isCurrent ? 'btn--ghost' : isLocked ? 'btn--outline' : 'btn--primary'} btn--full`}
+                                    disabled={isCurrent || isPending || isLocked}
                                     onClick={() => purchaseMutation.mutate(plan)}
                                 >
                                     {isPending ? 'Processing...' : getPlanActionLabel(plan)}
                                 </button>
+                                {isLocked && (
+                                    <p className="text-xs text-muted mt-4">
+                                        Requires payment gateway integration before activation.
+                                    </p>
+                                )}
                             </div>
                         );
                     })}

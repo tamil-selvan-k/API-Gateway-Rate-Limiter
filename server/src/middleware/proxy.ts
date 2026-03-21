@@ -19,9 +19,10 @@ export const proxyHandler = async (req: Request, res: Response) => {
     const queryString = req.url.split('?')[1] || '';
     const targetUrl = `${api.upstreamBaseUrl}/${targetPath}${queryString ? '?' + queryString : ''}`;
 
-    const REQUEST_TIMEOUT_MS = 8000;
+    const timeoutMs = api.requestTimeoutMs ?? 10000;
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
 
     try {
         // Clean headers: join string arrays with commas (standard HTTP behavior)

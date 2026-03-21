@@ -1,19 +1,18 @@
 import { Request, Response, NextFunction } from 'express';
 import { ApiKeyService } from '@modules/apiKey/apiKey.service';
-import { ApiRepository } from '@modules/api/api.repository';
+import { ApiModel, ApiRepository } from '@modules/api/api.repository';
 import { ApiKeyRepository } from '@modules/apiKey/apiKey.repository';
+import { ApiKeyModel } from '@modules/apiKey/apiKey.service';
 import { AppError } from '@utils/AppError';
 import { prisma } from '@utils/prisma';
+import { Plan } from '@prisma/client';
 
 const apiRepository = new ApiRepository();
 const apiKeyRepository = new ApiKeyRepository();
 const apiKeyService = new ApiKeyService(apiKeyRepository);
 
-import { Api, Plan } from '@prisma/client';
-import { ApiKeyModel } from '@modules/apiKey/apiKey.service';
-
 interface GatewayContext {
-    api: Api;
+    api: ApiModel;
     apiKey: ApiKeyModel;
     plan?: Plan;
 }

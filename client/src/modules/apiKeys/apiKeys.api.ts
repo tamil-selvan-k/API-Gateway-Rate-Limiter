@@ -12,7 +12,7 @@ export const fetchApiKeys = (accountId: string): Promise<{ data: ApiKey[] }> => 
     return axiosInstance.get(`/api-keys/account/${accountId}`);
 };
 
-export const createApiKey = (data: { accountId: string; name: string }): Promise<{ data: ApiKey }> => {
+export const createApiKey = (data: { apiId: string; name: string; expiresAt?: string }): Promise<{ data: ApiKey }> => {
     return axiosInstance.post('/api-keys', data);
 };
 

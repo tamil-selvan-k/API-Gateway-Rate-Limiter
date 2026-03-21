@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch ./src/server.ts",
-    "start": "node dist/server.js",
+    "start": "nodemon dist/server.js",
     "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
@@ -26,7 +26,8 @@
     "jsonwebtoken": "^9.0.3",
     "module-alias": "^2.3.4",
     "morgan": "^1.10.1",
-    "prisma": "6.16.2",
+    "nodemon": "^3.1.14",
+    "prisma": "^6.16.2",
     "redis": "^5.11.0",
     "winston": "^3.19.0",
     "zod": "^4.3.6"

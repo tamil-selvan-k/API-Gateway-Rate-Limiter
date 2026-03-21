@@ -2,7 +2,6 @@ import { z } from 'zod';
 
 export const createApiKeySchema = z.object({
     body: z.object({
-        accountId: z.string().uuid('Invalid Account ID format'),
         apiId: z.string().uuid('Invalid API ID format'),
         name: z.string().min(3, 'Name must be at least 3 characters long').max(50),
         expiresAt: z.string().datetime().optional(),

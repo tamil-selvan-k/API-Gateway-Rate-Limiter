@@ -12,7 +12,7 @@ async function main() {
         where: { email: 'admin@example.com' },
         update: {},
         create: {
-            id: 'enterprise_01',
+            id: '11111111-1111-1111-1111-111111111111',
             name: 'Enterprise Admin',
             email: 'admin@example.com',
             password: adminPassword,

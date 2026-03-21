@@ -1,4 +1,5 @@
 import { ApiKeyRepository } from './apiKey.repository';
+import { ApiRepository } from '@modules/api/api.repository';
 import { AppError } from '@utils/AppError';
 import crypto from 'crypto';
 import { Prisma } from '@prisma/client';
@@ -17,13 +18,22 @@ export interface ApiKeyModel {
 }
 
 export class ApiKeyService {
-    constructor(private apiKeyRepository: ApiKeyRepository) { }
+    private apiRepository: ApiRepository;
+
+    constructor(private apiKeyRepository: ApiKeyRepository) {
+        this.apiRepository = new ApiRepository();
+    }
 
     private hashKey(key: string): string {
         return crypto.createHash('sha256').update(key).digest('hex');
     }
 
     async generateKey(accountId: string, apiId: string, name: string, expiresAt?: string) {
+        const api = await this.apiRepository.findById(apiId);
+        if (!api || api.accountId !== accountId) {
+            throw new AppError('API not found', 404);
+        }
+
         const rawKey = `ak_${crypto.randomBytes(24).toString('hex')}`;
         const hashedKey = this.hashKey(rawKey);
         const parsedExpiresAt = expiresAt ? new Date(expiresAt) : undefined;
@@ -71,19 +81,30 @@ export class ApiKeyService {
         return this.apiKeyRepository.findByAccountId(accountId, offset, limit) as unknown as Promise<ApiKeyModel[]>;
     }
 
-    async getKeysByApi(apiId: string, offset?: number, limit?: number) {
+    async getKeysByApi(apiId: string, accountId: string, offset?: number, limit?: number) {
+        const api = await this.apiRepository.findById(apiId);
+        if (!api || api.accountId !== accountId) {
+            throw new AppError('API not found', 404);
+        }
         return this.apiKeyRepository.findByApiId(apiId, offset, limit) as unknown as Promise<ApiKeyModel[]>;
     }
 
-    async revokeKey(id: string) {
+    private async getOwnedKey(id: string, accountId: string) {
+        const apiKey = await this.apiKeyRepository.findById(id) as unknown as ApiKeyModel | null;
+        if (!apiKey || apiKey.accountId !== accountId) {
+            throw new AppError('API Key not found', 404);
+        }
+        return apiKey;
+    }
+
+    async revokeKey(id: string, accountId: string) {
+        await this.getOwnedKey(id, accountId);
         return this.apiKeyRepository.update(id, { isActive: false } as unknown as Prisma.ApiKeyUpdateInput);
     }
 
-    async rotateKey(id: string) {
-        const existingKey = await this.apiKeyRepository.update(id, { isActive: false } as unknown as Prisma.ApiKeyUpdateInput) as unknown as ApiKeyModel | null;
-        if (!existingKey) {
-            throw new AppError('API Key not found', 404);
-        }
+    async rotateKey(id: string, accountId: string) {
+        const existingKey = await this.getOwnedKey(id, accountId);
+        await this.apiKeyRepository.update(id, { isActive: false } as unknown as Prisma.ApiKeyUpdateInput);
         return this.generateKey(
             existingKey.accountId,
             existingKey.apiId,

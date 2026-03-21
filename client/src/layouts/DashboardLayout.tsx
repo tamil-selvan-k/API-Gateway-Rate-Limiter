@@ -20,14 +20,17 @@ import { useAuth } from '../context/AuthContext';
 import { useQuery } from '@tanstack/react-query';
 import axiosInstance from '../api/axiosInstance';
 import type { ApiResponse, Subscription } from '../types/types';
+import settingsService from '../api/settingsService';
 
 const NAV_ITEMS = [
     { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
     { to: '/apis', icon: Globe, label: 'APIs' },
     { to: '/api-keys', icon: Key, label: 'API Keys' },
     { to: '/analytics', icon: BarChart3, label: 'Analytics' },
-    { to: '/subscription', icon: Gem, label: 'Subscription' },
+    { to: '/billing', icon: Gem, label: 'Billing' },
+    { to: '/subscription', icon: Zap, label: 'Subscription' }, // Changed icon to Zap to distinguish from Billing
 ] as const;
+
 
 const BOTTOM_NAV = [
     { to: '/settings', icon: Settings, label: 'Settings' },
@@ -48,7 +51,14 @@ export default function DashboardLayout() {
             axiosInstance.get('/subscriptions/status') as Promise<ApiResponse<Subscription | null>>,
     });
 
+    const { data: settingsData } = useQuery({
+        queryKey: ['settings'],
+        queryFn: settingsService.getSettings,
+        enabled: Boolean(user),
+    });
+
     const planName = subscription?.data?.plan?.name ?? 'No Plan';
+    const selectedTheme = settingsData?.data.settings?.theme ?? 'system';
 
     useEffect(() => {
         setIsMobileNavOpen(false);
@@ -57,6 +67,25 @@ export default function DashboardLayout() {
     useEffect(() => {
         localStorage.setItem('sidebar-collapsed', String(isSidebarCollapsed));
     }, [isSidebarCollapsed]);
+
+    useEffect(() => {
+        const root = document.documentElement;
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        const applyTheme = () => {
+            const resolvedTheme =
+                selectedTheme === 'system' ? (mediaQuery.matches ? 'dark' : 'light') : selectedTheme;
+
+            root.dataset.theme = resolvedTheme;
+            root.style.colorScheme = resolvedTheme;
+            localStorage.setItem('theme-preference', selectedTheme);
+        };
+
+        applyTheme();
+        mediaQuery.addEventListener('change', applyTheme);
+
+        return () => mediaQuery.removeEventListener('change', applyTheme);
+    }, [selectedTheme]);
 
     const handleLogout = () => {
         if (!window.confirm('Are you sure you want to logout?')) return;

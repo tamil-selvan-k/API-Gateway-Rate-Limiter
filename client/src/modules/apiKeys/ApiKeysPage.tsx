@@ -3,14 +3,12 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Key, Plus, RotateCcw, ShieldOff, Copy, CheckCircle2, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import axiosInstance from '../../api/axiosInstance';
-import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../components/Toast';
 import { TableSkeleton } from '../../components/LoadingSkeleton';
 import type { ApiResponse, Api, ApiKey, CreateApiKeyPayload } from '../../types/types';
 import type { AxiosError } from 'axios';
 
 export default function ApiKeysPage() {
-    const { user } = useAuth();
     const { showToast } = useToast();
     const queryClient = useQueryClient();
     const [selectedApiId, setSelectedApiId] = useState<string>('');
@@ -249,9 +247,8 @@ export default function ApiKeysPage() {
 
             {/* Create Key Modal */}
             <AnimatePresence>
-                {showCreate && user && (
+                {showCreate && (
                     <CreateKeyModal
-                        accountId={user.id}
                         apiId={activeApiId}
                         onClose={() => setShowCreate(false)}
                         onSubmit={(data) => createMutation.mutate(data)}
@@ -265,21 +262,19 @@ export default function ApiKeysPage() {
 
 // ─── Create Key Modal ───
 interface CreateKeyModalProps {
-    accountId: string;
     apiId: string;
     onClose: () => void;
     onSubmit: (data: CreateApiKeyPayload) => void;
     loading: boolean;
 }
 
-function CreateKeyModal({ accountId, apiId, onClose, onSubmit, loading }: CreateKeyModalProps) {
+function CreateKeyModal({ apiId, onClose, onSubmit, loading }: CreateKeyModalProps) {
     const [name, setName] = useState('');
     const [expiresAt, setExpiresAt] = useState('');
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
         onSubmit({
-            accountId,
             apiId,
             name,
             ...(expiresAt ? { expiresAt: new Date(expiresAt).toISOString() } : {}),

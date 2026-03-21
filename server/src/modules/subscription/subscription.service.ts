@@ -11,6 +11,10 @@ interface SubscriptionWithPlan extends Subscription {
 export class SubscriptionService {
     constructor(private subscriptionRepository: SubscriptionRepository) { }
 
+    private isSelfServePlan(plan: Plan) {
+        return Number(plan.monthlyPrice) === 0;
+    }
+
     async subscribe(accountId: string, planId: string) {
         const activeSub = await this.subscriptionRepository.findActiveByAccountId(accountId);
         if (activeSub) {
@@ -20,6 +24,9 @@ export class SubscriptionService {
         const plan = await this.subscriptionRepository.findPlanById(planId);
         if (!plan || !plan.isActive) {
             throw new AppError('Invalid or inactive plan', 400);
+        }
+        if (!this.isSelfServePlan(plan)) {
+            throw new AppError('Paid plans will be available after payment gateway integration.', 403);
         }
 
         return this.subscriptionRepository.create({
@@ -39,6 +46,9 @@ export class SubscriptionService {
         const newPlan = await this.subscriptionRepository.findPlanById(newPlanId);
         if (!newPlan || !newPlan.isActive) {
             throw new AppError('Invalid or inactive plan', 400);
+        }
+        if (!this.isSelfServePlan(newPlan)) {
+            throw new AppError('Paid plan upgrades will be available after payment gateway integration.', 403);
         }
 
         // Downgrade check

@@ -8,32 +8,50 @@ datasource db {
 }
 
 model Account {
-  id            String         @id @default(uuid())
-  name          String
-  email         String         @unique
-  password      String
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  isActive      Boolean        @default(true)
-  apis          Api[]
-  apiKeys       ApiKey[]
-  subscriptions Subscription[]
-  monthlyUsages MonthlyUsage[]
+  id               String                @id @default(uuid())
+  name             String
+  email            String                @unique
+  password         String
+  createdAt        DateTime              @default(now())
+  updatedAt        DateTime              @updatedAt
+  isActive         Boolean               @default(true)
+  apis             Api[]
+  apiKeys          ApiKey[]
+  monthlyUsages    MonthlyUsage[]
+  subscriptions    Subscription[]
+  settings         OrganizationSettings?
+}
+
+model OrganizationSettings {
+  id                    String   @id @default(uuid())
+  accountId             String   @unique
+  theme                 String   @default("system")
+  weeklyUsageSummary    Boolean  @default(false)
+  usageAlertThreshold   Int      @default(80)
+  defaultApiKeyExpiryDays Int    @default(90)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+  account               Account  @relation(fields: [accountId], references: [id])
+
+  @@index([accountId])
 }
 
 model Api {
-  id              String     @id @default(uuid())
-  name            String
-  gatewayId       String     @unique
-  upstreamBaseUrl String
-  isActive        Boolean    @default(true)
-  accountId       String
-  createdAt       DateTime   @default(now())
-  updatedAt       DateTime   @updatedAt
-  account         Account    @relation(fields: [accountId], references: [id])
-  apiKeys         ApiKey[]
-  usageLogs       UsageLog[]
-  monthlyUsages MonthlyUsage[]
+  id               String         @id @default(uuid())
+  name             String
+  gatewayId        String         @unique
+  upstreamBaseUrl  String
+  isActive         Boolean        @default(true)
+  accountId        String
+  requestTimeoutMs Int            @default(10000)
+  rateLimitRps     Int?
+  rateLimitBurst   Int?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  account          Account        @relation(fields: [accountId], references: [id])
+  apiKeys          ApiKey[]
+  monthlyUsages    MonthlyUsage[]
+  usageLogs        UsageLog[]
 
   @@index([accountId])
   @@index([gatewayId])
@@ -78,6 +96,7 @@ model ApiKey {
   name      String
   accountId String
   isActive  Boolean    @default(true)
+  expiresAt DateTime?
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
   apiId     String
@@ -123,10 +142,8 @@ model MonthlyUsage {
   apiId         String
   month         DateTime @db.Date
   totalRequests BigInt   @default(0)
-
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
-
   account       Account  @relation(fields: [accountId], references: [id])
   api           Api      @relation(fields: [apiId], references: [id])
 

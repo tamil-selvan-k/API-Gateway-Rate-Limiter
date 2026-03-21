@@ -18,6 +18,18 @@ export interface Account {
     isActive: boolean;
     createdAt: string;
     updatedAt: string;
+    settings?: OrganizationSettings | null;
+}
+
+export interface OrganizationSettings {
+    id: string;
+    accountId: string;
+    theme: 'system' | 'light' | 'dark';
+    weeklyUsageSummary: boolean;
+    usageAlertThreshold: number;
+    defaultApiKeyExpiryDays: number;
+    createdAt: string;
+    updatedAt: string;
 }
 
 export interface LoginResponse {
@@ -35,6 +47,9 @@ export interface Api {
     upstreamBaseUrl: string;
     isActive: boolean;
     accountId: string;
+    requestTimeoutMs: number;
+    rateLimitRps?: number | null;
+    rateLimitBurst?: number | null;
     createdAt: string;
     updatedAt: string;
 }
@@ -42,13 +57,16 @@ export interface Api {
 export interface CreateApiPayload {
     name: string;
     upstreamBaseUrl: string;
+    requestTimeoutMs?: number;
 }
 
 export interface UpdateApiPayload {
     name?: string;
     upstreamBaseUrl?: string;
     isActive?: boolean;
+    requestTimeoutMs?: number;
 }
+
 
 // ============================================================
 // ApiKey
@@ -60,12 +78,12 @@ export interface ApiKey {
     isActive: boolean;
     accountId: string;
     apiId: string;
+    expiresAt?: string | null;
     createdAt: string;
     updatedAt: string;
 }
 
 export interface CreateApiKeyPayload {
-    accountId: string;
     apiId: string;
     name: string;
     expiresAt?: string;

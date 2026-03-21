@@ -14,6 +14,7 @@ import { apiRoutes } from '@modules/api/api.routes';
 import { subscriptionRoutes } from '@modules/subscription/subscription.routes';
 import { rateLimiterRoutes } from '@modules/rateLimiter/rateLimiter.routes';
 import { planRoutes } from '@modules/plan/plan.routes';
+import { settingsRoutes } from '@modules/settings/settings.routes';
 import { gatewayMiddleware } from '@middleware/gateway';
 import { proxyHandler } from '@middleware/proxy';
 import { ApiResponse } from '@utils/ApiResponse';
@@ -45,7 +46,7 @@ app.use('/ready', readyRoutes);
 app.use('/internal/metrics', metricsRoutes);
 
 app.get('/api/v1/test', (req: Request, res: Response) => {
-    return new ApiResponse(200, { message: 'API is working' })
+    return res.status(200).json(new ApiResponse(200, { message: 'API is working' }));
 });
 
 // Routes
@@ -56,6 +57,8 @@ app.use('/api/v1/apis', apiRoutes);
 app.use('/api/v1/plans', planRoutes);
 app.use('/api/v1/subscriptions', subscriptionRoutes);
 app.use('/api/v1/rate-limiter', rateLimiterRoutes);
+app.use('/api/v1/settings', settingsRoutes);
+
 
 // GATEWAY ROUTES (Express 5 / path-to-regexp v8 compatible wildcard syntax)
 app.all('/:gatewayId', gatewayMiddleware, validateSubscription(), gatewayRateLimiter, proxyHandler);

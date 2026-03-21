@@ -42,6 +42,12 @@ export class ApiKeyRepository {
         }) as unknown as Promise<ApiKey[]>;
     }
 
+    async findById(id: string): Promise<ApiKey | null> {
+        return prisma.apiKey.findUnique({
+            where: { id },
+        }) as Promise<ApiKey | null>;
+    }
+
     async update(id: string, data: Prisma.ApiKeyUpdateInput): Promise<ApiKey> {
         return prisma.apiKey.update({
             where: { id },

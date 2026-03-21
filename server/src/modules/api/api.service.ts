@@ -6,7 +6,7 @@ import { validateUpstreamBaseUrl } from '@utils/url.util';
 export class ApiService {
     constructor(private apiRepository: ApiRepository) { }
 
-    async createApi(accountId: string, data: { name: string; upstreamBaseUrl: string }) {
+    async createApi(accountId: string, data: { name: string; upstreamBaseUrl: string; requestTimeoutMs?: number }) {
         const gatewayId = crypto.randomBytes(8).toString('hex');
         validateUpstreamBaseUrl(data.upstreamBaseUrl);
 

@@ -150,7 +150,7 @@ export default function DashboardPage() {
                     <div
                         style={{
                             height: '10px',
-                            background: 'var(--gray-800)',
+                            background: 'var(--progress-track)',
                             borderRadius: '100px',
                             overflow: 'hidden',
                         }}
@@ -161,12 +161,13 @@ export default function DashboardPage() {
                                 width: `${usagePercent}%`,
                                 background:
                                     usagePercent > 90
-                                        ? 'var(--red-400)'
+                                        ? 'linear-gradient(90deg, var(--red-500), var(--orange-400))'
                                         : usagePercent > 70
-                                            ? 'var(--orange-400)'
-                                            : 'var(--brand-500)',
+                                            ? 'linear-gradient(90deg, var(--orange-400), var(--yellow-400))'
+                                            : 'linear-gradient(90deg, var(--brand-500), var(--brand-400))',
                                 borderRadius: '100px',
                                 transition: 'width 0.5s ease',
+                                boxShadow: '0 6px 14px rgba(37,99,235,0.18)',
                             }}
                         />
                     </div>
