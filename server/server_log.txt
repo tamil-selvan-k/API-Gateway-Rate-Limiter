@@ -2306,3 +2306,409 @@ Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pool
 2026-03-21T08:57:04.670Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
 
 Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T08:58:12.116Z [INFO]: Database connection established
+2026-03-21T08:58:12.292Z [INFO]: Redis connection established
+2026-03-21T08:58:12.305Z [INFO]: Server is running on port 3000 in development mode
+2026-03-21T08:58:22.400Z [INFO]: request.start
+2026-03-21T08:58:24.269Z [INFO]: request.end
+2026-03-21T08:58:24.276Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 1856.567 ms - 532[0m
+2026-03-21T08:58:24.599Z [INFO]: request.start
+2026-03-21T08:58:24.614Z [INFO]: request.start
+2026-03-21T08:58:24.620Z [INFO]: request.start
+2026-03-21T08:58:24.637Z [INFO]: request.start
+2026-03-21T08:58:27.854Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T08:58:27.905Z [INFO]: request.end
+2026-03-21T08:58:27.973Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 3278.300 ms - 1711[0m
+2026-03-21T08:58:29.754Z [ERROR]: GET /api/v1/apis - 
+Invalid `prisma.api.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\api\api.repository.ts:135:38
+
+  132     limit: number = DEFAULT_LIMIT,
+  133 ): Promise<ApiModel[]> {
+  134     try {
+→ 135         return (await prisma.api.findMany(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T08:58:29.760Z [INFO]: request.end
+2026-03-21T08:58:29.768Z [INFO]: [0mGET /api/v1/apis?limit=100 [31m500[0m 5131.773 ms - 2093[0m
+2026-03-21T08:58:29.781Z [ERROR]: GET /api/v1/settings - 
+Invalid `prisma.account.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\account\account.repository.ts:12:31
+
+   9 }
+  10 
+  11 async findById(id: string): Promise<Account | null> {
+→ 12     return prisma.account.findUnique(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T08:58:29.786Z [INFO]: request.end
+2026-03-21T08:58:29.788Z [INFO]: [0mGET /api/v1/settings [31m500[0m 5167.863 ms - 2089[0m
+2026-03-21T08:58:29.797Z [ERROR]: GET /api/v1/subscriptions/status - 
+Invalid `prisma.subscription.findFirst()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\subscription\subscription.repository.ts:8:36
+
+  5 
+  6 export class SubscriptionRepository {
+  7     async findActiveByAccountId(accountId: string): Promise<Subscription | null> {
+→ 8         return prisma.subscription.findFirst(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T08:58:29.802Z [INFO]: request.end
+2026-03-21T08:58:29.807Z [INFO]: [0mGET /api/v1/subscriptions/status [31m500[0m 5150.017 ms - 2271[0m
+2026-03-21T08:58:30.794Z [INFO]: request.start
+2026-03-21T08:58:30.815Z [INFO]: request.start
+2026-03-21T08:58:30.851Z [INFO]: request.start
+2026-03-21T08:58:34.576Z [INFO]: request.end
+2026-03-21T08:58:34.594Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 3775.558 ms - 435[0m
+2026-03-21T08:58:35.912Z [ERROR]: GET /api/v1/settings - 
+Invalid `prisma.account.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\account\account.repository.ts:12:31
+
+   9 }
+  10 
+  11 async findById(id: string): Promise<Account | null> {
+→ 12     return prisma.account.findUnique(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T08:58:35.980Z [INFO]: request.end
+2026-03-21T08:58:36.026Z [INFO]: [0mGET /api/v1/settings [31m500[0m 5121.095 ms - 2089[0m
+2026-03-21T08:58:36.049Z [ERROR]: GET /api/v1/subscriptions/status - 
+Invalid `prisma.subscription.findFirst()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\subscription\subscription.repository.ts:8:36
+
+  5 
+  6 export class SubscriptionRepository {
+  7     async findActiveByAccountId(accountId: string): Promise<Subscription | null> {
+→ 8         return prisma.subscription.findFirst(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T08:58:36.069Z [INFO]: request.end
+2026-03-21T08:58:36.099Z [INFO]: [0mGET /api/v1/subscriptions/status [31m500[0m 5202.792 ms - 2271[0m
+2026-03-21T08:58:41.285Z [INFO]: request.start
+2026-03-21T08:58:51.548Z [INFO]: settings:preferences_updated
+2026-03-21T08:58:51.555Z [INFO]: request.end
+2026-03-21T08:58:51.560Z [INFO]: [0mPUT /api/v1/settings/preferences [32m200[0m 10263.214 ms - 356[0m
+2026-03-21T08:58:51.576Z [INFO]: request.start
+2026-03-21T08:58:54.175Z [INFO]: request.end
+2026-03-21T08:58:54.186Z [INFO]: [0mGET /api/v1/settings [32m200[0m 2595.523 ms - 579[0m
+2026-03-21T08:59:02.163Z [INFO]: request.start
+2026-03-21T08:59:02.514Z [INFO]: request.end
+2026-03-21T08:59:02.516Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 346.271 ms - -[0m
+2026-03-21T08:59:02.518Z [INFO]: request.start
+2026-03-21T08:59:02.684Z [INFO]: request.start
+2026-03-21T08:59:02.687Z [INFO]: request.start
+2026-03-21T08:59:02.696Z [INFO]: request.start
+2026-03-21T08:59:02.959Z [INFO]: request.end
+2026-03-21T08:59:02.970Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 438.328 ms - -[0m
+2026-03-21T08:59:07.082Z [INFO]: request.end
+2026-03-21T08:59:07.092Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 4389.886 ms - -[0m
+2026-03-21T08:59:07.101Z [INFO]: request.end
+2026-03-21T08:59:07.105Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 4399.152 ms - 703[0m
+2026-03-21T08:59:08.553Z [INFO]: request.end
+2026-03-21T08:59:08.554Z [INFO]: [0mGET /api/v1/settings [36m304[0m 5866.493 ms - -[0m
+2026-03-21T08:59:11.013Z [INFO]: request.start
+2026-03-21T08:59:11.020Z [INFO]: request.start
+2026-03-21T08:59:11.711Z [ERROR]: GET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 - 
+Invalid `prisma.api.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\rateLimiter\rateLimiter.repository.ts:6:27
+
+  3 
+  4 export class RateLimiterRepository {
+  5     async findApiById(apiId: string) {
+→ 6         return prisma.api.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T08:59:11.730Z [INFO]: request.end
+2026-03-21T08:59:11.746Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [31m500[0m 700.470 ms - 1852[0m
+2026-03-21T08:59:12.617Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [0m-[0m - ms - -[0m
+2026-03-21T08:59:12.698Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T08:59:13.062Z [INFO]: request.start
+2026-03-21T08:59:14.048Z [INFO]: request.end
+2026-03-21T08:59:14.156Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 884.493 ms - -[0m
+2026-03-21T08:59:14.195Z [INFO]: request.start
+2026-03-21T08:59:14.298Z [INFO]: request.start
+2026-03-21T08:59:14.311Z [INFO]: request.start
+2026-03-21T08:59:14.319Z [INFO]: request.start
+2026-03-21T08:59:14.333Z [INFO]: request.start
+2026-03-21T08:59:14.972Z [INFO]: request.end
+2026-03-21T08:59:15.009Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 771.033 ms - -[0m
+2026-03-21T08:59:15.893Z [INFO]: request.end
+2026-03-21T08:59:15.922Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1562.349 ms - -[0m
+2026-03-21T08:59:15.930Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T08:59:15.935Z [INFO]: request.end
+2026-03-21T08:59:15.937Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 1624.477 ms - 1711[0m
+2026-03-21T08:59:15.945Z [INFO]: request.start
+2026-03-21T08:59:16.745Z [ERROR]: GET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 - 
+Invalid `prisma.api.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\rateLimiter\rateLimiter.repository.ts:6:27
+
+  3 
+  4 export class RateLimiterRepository {
+  5     async findApiById(apiId: string) {
+→ 6         return prisma.api.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T08:59:16.760Z [INFO]: request.end
+2026-03-21T08:59:16.767Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [31m500[0m 804.762 ms - 1852[0m
+2026-03-21T08:59:16.786Z [INFO]: request.end
+2026-03-21T08:59:16.798Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 2438.714 ms - -[0m
+2026-03-21T08:59:16.957Z [INFO]: request.start
+2026-03-21T08:59:17.677Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T08:59:17.692Z [INFO]: request.end
+2026-03-21T08:59:17.698Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 732.548 ms - 1711[0m
+2026-03-21T08:59:17.792Z [INFO]: request.start
+2026-03-21T08:59:18.170Z [ERROR]: GET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 - 
+Invalid `prisma.api.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\rateLimiter\rateLimiter.repository.ts:6:27
+
+  3 
+  4 export class RateLimiterRepository {
+  5     async findApiById(apiId: string) {
+→ 6         return prisma.api.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T08:59:18.172Z [INFO]: request.end
+2026-03-21T08:59:18.174Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [31m500[0m 378.334 ms - 1852[0m
+2026-03-21T08:59:20.636Z [INFO]: request.start
+2026-03-21T08:59:20.897Z [INFO]: request.end
+2026-03-21T08:59:20.900Z [INFO]: [0mGET /api/v1/settings [36m304[0m 6579.575 ms - -[0m
+2026-03-21T08:59:22.031Z [INFO]: request.end
+2026-03-21T08:59:22.033Z [INFO]: [0mGET /api/v1/plans [36m304[0m 1392.574 ms - -[0m
+2026-03-21T08:59:25.959Z [INFO]: request.start
+2026-03-21T08:59:27.924Z [INFO]: request.end
+2026-03-21T08:59:27.925Z [INFO]: [0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1963.006 ms - -[0m
+2026-03-21T16:06:20.404Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T16:06:48.148Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T16:20:18.696Z [INFO]: Database connection established
+2026-03-21T16:20:18.856Z [INFO]: Redis connection established
+2026-03-21T16:20:18.864Z [INFO]: Server is running on port 3000 in development mode
+2026-03-21T16:23:00.044Z [INFO]: request.start
+2026-03-21T16:23:01.263Z [INFO]: request.end
+2026-03-21T16:23:01.265Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 1216.372 ms - 532[0m
+2026-03-21T16:23:01.456Z [INFO]: request.start
+2026-03-21T16:23:01.462Z [INFO]: request.start
+2026-03-21T16:23:01.465Z [INFO]: request.start
+2026-03-21T16:23:01.489Z [INFO]: request.start
+2026-03-21T16:23:02.622Z [INFO]: request.end
+2026-03-21T16:23:02.624Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1158.548 ms - -[0m
+2026-03-21T16:23:02.635Z [INFO]: request.start
+2026-03-21T16:23:03.072Z [ERROR]: GET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 - 
+Invalid `prisma.api.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\rateLimiter\rateLimiter.repository.ts:6:27
+
+  3 
+  4 export class RateLimiterRepository {
+  5     async findApiById(apiId: string) {
+→ 6         return prisma.api.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:03.076Z [INFO]: request.end
+2026-03-21T16:23:03.078Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [31m500[0m 438.529 ms - 1852[0m
+2026-03-21T16:23:04.090Z [INFO]: request.start
+2026-03-21T16:23:04.406Z [ERROR]: GET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 - 
+Invalid `prisma.api.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\rateLimiter\rateLimiter.repository.ts:6:27
+
+  3 
+  4 export class RateLimiterRepository {
+  5     async findApiById(apiId: string) {
+→ 6         return prisma.api.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:04.408Z [INFO]: request.end
+2026-03-21T16:23:04.409Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [31m500[0m 316.125 ms - 1852[0m
+2026-03-21T16:23:05.079Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:05.082Z [INFO]: request.end
+2026-03-21T16:23:05.082Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 3614.460 ms - 1711[0m
+2026-03-21T16:23:05.398Z [INFO]: request.end
+2026-03-21T16:23:05.399Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 3939.599 ms - -[0m
+2026-03-21T16:23:06.092Z [INFO]: request.start
+2026-03-21T16:23:06.874Z [INFO]: request.end
+2026-03-21T16:23:06.874Z [INFO]: [0mGET /api/v1/settings [36m304[0m 5383.583 ms - -[0m
+2026-03-21T16:23:07.160Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:07.163Z [INFO]: request.end
+2026-03-21T16:23:07.164Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 1069.289 ms - 1711[0m
+2026-03-21T16:23:16.767Z [INFO]: request.start
+2026-03-21T16:23:16.769Z [INFO]: request.start
+2026-03-21T16:23:17.176Z [ERROR]: GET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 - 
+Invalid `prisma.api.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\rateLimiter\rateLimiter.repository.ts:6:27
+
+  3 
+  4 export class RateLimiterRepository {
+  5     async findApiById(apiId: string) {
+→ 6         return prisma.api.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:17.178Z [INFO]: request.end
+2026-03-21T16:23:17.179Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [31m500[0m 407.987 ms - 1852[0m
+2026-03-21T16:23:17.540Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:17.542Z [INFO]: request.end
+2026-03-21T16:23:17.543Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 773.448 ms - 1711[0m
+2026-03-21T16:23:18.189Z [INFO]: request.start
+2026-03-21T16:23:18.548Z [INFO]: request.start
+2026-03-21T16:23:18.637Z [ERROR]: GET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 - 
+Invalid `prisma.api.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\rateLimiter\rateLimiter.repository.ts:6:27
+
+  3 
+  4 export class RateLimiterRepository {
+  5     async findApiById(apiId: string) {
+→ 6         return prisma.api.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:18.638Z [INFO]: request.end
+2026-03-21T16:23:18.638Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [31m500[0m 448.327 ms - 1852[0m
+2026-03-21T16:23:19.742Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:19.743Z [INFO]: request.end
+2026-03-21T16:23:19.743Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 1193.615 ms - 1711[0m
+2026-03-21T16:23:31.016Z [INFO]: request.start
+2026-03-21T16:23:32.562Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:32.563Z [INFO]: request.end
+2026-03-21T16:23:32.564Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 1545.833 ms - 1711[0m
+2026-03-21T16:23:33.578Z [INFO]: request.start
+2026-03-21T16:23:34.354Z [ERROR]: GET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 - 
+Invalid `prisma.apiKey.findMany()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:25:30
+
+  22     offset: number = DEFAULT_OFFSET,
+  23     limit: number = DEFAULT_LIMIT,
+  24 ): Promise<ApiKey[]> {
+→ 25     return prisma.apiKey.findMany(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:23:34.356Z [INFO]: request.end
+2026-03-21T16:23:34.356Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [31m500[0m 776.769 ms - 1711[0m
+2026-03-21T16:24:01.504Z [INFO]: request.start
+2026-03-21T16:24:15.424Z [ERROR]: GET /d906084864c280c2/health - 
+Invalid `prisma.apiKey.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:7:30
+
+  4 
+  5 export class ApiKeyRepository {
+  6     async findByKey(key: string): Promise<ApiKey | null> {
+→ 7         return prisma.apiKey.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:24:15.429Z [INFO]: request.end
+2026-03-21T16:24:15.433Z [INFO]: [0mGET /d906084864c280c2/health [31m500[0m 13922.822 ms - 1728[0m
+2026-03-21T16:24:21.604Z [INFO]: request.start
+2026-03-21T16:24:28.197Z [ERROR]: GET /d906084864c280c2/health - 
+Invalid `prisma.apiKey.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:7:30
+
+  4 
+  5 export class ApiKeyRepository {
+  6     async findByKey(key: string): Promise<ApiKey | null> {
+→ 7         return prisma.apiKey.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:24:28.200Z [INFO]: request.end
+2026-03-21T16:24:28.201Z [INFO]: [0mGET /d906084864c280c2/health [31m500[0m 6594.252 ms - 1728[0m
+2026-03-21T16:24:42.898Z [INFO]: request.start
+2026-03-21T16:24:51.594Z [ERROR]: GET /d906084864c280c2/health - 
+Invalid `prisma.apiKey.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\src\modules\apiKey\apiKey.repository.ts:7:30
+
+  4 
+  5 export class ApiKeyRepository {
+  6     async findByKey(key: string): Promise<ApiKey | null> {
+→ 7         return prisma.apiKey.findUnique(
+The column `Api.requestTimeoutMs` does not exist in the current database.
+2026-03-21T16:24:51.596Z [INFO]: request.end
+2026-03-21T16:24:51.597Z [INFO]: [0mGET /d906084864c280c2/health [31m500[0m 8697.065 ms - 1728[0m
+2026-03-21T16:25:02.132Z [INFO]: request.start
+2026-03-21T16:25:03.522Z [INFO]: request.start
+2026-03-21T16:25:06.009Z [INFO]: request.end
+2026-03-21T16:25:06.011Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 3876.082 ms - -[0m
+2026-03-21T16:25:09.413Z [INFO]: request.end
+2026-03-21T16:25:09.414Z [INFO]: [0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 5890.165 ms - -[0m
+2026-03-21T16:28:21.732Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T16:29:51.747Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T16:30:03.979Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T16:30:28.746Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T16:32:10.767Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-03-21T16:32:49.863Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
