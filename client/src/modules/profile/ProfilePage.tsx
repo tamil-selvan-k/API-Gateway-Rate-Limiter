@@ -87,12 +87,12 @@ export default function ProfilePage() {
 
                     <div className="card mb-6">
                         <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '10px' }}>
-                            How your organization can access APIs through this rate limiter
+                            How your organization can access APIs through GateZentry
                         </h3>
                         <ol className="profile-steps">
-                            <li>Create an API in the APIs page (you get a unique gateway ID).</li>
+                            <li>Create an API in the APIs page (you get a unique GateZentry ID).</li>
                             <li>Create an API key in API Keys page for that API.</li>
-                            <li>Call the gateway URL using your key in header: <code>x-api-key</code>.</li>
+                            <li>Call the GateZentry URL using your key in header: <code>x-api-key</code>.</li>
                             <li>
                                 Traffic is validated, rate-limited by your plan, and then proxied to your upstream.
                             </li>
@@ -102,7 +102,7 @@ export default function ProfilePage() {
                     <div className="card">
                         <div className="profile-card__title" style={{ marginBottom: '10px' }}>
                             <Globe size={16} />
-                            <span>Gateway request example</span>
+                            <span>GateZentry request example</span>
                         </div>
                         {exampleApi ? (
                             <>
@@ -114,14 +114,14 @@ export default function ProfilePage() {
                             </>
                         ) : (
                             <p className="text-sm text-muted">
-                                Create your first API to generate a gateway URL and start sending requests.
+                                Create your first API to generate a GateZentry URL and start sending requests.
                             </p>
                         )}
                         <p className="text-xs text-muted mt-4">
                             Control plane base: {import.meta.env.VITE_API_URL || 'http://localhost:3000/api/v1'}
                         </p>
                         <p className="text-xs text-muted">
-                            Gateway base: {gatewayBaseUrl}
+                            GateZentry base: {gatewayBaseUrl}
                         </p>
                     </div>
                 </>

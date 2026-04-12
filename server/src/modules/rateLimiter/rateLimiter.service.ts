@@ -1,6 +1,7 @@
 import { RateLimiterRepository } from './rateLimiter.repository';
 import { SubscriptionRepository } from '@modules/subscription/subscription.repository';
 import { SubscriptionService } from '@modules/subscription/subscription.service';
+import { ApiRepository } from '@modules/api/api.repository';
 import { AppError } from '@utils/AppError';
 import { getMonthStart } from '@utils/date.util';
 import { redisClient } from '@config/redis.config';
@@ -8,13 +9,15 @@ import { Prisma } from '@prisma/client';
 
 export class RateLimiterService {
     private subscriptionService: SubscriptionService;
+    private apiRepository: ApiRepository;
 
     constructor(private rateLimiterRepository: RateLimiterRepository, subscriptionRepository: SubscriptionRepository) {
         this.subscriptionService = new SubscriptionService(subscriptionRepository);
+        this.apiRepository = new ApiRepository();
     }
 
     private ensureOwnership(apiId: string, accountId: string) {
-        return this.rateLimiterRepository.findApiById(apiId).then((api) => {
+        return this.apiRepository.findById(apiId).then((api) => {
             if (!api) {
                 throw new AppError('API not found', 404);
             }
@@ -58,7 +61,7 @@ export class RateLimiterService {
             throw new AppError('rateLimitBurst must be greater than 0', 400);
         }
 
-        const updateData: Prisma.ApiUpdateInput = {};
+        const updateData: Record<string, unknown> = {};
         if (data.rateLimitRps !== undefined) {
             updateData.rateLimitRps = data.rateLimitRps;
         }
@@ -66,18 +69,29 @@ export class RateLimiterService {
             updateData.rateLimitBurst = data.rateLimitBurst;
         }
 
-        return this.rateLimiterRepository.updateApiRateLimit(apiId, updateData);
+        return this.rateLimiterRepository.updateApiRateLimit(
+            apiId,
+            updateData as Prisma.ApiUncheckedUpdateInput,
+        );
     }
 
     async getUsage(apiId: string, accountId: string) {
         await this.ensureOwnership(apiId, accountId);
         const monthStart = getMonthStart();
-        const usage = await this.rateLimiterRepository.getMonthlyUsageForApi(accountId, apiId, monthStart);
+        const [usage, usageFromLogs] = await Promise.all([
+            this.rateLimiterRepository.getMonthlyUsageForApi(accountId, apiId, monthStart),
+            this.rateLimiterRepository.getCurrentMonthRequestCountFromLogs(apiId, monthStart),
+        ]);
+
+        const storedTotal = usage?.totalRequests ?? 0n;
+        const reconciledTotal = storedTotal > BigInt(usageFromLogs)
+            ? storedTotal
+            : BigInt(usageFromLogs);
 
         return {
             apiId,
             month: monthStart.toISOString().slice(0, 10),
-            totalRequests: usage?.totalRequests ? usage.totalRequests.toString() : '0'
+            totalRequests: reconciledTotal.toString()
         };
     }
 

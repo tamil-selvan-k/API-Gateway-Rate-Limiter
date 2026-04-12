@@ -13,20 +13,20 @@
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "moduleResolution": "node",
+        "moduleResolution": "node10",
         "baseUrl": ".",
         "paths": {
             "@config/*": [
-                "src/config/*"
+                "./src/config/*"
             ],
             "@modules/*": [
-                "src/modules/*"
+                "./src/modules/*"
             ],
             "@middleware/*": [
-                "src/middleware/*"
+                "./src/middleware/*"
             ],
             "@utils/*": [
-                "src/utils/*"
+                "./src/utils/*"
             ]
         }
     },

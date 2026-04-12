@@ -44,7 +44,7 @@ export class AccountService {
             throw new AppError('Invalid email or password', 401);
         }
 
-        const token = JwtUtil.generateToken({ id: account.id, email: account.email });
+        const token = await JwtUtil.generateToken({ id: account.id, email: account.email });
 
         const { password: _, ...accountWithoutPassword } = account;
         return { account: accountWithoutPassword, token };

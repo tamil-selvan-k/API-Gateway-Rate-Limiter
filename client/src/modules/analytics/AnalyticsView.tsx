@@ -6,7 +6,7 @@ const AnalyticsView: React.FC = () => {
         <section>
             <div className="mb-8">
                 <h2 className="text-xl font-bold mb-1">Global Traffic</h2>
-                <p className="text-gray-400 text-sm">Real-time usage analytics for your API Gateway.</p>
+                <p className="text-gray-400 text-sm">Real-time usage analytics for GateZentry.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">

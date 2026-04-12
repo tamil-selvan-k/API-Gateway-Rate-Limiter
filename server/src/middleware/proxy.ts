@@ -4,6 +4,49 @@ import { Prisma } from '@prisma/client';
 import { logger } from '@middleware/logger';
 import { getMonthStart } from '@utils/date.util';
 
+const persistGatewayUsage = async (input: {
+    apiId: string;
+    apiKeyId: string;
+    accountId: string;
+    endpoint: string;
+    method: string;
+    statusCode: number;
+    responseTime: number;
+}) => {
+    await prisma.$transaction(async (tx) => {
+        await tx.usageLog.create({
+            data: {
+                apiId: input.apiId,
+                apiKeyId: input.apiKeyId,
+                endpoint: input.endpoint,
+                method: input.method,
+                statusCode: input.statusCode,
+                responseTime: input.responseTime,
+            } as unknown as Prisma.UsageLogUncheckedCreateInput,
+        });
+
+        const monthStart = getMonthStart();
+        await tx.monthlyUsage.upsert({
+            where: {
+                accountId_apiId_month: {
+                    accountId: input.accountId,
+                    apiId: input.apiId,
+                    month: monthStart,
+                },
+            },
+            create: {
+                accountId: input.accountId,
+                apiId: input.apiId,
+                month: monthStart,
+                totalRequests: 1n,
+            },
+            update: {
+                totalRequests: { increment: 1n },
+            },
+        });
+    });
+};
+
 export const proxyHandler = async (req: Request, res: Response) => {
     const context = req.gatewayContext;
     if (!context) {
@@ -48,45 +91,35 @@ export const proxyHandler = async (req: Request, res: Response) => {
         const responseData = await response.text();
         const endTime = Date.now();
 
-        // 8. Usage Logging + Monthly Usage
-        await prisma.$transaction(async (tx) => {
-            await tx.usageLog.create({
-                data: {
-                    apiId: api.id,
-                    apiKeyId: apiKey.id,
-                    endpoint: targetPath,
-                    method: req.method,
-                    statusCode: response.status,
-                    responseTime: endTime - startTime,
-                } as unknown as Prisma.UsageLogUncheckedCreateInput
-            });
-
-            if (response.status < 400) {
-                const monthStart = getMonthStart();
-                await tx.monthlyUsage.upsert({
-                    where: {
-                        accountId_apiId_month: {
-                            accountId: api.accountId,
-                            apiId: api.id,
-                            month: monthStart
-                        }
-                    },
-                    create: {
-                        accountId: api.accountId,
-                        apiId: api.id,
-                        month: monthStart,
-                        totalRequests: 1n
-                    },
-                    update: {
-                        totalRequests: { increment: 1n }
-                    }
-                });
-            }
+        await persistGatewayUsage({
+            apiId: api.id,
+            apiKeyId: apiKey.id,
+            accountId: api.accountId,
+            endpoint: targetPath,
+            method: req.method,
+            statusCode: response.status,
+            responseTime: endTime - startTime,
         });
 
         res.status(response.status).send(responseData);
     } catch (error) {
         logger.error('Proxy error', { error });
+        const endTime = Date.now();
+
+        try {
+            await persistGatewayUsage({
+                apiId: api.id,
+                apiKeyId: apiKey.id,
+                accountId: api.accountId,
+                endpoint: targetPath,
+                method: req.method,
+                statusCode: 502,
+                responseTime: endTime - startTime,
+            });
+        } catch (usageError) {
+            logger.error('Failed to persist gateway usage', { usageError });
+        }
+
         res.status(502).json({ error: 'Bad Gateway' });
     } finally {
         clearTimeout(timeoutId);

@@ -112,7 +112,7 @@ export default function DashboardLayout() {
                     <div className="sidebar__logo">
                         <Zap size={20} />
                     </div>
-                    <span className="sidebar__title">API Gateway</span>
+                    <span className="sidebar__title">GateZentry</span>
                     <button
                         className="sidebar__close"
                         onClick={() => setIsMobileNavOpen(false)}

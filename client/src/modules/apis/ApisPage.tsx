@@ -91,7 +91,7 @@ export default function ApisPage() {
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Gateway ID</th>
+                                <th>GateZentry ID</th>
                                 <th>Upstream URL</th>
                                 <th>Status</th>
                                 <th>Actions</th>

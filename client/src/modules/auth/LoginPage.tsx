@@ -37,7 +37,7 @@ export default function LoginPage() {
                         <Zap size={24} />
                     </div>
                     <h1>Welcome back</h1>
-                    <p>Sign in to your API Gateway account</p>
+                    <p>Sign in to your GateZentry account</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="auth-form">

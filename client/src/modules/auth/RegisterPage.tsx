@@ -38,7 +38,7 @@ export default function RegisterPage() {
                         <Zap size={24} />
                     </div>
                     <h1>Create account</h1>
-                    <p>Get started with your API Gateway</p>
+                    <p>Get started with GateZentry</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="auth-form">
