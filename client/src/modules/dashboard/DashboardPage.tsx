@@ -64,7 +64,7 @@ export default function DashboardPage() {
             <div>
                 <div className="page-header">
                     <h2>Dashboard</h2>
-                    <p>Overview of your API Gateway</p>
+                    <p>Overview of GateZentry</p>
                 </div>
                 <div className="stat-grid">
                     {[1, 2, 3, 4, 5].map((i) => (
@@ -120,7 +120,7 @@ export default function DashboardPage() {
         <div>
             <div className="page-header">
                 <h2>Dashboard</h2>
-                <p>Overview of your API Gateway</p>
+                <p>Overview of GateZentry</p>
             </div>
 
             <div className="stat-grid">

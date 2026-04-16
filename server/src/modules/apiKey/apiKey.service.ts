@@ -1,8 +1,8 @@
 import { ApiKeyRepository } from './apiKey.repository';
 import { ApiRepository } from '@modules/api/api.repository';
 import { AppError } from '@utils/AppError';
-import crypto from 'crypto';
 import { Prisma } from '@prisma/client';
+import { runSecurityWorkerTask, WorkerTaskExecutionError } from '@utils/workerTask.util';
 
 // Local interface to handle stale Prisma client types
 export interface ApiKeyModel {
@@ -24,8 +24,39 @@ export class ApiKeyService {
         this.apiRepository = new ApiRepository();
     }
 
-    private hashKey(key: string): string {
-        return crypto.createHash('sha256').update(key).digest('hex');
+    private async hashKey(key: string): Promise<string> {
+        try {
+            return await runSecurityWorkerTask<string>({
+                task: 'hashApiKey',
+                key,
+            });
+        } catch (error) {
+            if (error instanceof WorkerTaskExecutionError) {
+                throw new AppError('Unable to process API key', 500, [
+                    { task: error.task, message: error.causeMessage ?? error.message },
+                ]);
+            }
+
+            throw error;
+        }
+    }
+
+    private async generateRawKey(): Promise<string> {
+        try {
+            return await runSecurityWorkerTask<string>({
+                task: 'randomHex',
+                bytes: 24,
+                prefix: 'ak_',
+            });
+        } catch (error) {
+            if (error instanceof WorkerTaskExecutionError) {
+                throw new AppError('Unable to generate API key', 500, [
+                    { task: error.task, message: error.causeMessage ?? error.message },
+                ]);
+            }
+
+            throw error;
+        }
     }
 
     async generateKey(accountId: string, apiId: string, name: string, expiresAt?: string) {
@@ -34,8 +65,8 @@ export class ApiKeyService {
             throw new AppError('API not found', 404);
         }
 
-        const rawKey = `ak_${crypto.randomBytes(24).toString('hex')}`;
-        const hashedKey = this.hashKey(rawKey);
+        const rawKey = await this.generateRawKey();
+        const hashedKey = await this.hashKey(rawKey);
         const parsedExpiresAt = expiresAt ? new Date(expiresAt) : undefined;
 
         if (parsedExpiresAt && Number.isNaN(parsedExpiresAt.getTime())) {
@@ -59,7 +90,7 @@ export class ApiKeyService {
     }
 
     async validateKey(rawKey: string, apiId?: string) {
-        const hashedKey = this.hashKey(rawKey);
+        const hashedKey = await this.hashKey(rawKey);
         const apiKey = await this.apiKeyRepository.findByKey(hashedKey) as unknown as ApiKeyModel | null;
 
         if (!apiKey || !apiKey.isActive) {

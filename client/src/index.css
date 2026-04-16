@@ -1,5 +1,5 @@
 /* ==========================================================
-   API Gateway — Professional Dark SaaS Theme
+   GateZentry — Professional Dark SaaS Theme
    ========================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -722,6 +722,52 @@ html[data-theme='light'] tbody tr:hover {
 .form-group input:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+/* ────────────────────── Password Input Wrapper ──────────── */
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  padding-right: 40px;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  transition: color 0.15s ease;
+}
+
+.password-toggle-btn:hover {
+  color: var(--gray-100);
+}
+
+.password-toggle-btn:focus {
+  outline: none;
+  color: var(--brand-400);
+}
+
+html[data-theme='light'] .password-toggle-btn {
+  color: #64748b;
+}
+
+html[data-theme='light'] .password-toggle-btn:hover {
+  color: #0f172a;
+}
+
+html[data-theme='light'] .password-toggle-btn:focus {
+  color: var(--brand-500);
 }
 
 /* ──────────────────────────── Auth Pages ─────────────────── */

@@ -41,6 +41,10 @@ export default function AnalyticsPage() {
     const usage = usageRes?.data;
     const hits = hitsRes?.data;
     const isLoading = usageLoading || hitsLoading;
+    const activeApi = apis.find((api) => api.id === activeApiId);
+    const gatewayBaseUrl = activeApi
+        ? `${window.location.protocol}//${window.location.hostname}:3000/${activeApi.gatewayId}`
+        : '';
 
     return (
         <div>
@@ -132,6 +136,25 @@ export default function AnalyticsPage() {
                         <h3>Traffic Overview</h3>
                         <TrafficVisual lastMinute={hits?.lastMinute ?? 0} lastHour={hits?.lastHour ?? 0} />
                     </div>
+
+                    {activeApi && (
+                        <div className="card mt-6">
+                            <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '12px' }}>
+                                How analytics gets populated
+                            </h3>
+                            <p className="text-sm text-muted" style={{ marginBottom: '12px' }}>
+                                These numbers increase only when requests go through your gateway URL with an
+                                active API key in the <code>x-api-key</code> header.
+                            </p>
+                            <div className="key-display" style={{ marginBottom: '12px' }}>
+                                <code>{gatewayBaseUrl}</code>
+                            </div>
+                            <p className="text-xs text-muted">
+                                Example: send traffic to this URL from Postman, curl, or your app, then refresh this
+                                page after a few requests.
+                            </p>
+                        </div>
+                    )}
                 </>
             )}
         </div>

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { JwtUtil, TokenPayload } from '@utils/jwt.util';
+import { JwtUtil } from '@utils/jwt.util';
 import { AppError } from '@utils/AppError';
 
 export const auth = async (req: Request, res: Response, next: NextFunction) => {
@@ -13,7 +13,7 @@ export const auth = async (req: Request, res: Response, next: NextFunction) => {
 
         const token = authHeader.split(' ')[1];
 
-        const decoded = JwtUtil.verifyToken(token);
+        const decoded = await JwtUtil.verifyToken(token);
 
         // Attach decoded user info to request
         (req as any).user = decoded;

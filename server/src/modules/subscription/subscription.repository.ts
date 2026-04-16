@@ -1,6 +1,6 @@
 import { prisma } from '@config/prisma.config';
 import { DEFAULT_LIMIT, DEFAULT_OFFSET } from '@utils/pagination';
-import { getMonthStart } from '@utils/date.util';
+import { getMonthStart, getNextMonthStart } from '@utils/date.util';
 import { Subscription, Prisma } from '@prisma/client';
 
 export class SubscriptionRepository {
@@ -53,7 +53,10 @@ export class SubscriptionRepository {
         const result = await prisma.monthlyUsage.aggregate({
             where: {
                 accountId,
-                month
+                month: {
+                    gte: month,
+                    lt: getNextMonthStart(month),
+                },
             },
             _sum: {
                 totalRequests: true

@@ -260,7 +260,7 @@ export default function SettingsPage() {
             </SectionCard>
 
             <SectionCard
-                title="Gateway Behaviour"
+                title="GateZentry Behaviour"
                 description="Fetched preferences are editable here, including per-API timeout values."
                 icon={Globe}
                 footer={

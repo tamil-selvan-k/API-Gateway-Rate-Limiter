@@ -1,13 +1,13 @@
 import { ApiRepository } from './api.repository';
 import { AppError } from '@utils/AppError';
-import crypto from 'crypto';
 import { validateUpstreamBaseUrl } from '@utils/url.util';
+import { runSecurityWorkerTask, WorkerTaskExecutionError } from '@utils/workerTask.util';
 
 export class ApiService {
     constructor(private apiRepository: ApiRepository) { }
 
     async createApi(accountId: string, data: { name: string; upstreamBaseUrl: string; requestTimeoutMs?: number }) {
-        const gatewayId = crypto.randomBytes(8).toString('hex');
+        const gatewayId = await this.generateGatewayId();
         validateUpstreamBaseUrl(data.upstreamBaseUrl);
 
         return this.apiRepository.create({
@@ -30,7 +30,7 @@ export class ApiService {
     }
 
     async updateApi(id: string, accountId: string, data: any) {
-        await this.getApiById(id, accountId); // Ensure ownership
+        await this.getApiById(id, accountId);
         if (data?.upstreamBaseUrl) {
             validateUpstreamBaseUrl(data.upstreamBaseUrl);
         }
@@ -38,12 +38,29 @@ export class ApiService {
     }
 
     async deleteApi(id: string, accountId: string) {
-        await this.getApiById(id, accountId); // Ensure ownership
+        await this.getApiById(id, accountId);
         return this.apiRepository.delete(id);
     }
 
     async toggleApi(id: string, accountId: string, isActive: boolean) {
         await this.getApiById(id, accountId);
         return this.apiRepository.update(id, { isActive });
+    }
+
+    private async generateGatewayId() {
+        try {
+            return await runSecurityWorkerTask<string>({
+                task: 'randomHex',
+                bytes: 8,
+            });
+        } catch (error) {
+            if (error instanceof WorkerTaskExecutionError) {
+                throw new AppError('Unable to generate gateway identifier', 500, [
+                    { task: error.task, message: error.causeMessage ?? error.message },
+                ]);
+            }
+
+            throw error;
+        }
     }
 }

@@ -1,4 +1,4 @@
-# Enterprise API Gateway Rate Limiter
+# GateZentry Rate Limiter
 
 A production-ready Rate Limiting system built with TypeScript, Node.js, Express, Prisma, Redis, and React.
 
@@ -51,3 +51,14 @@ Using TypeScript path aliases (`@modules/*`, `@utils/*`) improves maintainabilit
 - **Rate Limit Tiers**: Implement dynamic limits based on the `Plan` associated with an API Key.
 - **Database Indexing**: Further optimization of `UsageLog` indexing for massive scale.
 - **Horizontal Scaling**: The stateless design allows for easy scaling horizontally by deploying multiple instances behind a load balancer.
+
+## 🧪 Load Testing
+
+A focused k6 starter suite is included in [load-tests/README.md](/mnt/c/Users/DELL/OneDrive/Docs/RateLimiter/load-tests/README.md:1).
+
+Start with:
+
+1. `k6 run load-tests/gateway-smoke.js`
+2. `k6 run load-tests/analytics-check.js`
+3. `k6 run load-tests/gateway-load.js`
+4. `k6 run load-tests/auth-login-burst.js`

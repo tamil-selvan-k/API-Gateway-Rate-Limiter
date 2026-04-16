@@ -8,7 +8,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <aside className="w-64 bg-gray-800 p-6 border-r border-gray-700">
                 <div className="text-xl font-bold mb-10 flex items-center gap-2">
                     <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">G</div>
-                    <span>Gateway</span>
+                    <span>GateZentry</span>
                 </div>
                 <nav className="space-y-4">
                     <NavItem icon={<LayoutDashboard size={20} />} label="Dashboard" active />
@@ -24,7 +24,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {/* Main Content */}
             <main className="flex-1 overflow-auto p-10">
                 <header className="mb-10 flex justify-between items-center">
-                    <h1 className="text-2xl font-semibold">API Management</h1>
+                    <h1 className="text-2xl font-semibold">GateZentry Console</h1>
                     <div className="flex items-center gap-4">
                         <div className="bg-gray-800 px-4 py-2 rounded-full border border-gray-700 text-sm">
                             Account ID: enterprise_01

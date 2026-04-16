@@ -1,6 +1,6 @@
-import jwt from 'jsonwebtoken';
 import { config } from '@config/index';
 import { AppError } from './AppError';
+import { runSecurityWorkerTask, WorkerTaskExecutionError } from './workerTask.util';
 
 export interface TokenPayload {
     id: string;
@@ -8,16 +8,36 @@ export interface TokenPayload {
 }
 
 export class JwtUtil {
-    static generateToken(payload: TokenPayload): string {
-        return jwt.sign(payload, config.jwt.secret, {
-            expiresIn: '7d',
-        });
+    static async generateToken(payload: TokenPayload): Promise<string> {
+        try {
+            return await runSecurityWorkerTask<string>({
+                task: 'generateToken',
+                payload,
+                secret: config.jwt.secret,
+            });
+        } catch (error) {
+            if (error instanceof WorkerTaskExecutionError) {
+                throw new AppError('Unable to generate authentication token', 500, [
+                    { task: error.task, message: error.causeMessage ?? error.message },
+                ]);
+            }
+
+            throw error;
+        }
     }
 
-    static verifyToken(token: string): TokenPayload {
+    static async verifyToken(token: string): Promise<TokenPayload> {
         try {
-            return jwt.verify(token, config.jwt.secret) as TokenPayload;
+            return await runSecurityWorkerTask<TokenPayload>({
+                task: 'verifyToken',
+                token,
+                secret: config.jwt.secret,
+            });
         } catch (error) {
+            if (error instanceof WorkerTaskExecutionError) {
+                throw new AppError('Invalid or expired token', 401);
+            }
+
             throw new AppError('Invalid or expired token', 401);
         }
     }
