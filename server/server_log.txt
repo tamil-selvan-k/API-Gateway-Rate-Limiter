@@ -1381,3 +1381,484 @@ Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pool
 2026-04-12T09:45:20.056Z [INFO]: request.start
 2026-04-12T09:45:29.272Z [INFO]: request.end
 2026-04-12T09:45:29.841Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 7115.384 ms - 157[0m
+2026-04-12T09:57:20.818Z [INFO]: request.start
+2026-04-12T09:57:30.672Z [INFO]: request.end
+2026-04-12T09:57:30.686Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 9796.176 ms - 157[0m
+2026-04-12T09:57:44.984Z [ERROR]: Redis Client Error
+2026-04-12T09:57:45.156Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
+2026-04-12T09:57:45.176Z [DEBUG]: Redis Client Error Socket closed unexpectedly
+2026-04-12T09:57:45.288Z [ERROR]: Redis Client Error
+2026-04-12T09:57:45.492Z [ERROR]: Redis Client Error
+2026-04-12T09:57:46.484Z [ERROR]: Redis Client Error
+2026-04-12T09:57:46.955Z [ERROR]: Redis Client Error
+2026-04-12T09:57:47.656Z [ERROR]: Redis Client Error
+2026-04-12T09:57:48.615Z [ERROR]: Redis Client Error
+2026-04-12T09:57:50.274Z [ERROR]: Redis Client Error
+2026-04-12T09:57:52.463Z [ERROR]: Redis Client Error
+2026-04-12T09:57:54.573Z [ERROR]: Redis Client Error
+2026-04-12T09:57:56.785Z [ERROR]: Redis Client Error
+2026-04-12T09:57:59.016Z [ERROR]: Redis Client Error
+2026-04-12T09:58:01.297Z [ERROR]: Redis Client Error
+2026-04-12T09:58:03.421Z [ERROR]: Redis Client Error
+2026-04-12T09:58:05.475Z [ERROR]: Redis Client Error
+2026-04-12T09:58:07.505Z [ERROR]: Redis Client Error
+2026-04-12T09:58:09.691Z [ERROR]: Redis Client Error
+2026-04-12T09:58:11.897Z [ERROR]: Redis Client Error
+2026-04-12T09:58:13.953Z [ERROR]: Redis Client Error
+2026-04-12T09:58:16.051Z [ERROR]: Redis Client Error
+2026-04-12T09:58:18.218Z [ERROR]: Redis Client Error
+2026-04-12T09:58:20.358Z [ERROR]: Redis Client Error
+2026-04-12T09:58:22.566Z [ERROR]: Redis Client Error
+2026-04-12T09:58:24.723Z [ERROR]: Redis Client Error
+2026-04-12T09:58:26.840Z [ERROR]: Redis Client Error
+2026-04-12T09:58:28.923Z [ERROR]: Redis Client Error
+2026-04-12T09:58:31.076Z [ERROR]: Redis Client Error
+2026-04-12T09:58:33.178Z [ERROR]: Redis Client Error
+2026-04-12T09:58:35.320Z [ERROR]: Redis Client Error
+2026-04-12T09:58:37.486Z [ERROR]: Redis Client Error
+2026-04-12T09:58:39.588Z [ERROR]: Redis Client Error
+2026-04-12T09:58:41.769Z [ERROR]: Redis Client Error
+2026-04-12T09:58:43.817Z [ERROR]: Redis Client Error
+2026-04-12T09:58:46.021Z [ERROR]: Redis Client Error
+2026-04-12T09:58:48.143Z [ERROR]: Redis Client Error
+2026-04-12T09:58:50.265Z [ERROR]: Redis Client Error
+2026-04-12T09:58:52.499Z [ERROR]: Redis Client Error
+2026-04-12T09:58:54.550Z [ERROR]: Redis Client Error
+2026-04-12T09:58:56.764Z [ERROR]: Redis Client Error
+2026-04-12T09:58:58.945Z [ERROR]: Redis Client Error
+2026-04-12T09:59:01.175Z [ERROR]: Redis Client Error
+2026-04-12T09:59:03.386Z [ERROR]: Redis Client Error
+2026-04-12T09:59:05.813Z [ERROR]: Redis Client Error
+2026-04-12T09:59:08.204Z [ERROR]: Redis Client Error
+2026-04-12T09:59:10.255Z [ERROR]: Redis Client Error
+2026-04-12T09:59:12.341Z [ERROR]: Redis Client Error
+2026-04-12T09:59:14.476Z [ERROR]: Redis Client Error
+2026-04-12T09:59:16.521Z [ERROR]: Redis Client Error
+2026-04-12T09:59:18.562Z [ERROR]: Redis Client Error
+2026-04-12T09:59:20.731Z [ERROR]: Redis Client Error
+2026-04-12T09:59:22.796Z [ERROR]: Redis Client Error
+2026-04-12T09:59:24.835Z [ERROR]: Redis Client Error
+2026-04-12T09:59:26.970Z [ERROR]: Redis Client Error
+2026-04-12T09:59:29.163Z [ERROR]: Redis Client Error
+2026-04-12T09:59:31.274Z [ERROR]: Redis Client Error
+2026-04-12T09:59:33.445Z [ERROR]: Redis Client Error
+2026-04-12T09:59:35.507Z [ERROR]: Redis Client Error
+2026-04-12T09:59:37.682Z [ERROR]: Redis Client Error
+2026-04-12T09:59:39.896Z [ERROR]: Redis Client Error
+2026-04-12T09:59:42.095Z [ERROR]: Redis Client Error
+2026-04-12T09:59:44.160Z [ERROR]: Redis Client Error
+2026-04-12T09:59:46.212Z [ERROR]: Redis Client Error
+2026-04-12T09:59:48.402Z [ERROR]: Redis Client Error
+2026-04-12T09:59:50.437Z [ERROR]: Redis Client Error
+2026-04-12T09:59:52.573Z [ERROR]: Redis Client Error
+2026-04-12T09:59:54.677Z [ERROR]: Redis Client Error
+2026-04-12T09:59:56.786Z [ERROR]: Redis Client Error
+2026-04-12T09:59:58.943Z [ERROR]: Redis Client Error
+2026-04-12T10:00:01.047Z [ERROR]: Redis Client Error
+2026-04-12T10:00:03.181Z [ERROR]: Redis Client Error
+2026-04-12T10:00:05.368Z [ERROR]: Redis Client Error
+2026-04-12T10:00:07.580Z [ERROR]: Redis Client Error
+2026-04-12T10:00:09.722Z [ERROR]: Redis Client Error
+2026-04-12T10:00:11.828Z [ERROR]: Redis Client Error
+2026-04-12T10:00:13.955Z [ERROR]: Redis Client Error
+2026-04-12T10:00:16.080Z [ERROR]: Redis Client Error
+2026-04-12T10:00:18.261Z [ERROR]: Redis Client Error
+2026-04-12T10:00:20.405Z [ERROR]: Redis Client Error
+2026-04-12T10:00:22.579Z [ERROR]: Redis Client Error
+2026-04-12T10:00:24.709Z [ERROR]: Redis Client Error
+2026-04-12T10:00:26.745Z [ERROR]: Redis Client Error
+2026-04-12T10:00:28.815Z [ERROR]: Redis Client Error
+2026-04-12T10:00:31.010Z [ERROR]: Redis Client Error
+2026-04-12T10:00:33.098Z [ERROR]: Redis Client Error
+2026-04-12T10:00:35.235Z [ERROR]: Redis Client Error
+2026-04-12T10:00:37.273Z [ERROR]: Redis Client Error
+2026-04-12T10:00:39.294Z [ERROR]: Redis Client Error
+2026-04-12T10:00:41.432Z [ERROR]: Redis Client Error
+2026-04-12T10:00:43.448Z [ERROR]: Redis Client Error
+2026-04-12T10:00:45.598Z [ERROR]: Redis Client Error
+2026-04-12T10:00:47.737Z [ERROR]: Redis Client Error
+2026-04-12T10:00:49.879Z [ERROR]: Redis Client Error
+2026-04-12T10:00:51.981Z [ERROR]: Redis Client Error
+2026-04-12T10:00:54.099Z [ERROR]: Redis Client Error
+2026-04-12T10:00:56.167Z [ERROR]: Redis Client Error
+2026-04-12T10:00:58.366Z [ERROR]: Redis Client Error
+2026-04-12T10:01:00.553Z [ERROR]: Redis Client Error
+2026-04-12T10:01:02.650Z [ERROR]: Redis Client Error
+2026-04-12T10:01:04.679Z [ERROR]: Redis Client Error
+2026-04-12T10:01:06.747Z [ERROR]: Redis Client Error
+2026-04-12T10:01:08.811Z [ERROR]: Redis Client Error
+2026-04-12T10:01:11.014Z [ERROR]: Redis Client Error
+2026-04-12T10:01:13.206Z [ERROR]: Redis Client Error
+2026-04-12T10:01:15.304Z [ERROR]: Redis Client Error
+2026-04-12T10:01:17.511Z [ERROR]: Redis Client Error
+2026-04-12T10:01:19.567Z [ERROR]: Redis Client Error
+2026-04-12T10:01:21.780Z [ERROR]: Redis Client Error
+2026-04-12T10:01:23.871Z [ERROR]: Redis Client Error
+2026-04-12T10:01:25.932Z [ERROR]: Redis Client Error
+2026-04-12T10:01:28.039Z [ERROR]: Redis Client Error
+2026-04-12T10:01:30.121Z [ERROR]: Redis Client Error
+2026-04-12T10:01:32.229Z [ERROR]: Redis Client Error
+2026-04-12T10:01:34.395Z [ERROR]: Redis Client Error
+2026-04-12T10:01:36.404Z [ERROR]: Redis Client Error
+2026-04-12T10:01:38.445Z [ERROR]: Redis Client Error
+2026-04-12T10:01:40.547Z [ERROR]: Redis Client Error
+2026-04-12T10:01:42.636Z [ERROR]: Redis Client Error
+2026-04-12T10:01:44.732Z [ERROR]: Redis Client Error
+2026-04-12T10:01:46.773Z [ERROR]: Redis Client Error
+2026-04-12T10:01:48.796Z [ERROR]: Redis Client Error
+2026-04-12T10:01:50.855Z [ERROR]: Redis Client Error
+2026-04-12T10:01:53.054Z [ERROR]: Redis Client Error
+2026-04-12T10:01:55.202Z [ERROR]: Redis Client Error
+2026-04-12T10:01:57.367Z [ERROR]: Redis Client Error
+2026-04-12T10:01:59.436Z [ERROR]: Redis Client Error
+2026-04-12T10:02:01.597Z [ERROR]: Redis Client Error
+2026-04-12T10:02:03.786Z [ERROR]: Redis Client Error
+2026-04-12T10:02:05.808Z [ERROR]: Redis Client Error
+2026-04-12T10:02:07.850Z [ERROR]: Redis Client Error
+2026-04-12T10:02:09.867Z [ERROR]: Redis Client Error
+2026-04-12T10:02:11.955Z [ERROR]: Redis Client Error
+2026-04-12T10:02:14.147Z [ERROR]: Redis Client Error
+2026-04-12T10:02:16.225Z [ERROR]: Redis Client Error
+2026-04-12T10:02:18.445Z [ERROR]: Redis Client Error
+2026-04-12T10:02:20.501Z [ERROR]: Redis Client Error
+2026-04-12T10:02:22.642Z [ERROR]: Redis Client Error
+2026-04-12T10:02:24.807Z [ERROR]: Redis Client Error
+2026-04-12T10:02:26.900Z [ERROR]: Redis Client Error
+2026-04-12T10:02:29.031Z [ERROR]: Redis Client Error
+2026-04-12T10:02:31.110Z [ERROR]: Redis Client Error
+2026-04-12T10:02:33.301Z [ERROR]: Redis Client Error
+2026-04-12T10:02:35.381Z [ERROR]: Redis Client Error
+2026-04-12T10:02:37.463Z [ERROR]: Redis Client Error
+2026-04-12T10:02:39.580Z [ERROR]: Redis Client Error
+2026-04-12T10:02:41.702Z [ERROR]: Redis Client Error
+2026-04-12T10:02:43.886Z [ERROR]: Redis Client Error
+2026-04-12T10:02:46.067Z [ERROR]: Redis Client Error
+2026-04-12T10:02:48.102Z [ERROR]: Redis Client Error
+2026-04-12T10:02:50.186Z [ERROR]: Redis Client Error
+2026-04-12T10:02:52.339Z [ERROR]: Redis Client Error
+2026-04-12T10:02:54.494Z [ERROR]: Redis Client Error
+2026-04-12T10:02:56.655Z [ERROR]: Redis Client Error
+2026-04-12T10:02:58.695Z [ERROR]: Redis Client Error
+2026-04-12T10:03:00.747Z [ERROR]: Redis Client Error
+2026-04-12T10:03:02.923Z [ERROR]: Redis Client Error
+2026-04-12T10:03:04.987Z [ERROR]: Redis Client Error
+2026-04-12T10:03:07.055Z [ERROR]: Redis Client Error
+2026-04-12T10:03:09.238Z [ERROR]: Redis Client Error
+2026-04-12T10:03:11.431Z [ERROR]: Redis Client Error
+2026-04-12T10:03:13.507Z [ERROR]: Redis Client Error
+2026-04-12T10:03:15.556Z [ERROR]: Redis Client Error
+2026-04-12T10:03:17.679Z [ERROR]: Redis Client Error
+2026-04-12T10:03:19.825Z [ERROR]: Redis Client Error
+2026-04-12T10:03:21.945Z [ERROR]: Redis Client Error
+2026-04-12T10:03:23.991Z [ERROR]: Redis Client Error
+2026-04-12T10:03:26.065Z [ERROR]: Redis Client Error
+2026-04-12T10:03:28.259Z [ERROR]: Redis Client Error
+2026-04-12T10:03:30.342Z [ERROR]: Redis Client Error
+2026-04-12T10:03:32.389Z [ERROR]: Redis Client Error
+2026-04-12T10:03:34.583Z [ERROR]: Redis Client Error
+2026-04-12T10:03:36.712Z [ERROR]: Redis Client Error
+2026-04-12T10:03:38.835Z [ERROR]: Redis Client Error
+2026-04-12T10:03:40.922Z [ERROR]: Redis Client Error
+2026-04-12T10:03:43.052Z [ERROR]: Redis Client Error
+2026-04-12T10:03:45.190Z [ERROR]: Redis Client Error
+2026-04-12T10:03:47.394Z [ERROR]: Redis Client Error
+2026-04-12T10:03:49.413Z [ERROR]: Redis Client Error
+2026-04-12T10:03:51.579Z [ERROR]: Redis Client Error
+2026-04-12T10:03:53.694Z [ERROR]: Redis Client Error
+2026-04-12T10:03:55.713Z [ERROR]: Redis Client Error
+2026-04-12T10:03:57.872Z [ERROR]: Redis Client Error
+2026-04-12T10:04:00.005Z [ERROR]: Redis Client Error
+2026-04-12T10:04:02.128Z [ERROR]: Redis Client Error
+2026-04-12T10:04:04.319Z [ERROR]: Redis Client Error
+2026-04-12T10:04:06.399Z [ERROR]: Redis Client Error
+2026-04-12T10:04:08.584Z [ERROR]: Redis Client Error
+2026-04-12T10:04:10.675Z [ERROR]: Redis Client Error
+2026-04-12T10:04:12.793Z [ERROR]: Redis Client Error
+2026-04-12T10:04:14.916Z [ERROR]: Redis Client Error
+2026-04-12T10:04:16.941Z [ERROR]: Redis Client Error
+2026-04-12T10:04:19.001Z [ERROR]: Redis Client Error
+2026-04-12T10:04:21.054Z [ERROR]: Redis Client Error
+2026-04-12T10:04:23.199Z [ERROR]: Redis Client Error
+2026-04-12T10:04:25.262Z [ERROR]: Redis Client Error
+2026-04-12T10:04:27.286Z [ERROR]: Redis Client Error
+2026-04-12T10:04:29.435Z [ERROR]: Redis Client Error
+2026-04-12T10:04:31.570Z [ERROR]: Redis Client Error
+2026-04-12T10:04:33.768Z [ERROR]: Redis Client Error
+2026-04-12T10:04:35.918Z [ERROR]: Redis Client Error
+2026-04-12T10:04:37.980Z [ERROR]: Redis Client Error
+2026-04-12T10:04:40.027Z [ERROR]: Redis Client Error
+2026-04-12T10:04:42.232Z [ERROR]: Redis Client Error
+2026-04-12T10:04:44.297Z [ERROR]: Redis Client Error
+2026-04-12T10:04:46.394Z [ERROR]: Redis Client Error
+2026-04-12T10:04:48.470Z [ERROR]: Redis Client Error
+2026-04-12T10:04:50.619Z [ERROR]: Redis Client Error
+2026-04-12T10:04:52.651Z [ERROR]: Redis Client Error
+2026-04-12T10:04:54.790Z [ERROR]: Redis Client Error
+2026-04-12T10:04:56.913Z [ERROR]: Redis Client Error
+2026-04-12T10:04:59.069Z [ERROR]: Redis Client Error
+2026-04-12T10:05:01.121Z [ERROR]: Redis Client Error
+2026-04-12T10:05:03.164Z [ERROR]: Redis Client Error
+2026-04-12T10:05:05.251Z [ERROR]: Redis Client Error
+2026-04-12T10:05:07.308Z [ERROR]: Redis Client Error
+2026-04-12T10:05:09.487Z [ERROR]: Redis Client Error
+2026-04-12T10:05:11.621Z [ERROR]: Redis Client Error
+2026-04-12T10:05:13.664Z [ERROR]: Redis Client Error
+2026-04-12T10:05:15.861Z [ERROR]: Redis Client Error
+2026-04-12T10:05:17.924Z [ERROR]: Redis Client Error
+2026-04-12T10:05:19.972Z [ERROR]: Redis Client Error
+2026-04-12T10:05:22.131Z [ERROR]: Redis Client Error
+2026-04-12T10:05:24.209Z [ERROR]: Redis Client Error
+2026-04-12T10:05:26.344Z [ERROR]: Redis Client Error
+2026-04-12T10:05:28.360Z [ERROR]: Redis Client Error
+2026-04-12T10:05:30.484Z [ERROR]: Redis Client Error
+2026-04-12T10:05:32.637Z [ERROR]: Redis Client Error
+2026-04-12T10:05:34.720Z [ERROR]: Redis Client Error
+2026-04-12T10:05:36.820Z [ERROR]: Redis Client Error
+2026-04-12T10:05:38.867Z [ERROR]: Redis Client Error
+2026-04-12T10:05:40.991Z [ERROR]: Redis Client Error
+2026-04-12T10:05:43.189Z [ERROR]: Redis Client Error
+2026-04-12T10:05:45.215Z [ERROR]: Redis Client Error
+2026-04-12T10:05:47.399Z [ERROR]: Redis Client Error
+2026-04-12T10:05:49.525Z [ERROR]: Redis Client Error
+2026-04-12T10:05:51.572Z [ERROR]: Redis Client Error
+2026-04-12T10:05:53.782Z [ERROR]: Redis Client Error
+2026-04-12T10:05:55.961Z [ERROR]: Redis Client Error
+2026-04-12T10:05:58.148Z [ERROR]: Redis Client Error
+2026-04-12T10:06:00.302Z [ERROR]: Redis Client Error
+2026-04-12T10:06:02.320Z [ERROR]: Redis Client Error
+2026-04-12T10:06:04.473Z [ERROR]: Redis Client Error
+2026-04-12T10:06:06.533Z [ERROR]: Redis Client Error
+2026-04-12T10:06:08.623Z [ERROR]: Redis Client Error
+2026-04-12T10:06:10.659Z [ERROR]: Redis Client Error
+2026-04-12T10:06:12.684Z [ERROR]: Redis Client Error
+2026-04-12T10:06:14.841Z [ERROR]: Redis Client Error
+2026-04-12T10:06:16.869Z [ERROR]: Redis Client Error
+2026-04-12T10:06:18.900Z [ERROR]: Redis Client Error
+2026-04-12T10:06:20.988Z [ERROR]: Redis Client Error
+2026-04-12T10:06:23.056Z [ERROR]: Redis Client Error
+2026-04-12T10:06:25.138Z [ERROR]: Redis Client Error
+2026-04-12T10:06:27.179Z [ERROR]: Redis Client Error
+2026-04-12T10:06:29.370Z [ERROR]: Redis Client Error
+2026-04-12T10:06:31.464Z [ERROR]: Redis Client Error
+2026-04-12T10:06:33.508Z [ERROR]: Redis Client Error
+2026-04-12T10:06:35.667Z [ERROR]: Redis Client Error
+2026-04-12T10:06:37.738Z [ERROR]: Redis Client Error
+2026-04-12T10:06:39.879Z [ERROR]: Redis Client Error
+2026-04-12T10:06:41.901Z [ERROR]: Redis Client Error
+2026-04-12T10:06:44.026Z [ERROR]: Redis Client Error
+2026-04-12T10:06:46.178Z [ERROR]: Redis Client Error
+2026-04-12T10:06:48.379Z [ERROR]: Redis Client Error
+2026-04-12T10:06:50.487Z [ERROR]: Redis Client Error
+2026-04-12T10:06:52.620Z [ERROR]: Redis Client Error
+2026-04-12T10:06:54.679Z [ERROR]: Redis Client Error
+2026-04-12T10:06:56.799Z [ERROR]: Redis Client Error
+2026-04-12T10:06:58.967Z [ERROR]: Redis Client Error
+2026-04-12T10:07:01.050Z [ERROR]: Redis Client Error
+2026-04-12T10:07:03.159Z [ERROR]: Redis Client Error
+2026-04-12T10:07:05.170Z [ERROR]: Redis Client Error
+2026-04-12T10:07:07.251Z [ERROR]: Redis Client Error
+2026-04-12T10:07:09.398Z [ERROR]: Redis Client Error
+2026-04-12T10:07:11.521Z [ERROR]: Redis Client Error
+2026-04-12T10:07:13.543Z [ERROR]: Redis Client Error
+2026-04-12T10:07:15.629Z [ERROR]: Redis Client Error
+2026-04-12T10:07:17.755Z [ERROR]: Redis Client Error
+2026-04-12T10:07:19.851Z [ERROR]: Redis Client Error
+2026-04-12T10:07:21.984Z [ERROR]: Redis Client Error
+2026-04-12T10:07:24.094Z [ERROR]: Redis Client Error
+2026-04-12T10:07:26.272Z [ERROR]: Redis Client Error
+2026-04-12T10:07:28.408Z [ERROR]: Redis Client Error
+2026-04-12T10:07:30.497Z [ERROR]: Redis Client Error
+2026-04-12T10:07:32.629Z [ERROR]: Redis Client Error
+2026-04-12T10:07:34.793Z [ERROR]: Redis Client Error
+2026-04-12T10:07:36.907Z [ERROR]: Redis Client Error
+2026-04-12T10:07:38.998Z [ERROR]: Redis Client Error
+2026-04-12T10:07:41.189Z [ERROR]: Redis Client Error
+2026-04-12T10:07:43.321Z [ERROR]: Redis Client Error
+2026-04-12T10:07:45.366Z [ERROR]: Redis Client Error
+2026-04-12T10:07:47.464Z [ERROR]: Redis Client Error
+2026-04-12T10:07:49.543Z [ERROR]: Redis Client Error
+2026-04-12T10:07:51.570Z [ERROR]: Redis Client Error
+2026-04-12T10:07:53.676Z [ERROR]: Redis Client Error
+2026-04-12T10:07:55.858Z [ERROR]: Redis Client Error
+2026-04-12T10:07:58.073Z [ERROR]: Redis Client Error
+2026-04-12T10:08:00.225Z [ERROR]: Redis Client Error
+2026-04-12T10:08:02.259Z [ERROR]: Redis Client Error
+2026-04-12T10:08:04.297Z [ERROR]: Redis Client Error
+2026-04-12T10:08:06.362Z [ERROR]: Redis Client Error
+2026-04-12T10:08:08.416Z [ERROR]: Redis Client Error
+2026-04-12T10:08:10.567Z [ERROR]: Redis Client Error
+2026-04-12T10:08:12.702Z [ERROR]: Redis Client Error
+2026-04-12T10:08:14.914Z [ERROR]: Redis Client Error
+2026-04-12T10:08:17.066Z [ERROR]: Redis Client Error
+2026-04-12T10:08:19.226Z [ERROR]: Redis Client Error
+2026-04-12T10:08:21.393Z [ERROR]: Redis Client Error
+2026-04-12T10:08:23.531Z [ERROR]: Redis Client Error
+2026-04-12T10:08:25.654Z [ERROR]: Redis Client Error
+2026-04-12T10:08:27.664Z [ERROR]: Redis Client Error
+2026-04-12T10:08:29.822Z [ERROR]: Redis Client Error
+2026-04-12T10:08:31.864Z [ERROR]: Redis Client Error
+2026-04-12T10:08:33.922Z [ERROR]: Redis Client Error
+2026-04-12T10:08:36.105Z [ERROR]: Redis Client Error
+2026-04-12T10:08:38.162Z [ERROR]: Redis Client Error
+2026-04-12T10:09:44.443Z [ERROR]: Redis Client Error
+2026-04-12T10:09:46.657Z [ERROR]: Redis Client Error
+2026-04-12T10:09:48.785Z [ERROR]: Redis Client Error
+2026-04-12T10:09:50.998Z [ERROR]: Redis Client Error
+2026-04-12T10:09:53.506Z [ERROR]: Redis Client Error
+2026-04-12T10:09:55.730Z [ERROR]: Redis Client Error
+2026-04-16T06:28:03.116Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-16T06:28:27.500Z [INFO]: Database connection established
+2026-04-16T06:28:27.804Z [INFO]: Redis connection established
+2026-04-16T06:28:27.812Z [INFO]: Server is running on port 3000 in development mode
+2026-04-16T06:28:36.993Z [INFO]: request.start
+2026-04-16T06:28:42.632Z [INFO]: request.end
+2026-04-16T06:28:42.642Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 5632.104 ms - 532[0m
+2026-04-16T06:28:48.022Z [INFO]: request.start
+2026-04-16T06:28:48.028Z [INFO]: request.start
+2026-04-16T06:28:48.031Z [INFO]: request.start
+2026-04-16T06:28:48.034Z [INFO]: request.start
+2026-04-16T06:28:49.332Z [INFO]: request.end
+2026-04-16T06:28:49.334Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 1301.940 ms - 435[0m
+2026-04-16T06:28:49.388Z [INFO]: request.start
+2026-04-16T06:28:50.193Z [INFO]: request.end
+2026-04-16T06:28:50.208Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [32m200[0m 2159.595 ms - 415[0m
+2026-04-16T06:28:50.814Z [INFO]: request.end
+2026-04-16T06:28:50.815Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 1423.697 ms - 172[0m
+2026-04-16T06:28:51.244Z [INFO]: request.end
+2026-04-16T06:28:51.246Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 3218.254 ms - 703[0m
+2026-04-16T06:28:51.605Z [INFO]: request.end
+2026-04-16T06:28:51.606Z [INFO]: [0mGET /api/v1/settings [32m200[0m 3568.274 ms - 579[0m
+2026-04-16T06:30:54.456Z [INFO]: request.start
+2026-04-16T06:30:56.733Z [INFO]: request.end
+2026-04-16T06:30:56.750Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 2179.046 ms - -[0m
+2026-04-16T06:30:58.759Z [INFO]: request.start
+2026-04-16T06:31:00.787Z [INFO]: request.end
+2026-04-16T06:31:00.798Z [INFO]: [0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 2019.374 ms - 423[0m
+2026-04-16T06:31:04.152Z [INFO]: request.start
+2026-04-16T06:31:04.234Z [INFO]: request.start
+2026-04-16T06:31:05.980Z [INFO]: request.end
+2026-04-16T06:31:05.981Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1819.804 ms - -[0m
+2026-04-16T06:31:05.986Z [INFO]: request.end
+2026-04-16T06:31:05.995Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 1741.431 ms - 157[0m
+2026-04-16T06:31:07.542Z [INFO]: request.start
+2026-04-16T06:31:07.550Z [INFO]: request.start
+2026-04-16T06:31:08.728Z [INFO]: request.end
+2026-04-16T06:31:08.749Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1148.052 ms - -[0m
+2026-04-16T06:31:08.834Z [INFO]: request.end
+2026-04-16T06:31:08.896Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1285.508 ms - -[0m
+2026-04-16T06:31:25.043Z [INFO]: request.start
+2026-04-16T06:31:25.878Z [INFO]: request.end
+2026-04-16T06:31:25.886Z [INFO]: [0mGET /api/v1/plans [32m200[0m 831.219 ms - 1022[0m
+2026-04-16T06:31:28.219Z [INFO]: request.start
+2026-04-16T06:31:29.038Z [INFO]: request.end
+2026-04-16T06:31:29.039Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 811.153 ms - -[0m
+2026-04-16T06:32:07.239Z [INFO]: request.start
+2026-04-16T06:32:08.057Z [INFO]: request.end
+2026-04-16T06:32:08.062Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 814.742 ms - 284[0m
+2026-04-16T06:32:08.069Z [INFO]: request.start
+2026-04-16T06:32:08.360Z [INFO]: request.end
+2026-04-16T06:32:08.364Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 285.106 ms - -[0m
+2026-04-16T06:32:08.928Z [INFO]: request.start
+2026-04-16T06:32:08.940Z [INFO]: request.start
+2026-04-16T06:32:08.946Z [INFO]: request.start
+2026-04-16T06:32:09.705Z [INFO]: request.end
+2026-04-16T06:32:09.707Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 762.832 ms - -[0m
+2026-04-16T06:32:10.008Z [INFO]: request.end
+2026-04-16T06:32:10.010Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1069.639 ms - -[0m
+2026-04-16T06:32:11.601Z [INFO]: request.end
+2026-04-16T06:32:11.604Z [INFO]: [0mGET /api/v1/settings [36m304[0m 2643.456 ms - -[0m
+2026-04-16T06:32:24.939Z [INFO]: request.start
+2026-04-16T06:32:25.796Z [INFO]: request.end
+2026-04-16T06:32:25.798Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 855.479 ms - 532[0m
+2026-04-16T06:32:25.987Z [INFO]: request.start
+2026-04-16T06:32:25.990Z [INFO]: request.start
+2026-04-16T06:32:25.992Z [INFO]: request.start
+2026-04-16T06:32:25.999Z [INFO]: request.start
+2026-04-16T06:32:26.572Z [INFO]: request.end
+2026-04-16T06:32:26.573Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 583.147 ms - -[0m
+2026-04-16T06:32:26.703Z [INFO]: request.end
+2026-04-16T06:32:26.703Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 705.390 ms - -[0m
+2026-04-16T06:32:26.722Z [INFO]: request.end
+2026-04-16T06:32:26.723Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 731.075 ms - -[0m
+2026-04-16T06:32:26.755Z [INFO]: request.start
+2026-04-16T06:32:27.716Z [INFO]: request.end
+2026-04-16T06:32:27.717Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 957.808 ms - -[0m
+2026-04-16T06:32:28.524Z [INFO]: request.end
+2026-04-16T06:32:28.525Z [INFO]: [0mGET /api/v1/settings [36m304[0m 2521.890 ms - -[0m
+2026-04-16T06:32:45.281Z [INFO]: request.start
+2026-04-16T06:32:46.398Z [INFO]: request.end
+2026-04-16T06:32:46.401Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 1114.194 ms - 532[0m
+2026-04-16T06:32:46.624Z [INFO]: request.start
+2026-04-16T06:32:46.627Z [INFO]: request.start
+2026-04-16T06:32:46.629Z [INFO]: request.start
+2026-04-16T06:32:46.632Z [INFO]: request.start
+2026-04-16T06:32:47.280Z [INFO]: request.end
+2026-04-16T06:32:47.282Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 648.846 ms - -[0m
+2026-04-16T06:32:47.292Z [INFO]: request.end
+2026-04-16T06:32:47.294Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 666.152 ms - -[0m
+2026-04-16T06:32:47.526Z [INFO]: request.end
+2026-04-16T06:32:47.528Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 896.615 ms - -[0m
+2026-04-16T06:32:47.556Z [INFO]: request.start
+2026-04-16T06:32:48.192Z [INFO]: request.end
+2026-04-16T06:32:48.193Z [INFO]: [0mGET /api/v1/settings [36m304[0m 1558.101 ms - -[0m
+2026-04-16T06:32:48.477Z [INFO]: request.end
+2026-04-16T06:32:48.479Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 916.351 ms - -[0m
+2026-04-16T06:34:24.329Z [INFO]: request.start
+2026-04-16T06:34:27.737Z [INFO]: request.end
+2026-04-16T06:34:27.739Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 3342.266 ms - -[0m
+2026-04-16T06:34:27.741Z [INFO]: request.start
+2026-04-16T06:34:28.030Z [INFO]: request.end
+2026-04-16T06:34:28.031Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 286.245 ms - -[0m
+2026-04-16T06:34:29.791Z [INFO]: request.start
+2026-04-16T06:34:29.793Z [INFO]: request.start
+2026-04-16T06:34:29.795Z [INFO]: request.start
+2026-04-16T06:34:29.797Z [INFO]: request.start
+2026-04-16T06:34:30.963Z [INFO]: request.end
+2026-04-16T06:34:30.965Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1170.272 ms - -[0m
+2026-04-16T06:34:32.147Z [INFO]: request.end
+2026-04-16T06:34:32.149Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 2352.420 ms - -[0m
+2026-04-16T06:34:32.307Z [INFO]: request.end
+2026-04-16T06:34:32.309Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 2510.813 ms - -[0m
+2026-04-16T06:34:32.734Z [INFO]: request.start
+2026-04-16T06:34:33.490Z [INFO]: request.end
+2026-04-16T06:34:33.490Z [INFO]: [0mGET /api/v1/settings [36m304[0m 3689.961 ms - -[0m
+2026-04-16T06:34:34.064Z [INFO]: request.end
+2026-04-16T06:34:34.066Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1328.232 ms - -[0m
+2026-04-16T06:35:53.080Z [INFO]: request.start
+2026-04-16T06:35:53.120Z [INFO]: request.start
+2026-04-16T06:35:54.671Z [INFO]: request.end
+2026-04-16T06:35:54.674Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1547.104 ms - -[0m
+2026-04-16T06:35:56.162Z [INFO]: request.end
+2026-04-16T06:35:56.165Z [INFO]: [0mGET /api/v1/settings [36m304[0m 3051.505 ms - -[0m
+2026-04-16T06:35:59.520Z [INFO]: request.start
+2026-04-16T06:36:01.126Z [INFO]: settings:preferences_updated
+2026-04-16T06:36:01.136Z [INFO]: request.end
+2026-04-16T06:36:01.138Z [INFO]: [0mPUT /api/v1/settings/preferences [32m200[0m 1612.642 ms - 357[0m
+2026-04-16T06:36:01.148Z [INFO]: request.start
+2026-04-16T06:36:02.545Z [INFO]: request.end
+2026-04-16T06:36:02.549Z [INFO]: [0mGET /api/v1/settings [32m200[0m 1393.850 ms - 580[0m
+2026-04-16T06:36:04.451Z [INFO]: request.start
+2026-04-16T06:36:05.769Z [INFO]: settings:preferences_updated
+2026-04-16T06:36:05.772Z [INFO]: request.end
+2026-04-16T06:36:05.773Z [INFO]: [0mPUT /api/v1/settings/preferences [32m200[0m 1317.588 ms - 356[0m
+2026-04-16T06:36:05.790Z [INFO]: request.start
+2026-04-16T06:36:06.966Z [INFO]: request.end
+2026-04-16T06:36:06.970Z [INFO]: [0mGET /api/v1/settings [32m200[0m 1173.569 ms - 579[0m
+2026-04-16T06:36:27.147Z [INFO]: request.start
+2026-04-16T06:36:27.150Z [INFO]: request.start
+2026-04-16T06:36:27.153Z [INFO]: request.start
+2026-04-16T06:36:27.157Z [INFO]: request.start
+2026-04-16T06:36:27.883Z [INFO]: request.end
+2026-04-16T06:36:27.884Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 727.382 ms - -[0m
+2026-04-16T06:36:28.360Z [INFO]: request.end
+2026-04-16T06:36:28.361Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1211.722 ms - -[0m
+2026-04-16T06:36:28.367Z [INFO]: request.end
+2026-04-16T06:36:28.368Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1215.653 ms - -[0m
+2026-04-16T06:36:28.964Z [INFO]: request.end
+2026-04-16T06:36:28.966Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1804.183 ms - -[0m
+2026-04-16T06:39:52.317Z [INFO]: Database connection established
+2026-04-16T06:39:52.431Z [INFO]: Redis connection established
+2026-04-16T06:39:52.438Z [INFO]: Server is running on port 3000 in development mode
+2026-04-16T06:39:55.743Z [INFO]: Shutting down server...

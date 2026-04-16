@@ -15,6 +15,7 @@
         "forceConsistentCasingInFileNames": true,
         "moduleResolution": "node10",
         "baseUrl": ".",
+        "ignoreDeprecations": "6.0", // Not a good practice
         "paths": {
             "@config/*": [
                 "./src/config/*"
