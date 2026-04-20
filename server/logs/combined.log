@@ -109,3 +109,4 @@
 {"correlationId":"863f0989-6065-4871-ae77-9425ca4f31d8","level":"info","message":"request.start","method":"GET","path":"/api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298","timestamp":"2026-04-20T05:42:25.303Z"}
 {"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":"a6c7a351-4c27-44b1-a538-792bfa81d298","correlationId":"863f0989-6065-4871-ae77-9425ca4f31d8","latencyMs":2062,"level":"info","message":"request.end","method":"GET","path":"/api/a6c7a351-4c27-44b1-a538-792bfa81d298","statusCode":304,"timestamp":"2026-04-20T05:42:27.365Z"}
 {"level":"info","message":"\u001b[0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 \u001b[36m304\u001b[0m 2060.394 ms - -\u001b[0m","timestamp":"2026-04-20T05:42:27.366Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-04-20T06:00:36.708Z"}
