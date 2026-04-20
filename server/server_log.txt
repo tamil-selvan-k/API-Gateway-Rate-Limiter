@@ -1,103 +1,72 @@
-2026-04-16T06:34:33.490Z [INFO]: [0mGET /api/v1/settings [36m304[0m 3689.961 ms - -[0m
-2026-04-16T06:34:34.064Z [INFO]: request.end
-2026-04-16T06:34:34.066Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1328.232 ms - -[0m
-2026-04-16T06:35:53.080Z [INFO]: request.start
-2026-04-16T06:35:53.120Z [INFO]: request.start
-2026-04-16T06:35:54.671Z [INFO]: request.end
-2026-04-16T06:35:54.674Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1547.104 ms - -[0m
-2026-04-16T06:35:56.162Z [INFO]: request.end
-2026-04-16T06:35:56.165Z [INFO]: [0mGET /api/v1/settings [36m304[0m 3051.505 ms - -[0m
-2026-04-16T06:35:59.520Z [INFO]: request.start
-2026-04-16T06:36:01.126Z [INFO]: settings:preferences_updated
-2026-04-16T06:36:01.136Z [INFO]: request.end
-2026-04-16T06:36:01.138Z [INFO]: [0mPUT /api/v1/settings/preferences [32m200[0m 1612.642 ms - 357[0m
-2026-04-16T06:36:01.148Z [INFO]: request.start
-2026-04-16T06:36:02.545Z [INFO]: request.end
-2026-04-16T06:36:02.549Z [INFO]: [0mGET /api/v1/settings [32m200[0m 1393.850 ms - 580[0m
-2026-04-16T06:36:04.451Z [INFO]: request.start
-2026-04-16T06:36:05.769Z [INFO]: settings:preferences_updated
-2026-04-16T06:36:05.772Z [INFO]: request.end
-2026-04-16T06:36:05.773Z [INFO]: [0mPUT /api/v1/settings/preferences [32m200[0m 1317.588 ms - 356[0m
-2026-04-16T06:36:05.790Z [INFO]: request.start
-2026-04-16T06:36:06.966Z [INFO]: request.end
-2026-04-16T06:36:06.970Z [INFO]: [0mGET /api/v1/settings [32m200[0m 1173.569 ms - 579[0m
-2026-04-16T06:36:27.147Z [INFO]: request.start
-2026-04-16T06:36:27.150Z [INFO]: request.start
-2026-04-16T06:36:27.153Z [INFO]: request.start
-2026-04-16T06:36:27.157Z [INFO]: request.start
-2026-04-16T06:36:27.883Z [INFO]: request.end
-2026-04-16T06:36:27.884Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 727.382 ms - -[0m
-2026-04-16T06:36:28.360Z [INFO]: request.end
-2026-04-16T06:36:28.361Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1211.722 ms - -[0m
-2026-04-16T06:36:28.367Z [INFO]: request.end
-2026-04-16T06:36:28.368Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1215.653 ms - -[0m
-2026-04-16T06:36:28.964Z [INFO]: request.end
-2026-04-16T06:36:28.966Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1804.183 ms - -[0m
-2026-04-16T06:39:52.317Z [INFO]: Database connection established
-2026-04-16T06:39:52.431Z [INFO]: Redis connection established
-2026-04-16T06:39:52.438Z [INFO]: Server is running on port 3000 in development mode
-2026-04-16T06:39:55.743Z [INFO]: Shutting down server...
-2026-04-16T08:57:49.635Z [INFO]: Database connection established
-2026-04-16T08:57:49.651Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
-2026-04-16T08:57:49.652Z [DEBUG]: Redis Client Error
-2026-04-16T08:57:49.923Z [WARN]: Redis connection failed. Running with degraded rate limiting.
-2026-04-16T08:57:49.926Z [INFO]: Server is running on port 3000 in development mode
-2026-04-16T08:59:39.726Z [INFO]: Database connection established
-2026-04-16T08:59:39.796Z [INFO]: Redis connection established
-2026-04-16T08:59:39.806Z [INFO]: Server is running on port 3000 in development mode
-2026-04-17T06:02:55.039Z [INFO]: Database connection established
-2026-04-17T06:02:55.238Z [INFO]: Redis connection established
-2026-04-17T06:02:55.247Z [INFO]: Server is running on port 3000 in development mode
-2026-04-17T06:04:56.482Z [INFO]: request.start
-2026-04-17T06:05:00.904Z [INFO]: request.end
-2026-04-17T06:05:00.913Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 4415.965 ms - 284[0m
-2026-04-17T06:05:00.918Z [INFO]: request.start
-2026-04-17T06:05:01.276Z [INFO]: request.start
-2026-04-17T06:05:01.286Z [INFO]: request.end
-2026-04-17T06:05:01.289Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 363.288 ms - -[0m
-2026-04-17T06:05:01.298Z [INFO]: request.start
-2026-04-17T06:05:01.326Z [INFO]: request.start
-2026-04-17T06:05:01.332Z [INFO]: request.start
-2026-04-17T06:05:02.645Z [INFO]: request.end
-2026-04-17T06:05:02.652Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 1361.539 ms - 703[0m
-2026-04-17T06:05:04.255Z [INFO]: request.end
-2026-04-17T06:05:04.257Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [32m200[0m 2923.498 ms - 415[0m
-2026-04-17T06:05:04.962Z [INFO]: request.end
-2026-04-17T06:05:04.964Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 3662.263 ms - 435[0m
-2026-04-17T06:05:05.074Z [INFO]: request.start
-2026-04-17T06:05:06.396Z [INFO]: request.end
-2026-04-17T06:05:06.398Z [INFO]: [0mGET /api/v1/settings [32m200[0m 5061.166 ms - 579[0m
-2026-04-17T06:05:06.672Z [INFO]: request.end
-2026-04-17T06:05:06.674Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 1595.832 ms - 172[0m
-2026-04-17T06:05:20.450Z [INFO]: request.start
-2026-04-17T06:05:21.344Z [INFO]: request.start
-2026-04-17T06:05:21.351Z [INFO]: request.start
-2026-04-17T06:05:22.218Z [INFO]: request.end
-2026-04-17T06:05:22.221Z [INFO]: [0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1765.954 ms - -[0m
-2026-04-17T06:05:23.034Z [INFO]: request.end
-2026-04-17T06:05:23.048Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 1688.214 ms - 157[0m
-2026-04-17T06:05:23.372Z [INFO]: request.end
-2026-04-17T06:05:23.374Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 2006.736 ms - -[0m
-2026-04-17T06:07:42.854Z [INFO]: request.start
-2026-04-17T06:07:44.960Z [INFO]: request.end
-2026-04-17T06:07:44.962Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 2102.941 ms - -[0m
-2026-04-17T06:10:54.626Z [INFO]: request.start
-2026-04-17T06:10:57.701Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [0m-[0m - ms - -[0m
-2026-04-17T06:11:06.427Z [INFO]: request.start
-2026-04-17T06:11:07.529Z [INFO]: request.end
-2026-04-17T06:11:07.586Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 1043.102 ms - 532[0m
-2026-04-17T06:11:07.925Z [INFO]: request.start
-2026-04-17T06:11:07.981Z [INFO]: request.start
-2026-04-17T06:11:08.017Z [INFO]: request.start
-2026-04-17T06:11:08.047Z [INFO]: request.start
-2026-04-17T06:11:08.717Z [INFO]: request.end
-2026-04-17T06:11:08.760Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 768.587 ms - -[0m
-2026-04-17T06:11:09.410Z [INFO]: request.end
-2026-04-17T06:11:09.412Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1406.601 ms - -[0m
-2026-04-17T06:11:11.235Z [INFO]: request.end
-2026-04-17T06:11:11.281Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 3190.284 ms - -[0m
-2026-04-17T06:11:11.789Z [INFO]: request.start
-2026-04-17T06:11:12.704Z [INFO]: request.end
-2026-04-17T06:11:12.709Z [INFO]: [0mGET /api/v1/settings [36m304[0m 4632.559 ms - -[0m
-2026-04-17T06:11:13.425Z [INFO]: request.end
-2026-04-17T06:11:13.428Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1634.173 ms - -[0m
+2026-04-17T06:26:33.062Z [INFO]: request.start
+2026-04-17T06:26:33.063Z [INFO]: request.start
+2026-04-17T06:26:33.064Z [INFO]: request.start
+2026-04-17T06:26:33.065Z [INFO]: request.start
+2026-04-17T06:26:33.067Z [INFO]: request.start
+2026-04-17T06:26:33.072Z [INFO]: request.start
+2026-04-17T06:26:33.073Z [INFO]: request.start
+2026-04-17T06:26:33.074Z [INFO]: request.start
+2026-04-17T06:26:33.075Z [INFO]: request.start
+2026-04-17T06:26:33.079Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.081Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.082Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.083Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.085Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.086Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.089Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.090Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.092Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.094Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.096Z [INFO]: request.end
+2026-04-17T06:26:33.097Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.744 ms - 279[0m
+2026-04-17T06:26:33.098Z [INFO]: request.end
+2026-04-17T06:26:33.098Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.758 ms - 279[0m
+2026-04-17T06:26:33.098Z [INFO]: request.end
+2026-04-17T06:26:33.099Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 19.106 ms - 279[0m
+2026-04-17T06:26:33.099Z [INFO]: request.end
+2026-04-17T06:26:33.100Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 19.055 ms - 279[0m
+2026-04-17T06:26:33.100Z [INFO]: request.end
+2026-04-17T06:26:33.102Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 19.613 ms - 279[0m
+2026-04-17T06:26:33.105Z [INFO]: request.end
+2026-04-17T06:26:33.106Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 16.384 ms - 279[0m
+2026-04-17T06:26:33.107Z [INFO]: request.end
+2026-04-17T06:26:33.108Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 16.767 ms - 279[0m
+2026-04-17T06:26:33.109Z [INFO]: request.end
+2026-04-17T06:26:33.110Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 17.278 ms - 279[0m
+2026-04-17T06:26:33.111Z [INFO]: request.end
+2026-04-17T06:26:33.111Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.592 ms - 279[0m
+2026-04-17T06:26:33.112Z [INFO]: request.end
+2026-04-17T06:26:33.112Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 20.381 ms - 279[0m
+2026-04-17T06:26:33.113Z [INFO]: request.start
+2026-04-17T06:26:33.114Z [INFO]: request.start
+2026-04-17T06:26:33.115Z [INFO]: request.start
+2026-04-17T06:26:33.116Z [INFO]: request.start
+2026-04-17T06:26:33.116Z [INFO]: request.start
+2026-04-17T06:26:33.117Z [INFO]: request.start
+2026-04-17T06:26:33.120Z [INFO]: request.start
+2026-04-17T06:26:33.122Z [INFO]: request.start
+2026-04-17T06:26:33.123Z [INFO]: request.start
+2026-04-17T06:26:33.124Z [INFO]: request.start
+2026-04-17T06:26:33.126Z [INFO]: [0mGET /api/v1/accounts/profile [0m-[0m - ms - -[0m
+2026-04-17T06:26:33.127Z [INFO]: [0mGET /api/v1/accounts/profile [0m-[0m - ms - -[0m
+2026-04-17T06:26:33.128Z [INFO]: [0mGET /api/v1/accounts/profile [0m-[0m - ms - -[0m
+2026-04-17T06:26:33.130Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.132Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.133Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.134Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.137Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.146Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.148Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.162Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.166Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.175Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
+2026-04-17T06:26:33.180Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 40.444 ms - 279[0m
+2026-04-17T06:26:33.183Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 28.779 ms - 279[0m
+2026-04-17T06:26:33.186Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.166 ms - 279[0m
+2026-04-17T06:26:33.191Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 17.276 ms - 279[0m
+2026-04-17T06:26:33.192Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 17.813 ms - 279[0m
+2026-04-17T06:26:33.193Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 20.798 ms - 279[0m
+2026-04-17T06:26:33.194Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 28.127 ms - 279[0m
+2026-04-17T06:30:35.229Z [INFO]: Database connection established
+2026-04-17T06:30:35.429Z [INFO]: Redis connection established
+2026-04-17T06:30:35.465Z [INFO]: Server is running on port 3000 in development mode
