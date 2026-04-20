@@ -13,9 +13,8 @@
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "moduleResolution": "node10",
+        "moduleResolution": "node",
         "baseUrl": ".",
-        "ignoreDeprecations": "5.0", // Not a good practice
         "paths": {
             "@config/*": [
                 "./src/config/*"

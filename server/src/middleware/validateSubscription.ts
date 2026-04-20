@@ -19,11 +19,11 @@ export const validateSubscription = (
         try {
             const apiId = apiIdResolver
                 ? apiIdResolver(req)
-                : req.gatewayContext?.api.id || (req.params.apiId as string | undefined);
+                : req.gatewayContext?.api?.id || req.params?.apiId;
 
             const accountId = accountIdResolver
                 ? accountIdResolver(req)
-                : req.gatewayContext?.api.accountId || (req as { user?: { id?: string } }).user?.id;
+                : req.gatewayContext?.api?.accountId || (req as { user?: { id?: string } }).user?.id;
 
             if (!apiId || !accountId) {
                 throw new AppError('Subscription validation failed', 400);

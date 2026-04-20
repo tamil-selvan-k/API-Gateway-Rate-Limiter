@@ -36,8 +36,12 @@ export const requestContext = (req: Request, res: Response, next: NextFunction) 
 
         const accountId =
             (req as { user?: { id?: string } }).user?.id ||
-            req.gatewayContext?.api.accountId;
-        const apiId = req.gatewayContext?.api.id || req.params.apiId;
+            req.gatewayContext?.api?.accountId ||
+            null;
+        const apiId =
+            req.gatewayContext?.api?.id ||
+            req.params?.apiId ||
+            null;
 
         logger.info('request.end', {
             correlationId,
