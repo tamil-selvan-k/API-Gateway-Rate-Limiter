@@ -53,3 +53,59 @@
 {"level":"info","message":"Database connection established","timestamp":"2026-04-17T06:30:35.229Z"}
 {"level":"info","message":"Redis connection established","timestamp":"2026-04-17T06:30:35.429Z"}
 {"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-04-17T06:30:35.465Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-04-20T05:14:24.394Z"}
+{"level":"warn","message":"Redis unavailable; rate limiting is running in fail-open mode","timestamp":"2026-04-20T05:14:24.412Z"}
+{"code":"ECONNREFUSED","level":"debug","message":"Redis Client Error","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1134:18)\n    at afterConnectMultiple (node:net:1715:7)","timestamp":"2026-04-20T05:14:24.413Z"}
+{"level":"warn","message":"Redis connection failed. Running with degraded rate limiting.","timestamp":"2026-04-20T05:14:24.672Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-04-20T05:14:24.686Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-04-20T05:16:31.956Z"}
+{"level":"warn","message":"Redis unavailable; rate limiting is running in fail-open mode","timestamp":"2026-04-20T05:16:33.241Z"}
+{"code":"ENOTFOUND","errno":-3008,"hostname":"red-d7irbdfavr4c73ft83c0","level":"debug","message":"Redis Client Error getaddrinfo ENOTFOUND red-d7irbdfavr4c73ft83c0","stack":"Error: getaddrinfo ENOTFOUND red-d7irbdfavr4c73ft83c0\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)","syscall":"getaddrinfo","timestamp":"2026-04-20T05:16:33.242Z"}
+{"level":"warn","message":"Redis connection failed. Running with degraded rate limiting.","timestamp":"2026-04-20T05:16:34.346Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-04-20T05:16:34.353Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-04-20T05:25:23.975Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-04-20T05:25:27.118Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-04-20T05:25:27.127Z"}
+{"level":"info","message":"Shutting down server...","timestamp":"2026-04-20T05:25:34.381Z"}
+{"level":"info","message":"Database connection established","timestamp":"2026-04-20T05:38:02.662Z"}
+{"level":"info","message":"Redis connection established","timestamp":"2026-04-20T05:38:05.821Z"}
+{"level":"info","message":"Server is running on port 3000 in development mode","timestamp":"2026-04-20T05:38:05.826Z"}
+{"correlationId":"938fd63e-7b73-41b1-9724-af297f1dd3ff","level":"info","message":"request.start","method":"GET","path":"/api/v1/accounts/profile","timestamp":"2026-04-20T05:38:46.389Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"938fd63e-7b73-41b1-9724-af297f1dd3ff","latencyMs":3376,"level":"info","message":"request.end","method":"GET","path":"/profile","statusCode":200,"timestamp":"2026-04-20T05:38:49.765Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/accounts/profile \u001b[32m200\u001b[0m 3371.398 ms - 284\u001b[0m","timestamp":"2026-04-20T05:38:49.768Z"}
+{"correlationId":"c3fda03a-3f65-49ed-89be-ce866f7b3689","level":"info","message":"request.start","method":"GET","path":"/api/v1/accounts/profile","timestamp":"2026-04-20T05:38:49.770Z"}
+{"correlationId":"7ac45e7b-199a-41c4-ba38-7c317dd529a5","level":"info","message":"request.start","method":"GET","path":"/api/v1/subscriptions/status","timestamp":"2026-04-20T05:38:50.000Z"}
+{"correlationId":"803085f8-0ab4-47ca-b3f4-438dbd504274","level":"info","message":"request.start","method":"GET","path":"/api/v1/apis","timestamp":"2026-04-20T05:38:50.002Z"}
+{"correlationId":"467b7005-9065-42c0-9494-a090e716520d","level":"info","message":"request.start","method":"GET","path":"/api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8","timestamp":"2026-04-20T05:38:50.005Z"}
+{"correlationId":"dd67432f-829a-457a-8444-eb3a8874e8b5","level":"info","message":"request.start","method":"GET","path":"/api/v1/settings","timestamp":"2026-04-20T05:38:50.006Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"c3fda03a-3f65-49ed-89be-ce866f7b3689","latencyMs":349,"level":"info","message":"request.end","method":"GET","path":"/profile","statusCode":304,"timestamp":"2026-04-20T05:38:50.120Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/accounts/profile \u001b[36m304\u001b[0m 347.327 ms - -\u001b[0m","timestamp":"2026-04-20T05:38:50.121Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"803085f8-0ab4-47ca-b3f4-438dbd504274","latencyMs":1682,"level":"info","message":"request.end","method":"GET","path":"/","statusCode":200,"timestamp":"2026-04-20T05:38:51.684Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/apis?limit=100 \u001b[32m200\u001b[0m 1680.544 ms - 435\u001b[0m","timestamp":"2026-04-20T05:38:51.685Z"}
+{"correlationId":"97ce8bea-c10c-4e9e-aa3a-ad98863886a0","level":"info","message":"request.start","method":"GET","path":"/api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298","timestamp":"2026-04-20T05:38:51.709Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"467b7005-9065-42c0-9494-a090e716520d","latencyMs":2769,"level":"info","message":"request.end","method":"GET","path":"/account/a5b147de-7115-4045-b6d7-f1b2d00654e8","statusCode":200,"timestamp":"2026-04-20T05:38:52.774Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 \u001b[32m200\u001b[0m 2768.222 ms - 415\u001b[0m","timestamp":"2026-04-20T05:38:52.775Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"7ac45e7b-199a-41c4-ba38-7c317dd529a5","latencyMs":3196,"level":"info","message":"request.end","method":"GET","path":"/status","statusCode":200,"timestamp":"2026-04-20T05:38:53.196Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/subscriptions/status \u001b[32m200\u001b[0m 3195.156 ms - 703\u001b[0m","timestamp":"2026-04-20T05:38:53.197Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":"a6c7a351-4c27-44b1-a538-792bfa81d298","correlationId":"97ce8bea-c10c-4e9e-aa3a-ad98863886a0","latencyMs":3424,"level":"info","message":"request.end","method":"GET","path":"/usage/a6c7a351-4c27-44b1-a538-792bfa81d298","statusCode":200,"timestamp":"2026-04-20T05:38:55.133Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 \u001b[32m200\u001b[0m 3422.934 ms - 172\u001b[0m","timestamp":"2026-04-20T05:38:55.134Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"dd67432f-829a-457a-8444-eb3a8874e8b5","latencyMs":5395,"level":"info","message":"request.end","method":"GET","path":"/","statusCode":200,"timestamp":"2026-04-20T05:38:55.401Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/settings \u001b[32m200\u001b[0m 5393.472 ms - 579\u001b[0m","timestamp":"2026-04-20T05:38:55.402Z"}
+{"correlationId":"38751763-d973-48f2-a07f-5d7546f11ea2","level":"info","message":"request.start","method":"GET","path":"/api/v1/subscriptions/status","timestamp":"2026-04-20T05:42:09.820Z"}
+{"correlationId":"1090f8be-4bb5-46a6-b244-dee84bc29f47","level":"info","message":"request.start","method":"GET","path":"/api/v1/apis","timestamp":"2026-04-20T05:42:10.068Z"}
+{"correlationId":"b4934e42-1120-483e-84fb-57c6a2a99c62","level":"info","message":"request.start","method":"GET","path":"/api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298","timestamp":"2026-04-20T05:42:10.103Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"1090f8be-4bb5-46a6-b244-dee84bc29f47","latencyMs":1703,"level":"info","message":"request.end","method":"GET","path":"/","statusCode":304,"timestamp":"2026-04-20T05:42:11.771Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/apis?limit=100 \u001b[36m304\u001b[0m 1694.554 ms - -\u001b[0m","timestamp":"2026-04-20T05:42:11.778Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":null,"correlationId":"38751763-d973-48f2-a07f-5d7546f11ea2","latencyMs":2411,"level":"info","message":"request.end","method":"GET","path":"/status","statusCode":304,"timestamp":"2026-04-20T05:42:12.218Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/subscriptions/status \u001b[36m304\u001b[0m 2321.135 ms - -\u001b[0m","timestamp":"2026-04-20T05:42:12.221Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":"a6c7a351-4c27-44b1-a538-792bfa81d298","correlationId":"b4934e42-1120-483e-84fb-57c6a2a99c62","latencyMs":3101,"level":"info","message":"request.end","method":"GET","path":"/usage/a6c7a351-4c27-44b1-a538-792bfa81d298","statusCode":304,"timestamp":"2026-04-20T05:42:13.192Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 \u001b[36m304\u001b[0m 3082.280 ms - -\u001b[0m","timestamp":"2026-04-20T05:42:13.195Z"}
+{"correlationId":"95287069-5d22-41d7-b93a-16e1f2d832ef","level":"info","message":"request.start","method":"GET","path":"/api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298","timestamp":"2026-04-20T05:42:18.746Z"}
+{"correlationId":"a233c214-8d67-4dfb-ae17-68ce7516bb14","level":"info","message":"request.start","method":"GET","path":"/api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298","timestamp":"2026-04-20T05:42:18.750Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":"a6c7a351-4c27-44b1-a538-792bfa81d298","correlationId":"95287069-5d22-41d7-b93a-16e1f2d832ef","latencyMs":1405,"level":"info","message":"request.end","method":"GET","path":"/usage/a6c7a351-4c27-44b1-a538-792bfa81d298","statusCode":304,"timestamp":"2026-04-20T05:42:20.151Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 \u001b[36m304\u001b[0m 1401.817 ms - -\u001b[0m","timestamp":"2026-04-20T05:42:20.152Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":"a6c7a351-4c27-44b1-a538-792bfa81d298","correlationId":"a233c214-8d67-4dfb-ae17-68ce7516bb14","latencyMs":2175,"level":"info","message":"request.end","method":"GET","path":"/hits/a6c7a351-4c27-44b1-a538-792bfa81d298","statusCode":200,"timestamp":"2026-04-20T05:42:20.925Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 \u001b[32m200\u001b[0m 2173.799 ms - 157\u001b[0m","timestamp":"2026-04-20T05:42:20.928Z"}
+{"correlationId":"863f0989-6065-4871-ae77-9425ca4f31d8","level":"info","message":"request.start","method":"GET","path":"/api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298","timestamp":"2026-04-20T05:42:25.303Z"}
+{"accountId":"a5b147de-7115-4045-b6d7-f1b2d00654e8","apiId":"a6c7a351-4c27-44b1-a538-792bfa81d298","correlationId":"863f0989-6065-4871-ae77-9425ca4f31d8","latencyMs":2062,"level":"info","message":"request.end","method":"GET","path":"/api/a6c7a351-4c27-44b1-a538-792bfa81d298","statusCode":304,"timestamp":"2026-04-20T05:42:27.365Z"}
+{"level":"info","message":"\u001b[0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 \u001b[36m304\u001b[0m 2060.394 ms - -\u001b[0m","timestamp":"2026-04-20T05:42:27.366Z"}

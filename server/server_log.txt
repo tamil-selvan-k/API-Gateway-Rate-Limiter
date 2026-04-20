@@ -70,3 +70,59 @@
 2026-04-17T06:30:35.229Z [INFO]: Database connection established
 2026-04-17T06:30:35.429Z [INFO]: Redis connection established
 2026-04-17T06:30:35.465Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T05:14:24.394Z [INFO]: Database connection established
+2026-04-20T05:14:24.412Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
+2026-04-20T05:14:24.413Z [DEBUG]: Redis Client Error
+2026-04-20T05:14:24.672Z [WARN]: Redis connection failed. Running with degraded rate limiting.
+2026-04-20T05:14:24.686Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T05:16:31.956Z [INFO]: Database connection established
+2026-04-20T05:16:33.241Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
+2026-04-20T05:16:33.242Z [DEBUG]: Redis Client Error getaddrinfo ENOTFOUND red-d7irbdfavr4c73ft83c0
+2026-04-20T05:16:34.346Z [WARN]: Redis connection failed. Running with degraded rate limiting.
+2026-04-20T05:16:34.353Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T05:25:23.975Z [INFO]: Database connection established
+2026-04-20T05:25:27.118Z [INFO]: Redis connection established
+2026-04-20T05:25:27.127Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T05:25:34.381Z [INFO]: Shutting down server...
+2026-04-20T05:38:02.662Z [INFO]: Database connection established
+2026-04-20T05:38:05.821Z [INFO]: Redis connection established
+2026-04-20T05:38:05.826Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T05:38:46.389Z [INFO]: request.start
+2026-04-20T05:38:49.765Z [INFO]: request.end
+2026-04-20T05:38:49.768Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 3371.398 ms - 284[0m
+2026-04-20T05:38:49.770Z [INFO]: request.start
+2026-04-20T05:38:50.000Z [INFO]: request.start
+2026-04-20T05:38:50.002Z [INFO]: request.start
+2026-04-20T05:38:50.005Z [INFO]: request.start
+2026-04-20T05:38:50.006Z [INFO]: request.start
+2026-04-20T05:38:50.120Z [INFO]: request.end
+2026-04-20T05:38:50.121Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 347.327 ms - -[0m
+2026-04-20T05:38:51.684Z [INFO]: request.end
+2026-04-20T05:38:51.685Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 1680.544 ms - 435[0m
+2026-04-20T05:38:51.709Z [INFO]: request.start
+2026-04-20T05:38:52.774Z [INFO]: request.end
+2026-04-20T05:38:52.775Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [32m200[0m 2768.222 ms - 415[0m
+2026-04-20T05:38:53.196Z [INFO]: request.end
+2026-04-20T05:38:53.197Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 3195.156 ms - 703[0m
+2026-04-20T05:38:55.133Z [INFO]: request.end
+2026-04-20T05:38:55.134Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 3422.934 ms - 172[0m
+2026-04-20T05:38:55.401Z [INFO]: request.end
+2026-04-20T05:38:55.402Z [INFO]: [0mGET /api/v1/settings [32m200[0m 5393.472 ms - 579[0m
+2026-04-20T05:42:09.820Z [INFO]: request.start
+2026-04-20T05:42:10.068Z [INFO]: request.start
+2026-04-20T05:42:10.103Z [INFO]: request.start
+2026-04-20T05:42:11.771Z [INFO]: request.end
+2026-04-20T05:42:11.778Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1694.554 ms - -[0m
+2026-04-20T05:42:12.218Z [INFO]: request.end
+2026-04-20T05:42:12.221Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 2321.135 ms - -[0m
+2026-04-20T05:42:13.192Z [INFO]: request.end
+2026-04-20T05:42:13.195Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 3082.280 ms - -[0m
+2026-04-20T05:42:18.746Z [INFO]: request.start
+2026-04-20T05:42:18.750Z [INFO]: request.start
+2026-04-20T05:42:20.151Z [INFO]: request.end
+2026-04-20T05:42:20.152Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1401.817 ms - -[0m
+2026-04-20T05:42:20.925Z [INFO]: request.end
+2026-04-20T05:42:20.928Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 2173.799 ms - 157[0m
+2026-04-20T05:42:25.303Z [INFO]: request.start
+2026-04-20T05:42:27.365Z [INFO]: request.end
+2026-04-20T05:42:27.366Z [INFO]: [0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 2060.394 ms - -[0m
