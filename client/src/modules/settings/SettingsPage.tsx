@@ -5,9 +5,17 @@ import SectionCard from '../../components/SectionCard';
 import settingsService from '../../api/settingsService';
 import axiosInstance from '../../api/axiosInstance';
 import { CardSkeleton } from '../../components/LoadingSkeleton';
-import type { Api, ApiResponse } from '../../types/types';
+import type { Api, ApiResponse, OrganizationSettings } from '../../types/types';
 
-const DEFAULT_THEME = 'system' as const;
+type ThemePreference = OrganizationSettings['theme'];
+
+interface PreferencesForm {
+    theme: ThemePreference;
+    usageAlertThreshold: number;
+    defaultApiKeyExpiryDays: number;
+}
+
+const DEFAULT_THEME: ThemePreference = 'system';
 const DEFAULT_USAGE_THRESHOLD = 80;
 const DEFAULT_KEY_EXPIRY_DAYS = 90;
 
@@ -21,7 +29,7 @@ export default function SettingsPage() {
         newPassword: '',
         weeklyUsageSummary: false,
     });
-    const [preferencesForm, setPreferencesForm] = useState({
+    const [preferencesForm, setPreferencesForm] = useState<PreferencesForm>({
         theme: DEFAULT_THEME,
         usageAlertThreshold: DEFAULT_USAGE_THRESHOLD,
         defaultApiKeyExpiryDays: DEFAULT_KEY_EXPIRY_DAYS,
