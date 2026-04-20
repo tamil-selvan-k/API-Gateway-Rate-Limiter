@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "echo \"Vercel will build the API function automatically\"",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.ts"
+    }
+  ]
+}
