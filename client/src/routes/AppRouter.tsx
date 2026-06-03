@@ -11,17 +11,19 @@ import BillingPage from '../modules/billing/BillingPage';
 import SettingsPage from '../modules/settings/SettingsPage';
 import SubscriptionPage from '../modules/subscription/SubscriptionPage';
 import ProfilePage from '../modules/profile/ProfilePage';
+import LandingPage from '../modules/landing/LandingPage';
 
 export default function AppRouter() {
     return (
         <Routes>
             {/* Public routes */}
+            <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
 
             {/* Protected dashboard routes */}
             <Route
-                path="/"
+                path="/dashboard"
                 element={
                     <ProtectedRoute>
                         <DashboardLayout />
