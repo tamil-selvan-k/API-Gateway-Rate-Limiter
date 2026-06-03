@@ -21,25 +21,27 @@ import { useQuery } from '@tanstack/react-query';
 import axiosInstance from '../api/axiosInstance';
 import type { ApiResponse, Subscription } from '../types/types';
 import settingsService from '../api/settingsService';
+import ConfirmModal from '../components/ConfirmModal';
 
 const NAV_ITEMS = [
-    { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
-    { to: '/apis', icon: Globe, label: 'APIs' },
-    { to: '/api-keys', icon: Key, label: 'API Keys' },
-    { to: '/analytics', icon: BarChart3, label: 'Analytics' },
-    { to: '/billing', icon: Gem, label: 'Billing' },
-    { to: '/subscription', icon: Zap, label: 'Subscription' }, // Changed icon to Zap to distinguish from Billing
+    { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+    { to: '/dashboard/apis', icon: Globe, label: 'APIs' },
+    { to: '/dashboard/api-keys', icon: Key, label: 'API Keys' },
+    { to: '/dashboard/analytics', icon: BarChart3, label: 'Analytics' },
+    { to: '/dashboard/billing', icon: Gem, label: 'Billing' },
+    { to: '/dashboard/subscription', icon: Zap, label: 'Subscription' }, // Changed icon to Zap to distinguish from Billing
 ] as const;
 
 
 const BOTTOM_NAV = [
-    { to: '/settings', icon: Settings, label: 'Settings' },
+    { to: '/dashboard/settings', icon: Settings, label: 'Settings' },
 ] as const;
 
 export default function DashboardLayout() {
     const { user, logout } = useAuth();
     const location = useLocation();
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+    const [isLogoutModalOpen, setIsLogoutModalOpen] = useState(false);
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(() => {
         if (typeof window === 'undefined') return false;
         return localStorage.getItem('sidebar-collapsed') === 'true';
@@ -88,7 +90,10 @@ export default function DashboardLayout() {
     }, [selectedTheme]);
 
     const handleLogout = () => {
-        if (!window.confirm('Are you sure you want to logout?')) return;
+        setIsLogoutModalOpen(true);
+    };
+
+    const confirmLogout = () => {
         logout();
     };
 
@@ -127,7 +132,7 @@ export default function DashboardLayout() {
                         <NavLink
                             key={to}
                             to={to}
-                            end={to === '/'}
+                            end={to === '/dashboard'}
                             className={({ isActive }) =>
                                 `sidebar__link ${isActive ? 'sidebar__link--active' : ''}`
                             }
@@ -196,7 +201,7 @@ export default function DashboardLayout() {
                             <span>Sync</span>
                         </button>
                         <span className="badge badge--plan">{planName}</span>
-                        <NavLink to="/profile" className="topbar__avatar-link" aria-label="Open profile page">
+                        <NavLink to="/dashboard/profile" className="topbar__avatar-link" aria-label="Open profile page">
                             <div className="topbar__avatar">
                                 {user?.name?.charAt(0).toUpperCase() ?? 'U'}
                             </div>
@@ -222,6 +227,16 @@ export default function DashboardLayout() {
                         </motion.div>
                     </AnimatePresence>
                 </main>
+
+                <ConfirmModal
+                    isOpen={isLogoutModalOpen}
+                    onClose={() => setIsLogoutModalOpen(false)}
+                    onConfirm={confirmLogout}
+                    title="Confirm Logout"
+                    message="Are you sure you want to log out of your account?"
+                    confirmText="Logout"
+                    type="danger"
+                />
             </div>
         </div>
     );
