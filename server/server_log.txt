@@ -1,129 +1,248 @@
-2026-04-17T06:26:33.062Z [INFO]: request.start
-2026-04-17T06:26:33.063Z [INFO]: request.start
-2026-04-17T06:26:33.064Z [INFO]: request.start
-2026-04-17T06:26:33.065Z [INFO]: request.start
-2026-04-17T06:26:33.067Z [INFO]: request.start
-2026-04-17T06:26:33.072Z [INFO]: request.start
-2026-04-17T06:26:33.073Z [INFO]: request.start
-2026-04-17T06:26:33.074Z [INFO]: request.start
-2026-04-17T06:26:33.075Z [INFO]: request.start
-2026-04-17T06:26:33.079Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.081Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.082Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.083Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.085Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.086Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.089Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.090Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.092Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.094Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.096Z [INFO]: request.end
-2026-04-17T06:26:33.097Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.744 ms - 279[0m
-2026-04-17T06:26:33.098Z [INFO]: request.end
-2026-04-17T06:26:33.098Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.758 ms - 279[0m
-2026-04-17T06:26:33.098Z [INFO]: request.end
-2026-04-17T06:26:33.099Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 19.106 ms - 279[0m
-2026-04-17T06:26:33.099Z [INFO]: request.end
-2026-04-17T06:26:33.100Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 19.055 ms - 279[0m
-2026-04-17T06:26:33.100Z [INFO]: request.end
-2026-04-17T06:26:33.102Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 19.613 ms - 279[0m
-2026-04-17T06:26:33.105Z [INFO]: request.end
-2026-04-17T06:26:33.106Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 16.384 ms - 279[0m
-2026-04-17T06:26:33.107Z [INFO]: request.end
-2026-04-17T06:26:33.108Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 16.767 ms - 279[0m
-2026-04-17T06:26:33.109Z [INFO]: request.end
-2026-04-17T06:26:33.110Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 17.278 ms - 279[0m
-2026-04-17T06:26:33.111Z [INFO]: request.end
-2026-04-17T06:26:33.111Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.592 ms - 279[0m
-2026-04-17T06:26:33.112Z [INFO]: request.end
-2026-04-17T06:26:33.112Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 20.381 ms - 279[0m
-2026-04-17T06:26:33.113Z [INFO]: request.start
-2026-04-17T06:26:33.114Z [INFO]: request.start
-2026-04-17T06:26:33.115Z [INFO]: request.start
-2026-04-17T06:26:33.116Z [INFO]: request.start
-2026-04-17T06:26:33.116Z [INFO]: request.start
-2026-04-17T06:26:33.117Z [INFO]: request.start
-2026-04-17T06:26:33.120Z [INFO]: request.start
-2026-04-17T06:26:33.122Z [INFO]: request.start
-2026-04-17T06:26:33.123Z [INFO]: request.start
-2026-04-17T06:26:33.124Z [INFO]: request.start
-2026-04-17T06:26:33.126Z [INFO]: [0mGET /api/v1/accounts/profile [0m-[0m - ms - -[0m
-2026-04-17T06:26:33.127Z [INFO]: [0mGET /api/v1/accounts/profile [0m-[0m - ms - -[0m
-2026-04-17T06:26:33.128Z [INFO]: [0mGET /api/v1/accounts/profile [0m-[0m - ms - -[0m
-2026-04-17T06:26:33.130Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.132Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.133Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.134Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.137Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.146Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.148Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.162Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.166Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.175Z [ERROR]: GET /api/v1/accounts/profile - Too Many Requests
-2026-04-17T06:26:33.180Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 40.444 ms - 279[0m
-2026-04-17T06:26:33.183Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 28.779 ms - 279[0m
-2026-04-17T06:26:33.186Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 18.166 ms - 279[0m
-2026-04-17T06:26:33.191Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 17.276 ms - 279[0m
-2026-04-17T06:26:33.192Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 17.813 ms - 279[0m
-2026-04-17T06:26:33.193Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 20.798 ms - 279[0m
-2026-04-17T06:26:33.194Z [INFO]: [0mGET /api/v1/accounts/profile [33m429[0m 28.127 ms - 279[0m
-2026-04-17T06:30:35.229Z [INFO]: Database connection established
-2026-04-17T06:30:35.429Z [INFO]: Redis connection established
-2026-04-17T06:30:35.465Z [INFO]: Server is running on port 3000 in development mode
-2026-04-20T05:14:24.394Z [INFO]: Database connection established
-2026-04-20T05:14:24.412Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
-2026-04-20T05:14:24.413Z [DEBUG]: Redis Client Error
-2026-04-20T05:14:24.672Z [WARN]: Redis connection failed. Running with degraded rate limiting.
-2026-04-20T05:14:24.686Z [INFO]: Server is running on port 3000 in development mode
-2026-04-20T05:16:31.956Z [INFO]: Database connection established
-2026-04-20T05:16:33.241Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
-2026-04-20T05:16:33.242Z [DEBUG]: Redis Client Error getaddrinfo ENOTFOUND red-d7irbdfavr4c73ft83c0
-2026-04-20T05:16:34.346Z [WARN]: Redis connection failed. Running with degraded rate limiting.
-2026-04-20T05:16:34.353Z [INFO]: Server is running on port 3000 in development mode
-2026-04-20T05:25:23.975Z [INFO]: Database connection established
-2026-04-20T05:25:27.118Z [INFO]: Redis connection established
-2026-04-20T05:25:27.127Z [INFO]: Server is running on port 3000 in development mode
-2026-04-20T05:25:34.381Z [INFO]: Shutting down server...
-2026-04-20T05:38:02.662Z [INFO]: Database connection established
-2026-04-20T05:38:05.821Z [INFO]: Redis connection established
-2026-04-20T05:38:05.826Z [INFO]: Server is running on port 3000 in development mode
-2026-04-20T05:38:46.389Z [INFO]: request.start
-2026-04-20T05:38:49.765Z [INFO]: request.end
-2026-04-20T05:38:49.768Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 3371.398 ms - 284[0m
-2026-04-20T05:38:49.770Z [INFO]: request.start
-2026-04-20T05:38:50.000Z [INFO]: request.start
-2026-04-20T05:38:50.002Z [INFO]: request.start
-2026-04-20T05:38:50.005Z [INFO]: request.start
-2026-04-20T05:38:50.006Z [INFO]: request.start
-2026-04-20T05:38:50.120Z [INFO]: request.end
-2026-04-20T05:38:50.121Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 347.327 ms - -[0m
-2026-04-20T05:38:51.684Z [INFO]: request.end
-2026-04-20T05:38:51.685Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 1680.544 ms - 435[0m
-2026-04-20T05:38:51.709Z [INFO]: request.start
-2026-04-20T05:38:52.774Z [INFO]: request.end
-2026-04-20T05:38:52.775Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [32m200[0m 2768.222 ms - 415[0m
-2026-04-20T05:38:53.196Z [INFO]: request.end
-2026-04-20T05:38:53.197Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 3195.156 ms - 703[0m
-2026-04-20T05:38:55.133Z [INFO]: request.end
-2026-04-20T05:38:55.134Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 3422.934 ms - 172[0m
-2026-04-20T05:38:55.401Z [INFO]: request.end
-2026-04-20T05:38:55.402Z [INFO]: [0mGET /api/v1/settings [32m200[0m 5393.472 ms - 579[0m
-2026-04-20T05:42:09.820Z [INFO]: request.start
-2026-04-20T05:42:10.068Z [INFO]: request.start
-2026-04-20T05:42:10.103Z [INFO]: request.start
-2026-04-20T05:42:11.771Z [INFO]: request.end
-2026-04-20T05:42:11.778Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1694.554 ms - -[0m
-2026-04-20T05:42:12.218Z [INFO]: request.end
-2026-04-20T05:42:12.221Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 2321.135 ms - -[0m
-2026-04-20T05:42:13.192Z [INFO]: request.end
-2026-04-20T05:42:13.195Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 3082.280 ms - -[0m
-2026-04-20T05:42:18.746Z [INFO]: request.start
-2026-04-20T05:42:18.750Z [INFO]: request.start
-2026-04-20T05:42:20.151Z [INFO]: request.end
-2026-04-20T05:42:20.152Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 1401.817 ms - -[0m
-2026-04-20T05:42:20.925Z [INFO]: request.end
-2026-04-20T05:42:20.928Z [INFO]: [0mGET /api/v1/rate-limiter/hits/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 2173.799 ms - 157[0m
-2026-04-20T05:42:25.303Z [INFO]: request.start
-2026-04-20T05:42:27.365Z [INFO]: request.end
-2026-04-20T05:42:27.366Z [INFO]: [0mGET /api/v1/api-keys/api/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 2060.394 ms - -[0m
-2026-04-20T06:00:36.708Z [INFO]: Database connection established
+2026-04-20T14:18:18.581Z [INFO]: request.start
+2026-04-20T14:18:18.583Z [INFO]: request.start
+2026-04-20T14:18:23.201Z [INFO]: request.end
+2026-04-20T14:18:23.203Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 4620.890 ms - 435[0m
+2026-04-20T14:18:26.172Z [INFO]: request.end
+2026-04-20T14:18:26.173Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 7589.513 ms - 703[0m
+2026-04-20T14:18:35.135Z [INFO]: Database connection established
+2026-04-20T14:18:38.264Z [INFO]: Redis connection established
+2026-04-20T14:18:38.284Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T14:19:08.433Z [INFO]: Database connection established
+2026-04-20T14:19:13.630Z [INFO]: Redis connection established
+2026-04-20T14:19:13.642Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T14:19:51.521Z [INFO]: request.start
+2026-04-20T14:19:54.613Z [INFO]: request.end
+2026-04-20T14:19:54.621Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 3082.647 ms - 532[0m
+2026-04-20T14:19:54.839Z [INFO]: request.start
+2026-04-20T14:19:54.858Z [INFO]: request.start
+2026-04-20T14:19:54.888Z [INFO]: request.start
+2026-04-20T14:19:54.893Z [INFO]: request.start
+2026-04-20T14:19:56.402Z [INFO]: request.end
+2026-04-20T14:19:56.404Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1546.799 ms - -[0m
+2026-04-20T14:19:59.304Z [INFO]: request.end
+2026-04-20T14:19:59.306Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 4443.369 ms - -[0m
+2026-04-20T14:19:59.650Z [INFO]: request.end
+2026-04-20T14:19:59.652Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 4758.649 ms - -[0m
+2026-04-20T14:20:02.991Z [INFO]: request.end
+2026-04-20T14:20:02.993Z [INFO]: [0mGET /api/v1/settings [32m200[0m 8093.734 ms - 579[0m
+2026-04-20T14:20:11.223Z [INFO]: request.start
+2026-04-20T14:20:15.288Z [ERROR]: POST /api/v1/apis - 
+Invalid `prisma_config_1.prisma.api.create()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\dist\modules\api\api.repository.js:59:54
+
+  56     throw error;
+  57 }
+  58 const { requestTimeoutMs: _requestTimeoutMs, ...legacyData } = data;
+→ 59 return (await prisma_config_1.prisma.api.create(
+The column `requestTimeoutMs` does not exist in the current database.
+2026-04-20T14:20:15.299Z [INFO]: request.end
+2026-04-20T14:20:15.307Z [INFO]: [0mPOST /api/v1/apis [31m500[0m 4071.405 ms - 1832[0m
+2026-04-20T14:20:26.924Z [INFO]: request.start
+2026-04-20T14:20:29.373Z [INFO]: request.end
+2026-04-20T14:20:29.374Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 2446.589 ms - 284[0m
+2026-04-20T14:20:29.377Z [INFO]: request.start
+2026-04-20T14:20:29.639Z [INFO]: request.start
+2026-04-20T14:20:29.641Z [INFO]: request.start
+2026-04-20T14:20:29.644Z [INFO]: request.start
+2026-04-20T14:20:29.867Z [INFO]: request.end
+2026-04-20T14:20:29.868Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 488.405 ms - -[0m
+2026-04-20T14:20:31.556Z [INFO]: request.end
+2026-04-20T14:20:31.557Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1915.072 ms - -[0m
+2026-04-20T14:20:32.273Z [INFO]: request.end
+2026-04-20T14:20:32.275Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 2630.242 ms - -[0m
+2026-04-20T14:20:33.777Z [INFO]: request.end
+2026-04-20T14:20:33.778Z [INFO]: [0mGET /api/v1/settings [36m304[0m 4132.104 ms - -[0m
+2026-04-20T14:20:42.292Z [INFO]: request.start
+2026-04-20T14:20:43.958Z [INFO]: request.end
+2026-04-20T14:20:43.959Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 1664.663 ms - -[0m
+2026-04-20T14:20:43.961Z [INFO]: request.start
+2026-04-20T14:20:44.113Z [INFO]: request.start
+2026-04-20T14:20:44.115Z [INFO]: request.start
+2026-04-20T14:20:44.118Z [INFO]: request.start
+2026-04-20T14:20:44.601Z [INFO]: request.end
+2026-04-20T14:20:44.602Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 638.679 ms - -[0m
+2026-04-20T14:20:44.993Z [INFO]: request.end
+2026-04-20T14:20:44.994Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 878.392 ms - -[0m
+2026-04-20T14:20:45.895Z [INFO]: request.end
+2026-04-20T14:20:45.899Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1776.873 ms - -[0m
+2026-04-20T14:20:46.258Z [INFO]: request.end
+2026-04-20T14:20:46.261Z [INFO]: [0mGET /api/v1/settings [36m304[0m 2137.892 ms - -[0m
+2026-04-20T14:29:32.735Z [INFO]: request.start
+2026-04-20T14:29:38.293Z [ERROR]: POST /api/v1/apis - 
+Invalid `prisma_config_1.prisma.api.create()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\dist\modules\api\api.repository.js:52:54
+
+  49 }
+  50 async create(data) {
+  51     try {
+→ 52         return (await prisma_config_1.prisma.api.create(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:29:38.311Z [INFO]: request.end
+2026-04-20T14:29:38.315Z [INFO]: [0mPOST /api/v1/apis [31m500[0m 5521.808 ms - 2032[0m
+2026-04-20T14:30:06.899Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:33:33.781Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:34:05.350Z [INFO]: Database connection established
+2026-04-20T14:34:12.769Z [INFO]: Redis connection established
+2026-04-20T14:34:12.773Z [INFO]: Server is running on port 3000 in development mode
+2026-04-20T14:38:57.065Z [INFO]: request.start
+2026-04-20T14:39:05.437Z [ERROR]: POST /api/v1/apis - 
+Invalid `prisma_config_1.prisma.api.create()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\dist\modules\api\api.repository.js:52:54
+
+  49 }
+  50 async create(data) {
+  51     try {
+→ 52         return (await prisma_config_1.prisma.api.create(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:39:05.455Z [INFO]: request.end
+2026-04-20T14:39:05.463Z [INFO]: [0mPOST /api/v1/apis [31m500[0m 8363.335 ms - 2032[0m
+2026-04-20T14:39:23.099Z [INFO]: request.start
+2026-04-20T14:39:45.452Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:39:56.158Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:40:06.794Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:40:15.298Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:40:24.608Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:40:36.133Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:40:48.255Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:41:02.391Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:41:23.633Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-04-20T14:42:07.571Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-06-03T06:27:38.020Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-06-03T06:28:43.253Z [ERROR]: Failed to start server: Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-06-03T06:29:31.943Z [INFO]: Database connection established
+2026-06-03T06:29:36.235Z [INFO]: Redis connection established
+2026-06-03T06:29:36.252Z [INFO]: Server is running on port 3000 in development mode
+2026-06-03T06:41:23.400Z [WARN]: Redis unavailable; rate limiting is running in fail-open mode
+2026-06-03T06:41:23.748Z [DEBUG]: Redis Client Error read ECONNRESET
+2026-06-03T07:31:16.203Z [INFO]: request.start
+2026-06-03T07:31:19.974Z [ERROR]: GET /api/v1/accounts/profile - Invalid or expired token
+2026-06-03T07:31:20.012Z [INFO]: request.end
+2026-06-03T07:31:20.019Z [INFO]: [0mGET /api/v1/accounts/profile [33m401[0m 3789.299 ms - 330[0m
+2026-06-03T07:31:20.026Z [INFO]: request.start
+2026-06-03T07:31:20.037Z [ERROR]: GET /api/v1/accounts/profile - Invalid or expired token
+2026-06-03T07:31:20.041Z [INFO]: request.end
+2026-06-03T07:31:20.042Z [INFO]: [0mGET /api/v1/accounts/profile [33m401[0m 11.141 ms - 330[0m
+2026-06-03T07:31:42.841Z [INFO]: request.start
+2026-06-03T07:31:48.264Z [INFO]: request.end
+2026-06-03T07:31:48.265Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 5421.475 ms - 532[0m
+2026-06-03T07:31:48.423Z [INFO]: request.start
+2026-06-03T07:31:48.437Z [INFO]: request.start
+2026-06-03T07:31:48.445Z [INFO]: request.start
+2026-06-03T07:31:48.447Z [INFO]: request.start
+2026-06-03T07:31:49.864Z [INFO]: request.end
+2026-06-03T07:31:49.865Z [INFO]: [0mGET /api/v1/subscriptions/status [32m200[0m 1439.289 ms - 703[0m
+2026-06-03T07:31:51.799Z [INFO]: request.end
+2026-06-03T07:31:51.800Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [32m200[0m 3352.166 ms - 432[0m
+2026-06-03T07:31:52.109Z [INFO]: request.end
+2026-06-03T07:31:52.110Z [INFO]: [0mGET /api/v1/apis?limit=100 [32m200[0m 3671.092 ms - 435[0m
+2026-06-03T07:31:52.153Z [INFO]: request.start
+2026-06-03T07:31:54.096Z [INFO]: request.end
+2026-06-03T07:31:54.097Z [INFO]: [0mGET /api/v1/settings [32m200[0m 5647.393 ms - 579[0m
+2026-06-03T07:31:54.361Z [INFO]: request.end
+2026-06-03T07:31:54.362Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [32m200[0m 2206.810 ms - 171[0m
+2026-06-03T07:34:29.521Z [INFO]: request.start
+2026-06-03T07:34:30.472Z [INFO]: request.end
+2026-06-03T07:34:30.473Z [INFO]: [0mGET /api/v1/accounts/profile [32m200[0m 937.666 ms - 284[0m
+2026-06-03T07:34:30.488Z [INFO]: request.start
+2026-06-03T07:34:30.635Z [INFO]: request.start
+2026-06-03T07:34:30.638Z [INFO]: request.start
+2026-06-03T07:34:30.642Z [INFO]: request.start
+2026-06-03T07:34:30.652Z [INFO]: request.start
+2026-06-03T07:34:30.802Z [INFO]: request.end
+2026-06-03T07:34:30.805Z [INFO]: [0mGET /api/v1/accounts/profile [36m304[0m 311.807 ms - -[0m
+2026-06-03T07:34:31.632Z [INFO]: request.end
+2026-06-03T07:34:31.634Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 982.022 ms - -[0m
+2026-06-03T07:34:31.666Z [INFO]: request.end
+2026-06-03T07:34:31.669Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 1025.077 ms - -[0m
+2026-06-03T07:34:31.691Z [INFO]: request.start
+2026-06-03T07:34:32.215Z [INFO]: request.end
+2026-06-03T07:34:32.217Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1578.697 ms - -[0m
+2026-06-03T07:34:33.276Z [INFO]: request.end
+2026-06-03T07:34:33.277Z [INFO]: [0mGET /api/v1/settings [36m304[0m 2622.915 ms - -[0m
+2026-06-03T07:34:33.814Z [INFO]: request.end
+2026-06-03T07:34:33.815Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 2121.594 ms - -[0m
+2026-06-03T09:02:15.634Z [INFO]: request.start
+2026-06-03T09:02:21.189Z [ERROR]: GET /api/v1/accounts/profile - 
+Invalid `prisma_config_1.prisma.account.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\dist\modules\account\account.repository.js:12:47
+
+   9     });
+  10 }
+  11 async findById(id) {
+→ 12     return prisma_config_1.prisma.account.findUnique(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-06-03T09:02:21.218Z [INFO]: request.end
+2026-06-03T09:02:21.223Z [INFO]: [0mGET /api/v1/accounts/profile [31m500[0m 5536.763 ms - 2031[0m
+2026-06-03T09:02:21.286Z [INFO]: request.start
+2026-06-03T09:02:26.333Z [ERROR]: GET /api/v1/accounts/profile - 
+Invalid `prisma_config_1.prisma.account.findUnique()` invocation in
+C:\Users\DELL\OneDrive\Docs\RateLimiter\server\dist\modules\account\account.repository.js:12:47
+
+   9     });
+  10 }
+  11 async findById(id) {
+→ 12     return prisma_config_1.prisma.account.findUnique(
+Can't reach database server at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-muddy-mode-aim0bumy-pooler.c-4.us-east-1.aws.neon.tech:5432`.
+2026-06-03T09:02:26.348Z [INFO]: request.end
+2026-06-03T09:02:26.358Z [INFO]: [0mGET /api/v1/accounts/profile [31m500[0m 5055.931 ms - 2031[0m
+2026-06-03T09:21:09.096Z [INFO]: Database connection established
+2026-06-03T09:21:12.407Z [INFO]: Redis connection established
+2026-06-03T09:21:12.424Z [INFO]: Server is running on port 3000 in development mode
+2026-06-03T09:47:20.884Z [INFO]: Database connection established
+2026-06-03T09:47:25.463Z [INFO]: Redis connection established
+2026-06-03T09:47:25.474Z [INFO]: Server is running on port 3000 in development mode
+2026-06-03T09:47:30.155Z [INFO]: request.start
+2026-06-03T09:47:35.948Z [INFO]: request.end
+2026-06-03T09:47:35.952Z [INFO]: [0mPOST /api/v1/accounts/login [32m200[0m 5787.668 ms - 532[0m
+2026-06-03T09:47:36.211Z [INFO]: request.start
+2026-06-03T09:47:36.217Z [INFO]: request.start
+2026-06-03T09:47:36.220Z [INFO]: request.start
+2026-06-03T09:47:36.225Z [INFO]: request.start
+2026-06-03T09:47:38.071Z [INFO]: request.end
+2026-06-03T09:47:38.077Z [INFO]: [0mGET /api/v1/subscriptions/status [36m304[0m 1856.069 ms - -[0m
+2026-06-03T09:47:39.943Z [INFO]: request.end
+2026-06-03T09:47:39.947Z [INFO]: [0mGET /api/v1/apis?limit=100 [36m304[0m 3723.081 ms - -[0m
+2026-06-03T09:47:40.003Z [INFO]: request.start
+2026-06-03T09:47:40.257Z [INFO]: request.end
+2026-06-03T09:47:40.259Z [INFO]: [0mGET /api/v1/api-keys/account/a5b147de-7115-4045-b6d7-f1b2d00654e8 [36m304[0m 4032.828 ms - -[0m
+2026-06-03T09:47:42.988Z [INFO]: request.end
+2026-06-03T09:47:42.992Z [INFO]: [0mGET /api/v1/settings [36m304[0m 6760.865 ms - -[0m
+2026-06-03T09:47:42.998Z [INFO]: request.end
+2026-06-03T09:47:43.001Z [INFO]: [0mGET /api/v1/rate-limiter/usage/a6c7a351-4c27-44b1-a538-792bfa81d298 [36m304[0m 2992.941 ms - -[0m
+2026-06-03T09:48:38.621Z [INFO]: Shutting down server...
