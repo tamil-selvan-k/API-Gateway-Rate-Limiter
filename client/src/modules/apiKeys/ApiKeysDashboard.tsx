@@ -2,35 +2,66 @@ import React, { useState, useEffect } from 'react';
 import { Key, Plus, Trash2, Copy, CheckCircle2 } from 'lucide-react';
 import type { ApiKey } from './apiKeys.api';
 import { fetchApiKeys, createApiKey, revokeApiKey } from './apiKeys.api';
+import axiosInstance from '../../api/axiosInstance';
+import { useAuth } from '../../context/AuthContext';
+import type { Api, ApiResponse } from '../../types/types';
 
 const ApiKeysDashboard: React.FC = () => {
+    const { user } = useAuth();
     const [keys, setKeys] = useState<ApiKey[]>([]);
+    const [apis, setApis] = useState<Api[]>([]);
+    const [selectedApiId, setSelectedApiId] = useState('');
     const [loading, setLoading] = useState(true);
     const [copiedKey, setCopiedKey] = useState<string | null>(null);
-
-    const accountId = 'enterprise_01'; // Mock account ID
+    const activeApiId = selectedApiId || apis[0]?.id || '';
 
     useEffect(() => {
-        loadKeys();
-    }, []);
+        const loadDashboardData = async () => {
+            if (!user?.id) {
+                setKeys([]);
+                setApis([]);
+                setLoading(false);
+                return;
+            }
+
+            try {
+                const [keysResponse, apisResponse] = await Promise.all([
+                    fetchApiKeys(user.id),
+                    axiosInstance.get('/apis?limit=100') as Promise<ApiResponse<Api[]>>,
+                ]);
+                setKeys(keysResponse.data);
+                setApis(apisResponse.data);
+            } catch (error) {
+                console.error('Failed to load API key dashboard', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        loadDashboardData();
+    }, [user?.id]);
 
     const loadKeys = async () => {
+        if (!user?.id) return;
         try {
-            const response = await fetchApiKeys(accountId);
+            const response = await fetchApiKeys(user.id);
             setKeys(response.data);
         } catch (error) {
             console.error('Failed to fetch keys', error);
-        } finally {
-            setLoading(false);
         }
     };
 
     const handleCreateKey = async () => {
+        if (!activeApiId) {
+            alert('Create an API first before generating a key.');
+            return;
+        }
+
         const name = prompt('Enter a name for your API Key:');
         if (!name) return;
 
         try {
-            await createApiKey({ accountId, name });
+            await createApiKey({ apiId: activeApiId, name });
             loadKeys();
         } catch (error) {
             alert('Failed to create key');
@@ -60,13 +91,29 @@ const ApiKeysDashboard: React.FC = () => {
                     <h2 className="text-xl font-bold mb-1">API Keys</h2>
                     <p className="text-gray-400 text-sm">Manage access keys for your applications.</p>
                 </div>
-                <button
-                    onClick={handleCreateKey}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-medium flex items-center gap-2 transition-all shadow-lg shadow-blue-900/20"
-                >
-                    <Plus size={18} />
-                    Create New Key
-                </button>
+                <div className="flex items-center gap-3">
+                    {apis.length > 0 && (
+                        <select
+                            value={activeApiId}
+                            onChange={(e) => setSelectedApiId(e.target.value)}
+                            className="bg-gray-800 border border-gray-700 rounded-xl px-3 py-2 text-sm text-white"
+                        >
+                            {apis.map((api) => (
+                                <option key={api.id} value={api.id}>
+                                    {api.name}
+                                </option>
+                            ))}
+                        </select>
+                    )}
+                    <button
+                        onClick={handleCreateKey}
+                        disabled={!activeApiId}
+                        className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white px-5 py-2.5 rounded-xl font-medium flex items-center gap-2 transition-all shadow-lg shadow-blue-900/20"
+                    >
+                        <Plus size={18} />
+                        Create New Key
+                    </button>
+                </div>
             </div>
 
             <div className="space-y-4">
