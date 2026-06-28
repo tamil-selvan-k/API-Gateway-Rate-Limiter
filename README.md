@@ -1,4 +1,4 @@
-# GateZentry Rate Limiter
+# GateZentry Rate Limiter 
 
 A production-ready Rate Limiting system built with TypeScript, Node.js, Express, Prisma, Redis, and React.
 
